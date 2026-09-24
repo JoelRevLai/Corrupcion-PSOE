@@ -56,7 +56,9 @@
     "diarioinformacion.com": "Información",
     "mundiario.com": "Mundiario",
     "soydemadrid.com": "SoyDe",
-    "elpespunte.es": "El Pespunte"
+    "elpespunte.es": "El Pespunte",
+    "servimedia.es": "Servimedia",
+    "noticiasdenavarra.com": "Noticias de Navarra"
   };
 
   var MESES = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"];

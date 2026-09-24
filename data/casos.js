@@ -1540,5 +1540,90 @@ window.CASOS = [
         "https://www.infobae.com/espana/agencias/2026/09/01/siguen-diligencias-contra-un-exalcalde-del-psoe-de-la-granja-de-san-ildefonso-segovia-por-prevaricacion-y-malversacion/"
       ] }
     ]
+  },
+  {
+    id: "indultos-proces",
+    titulo: "Indultos a los líderes independentistas catalanes",
+    clase: "suceso",
+    ambito: "gobierno",
+    estado: "Decisiones del Gobierno sin causa penal. El Supremo rechazó en 2022 y 2023 los recursos de PP, Vox y Ciudadanos por falta de legitimación. En 2026 el Gobierno indultó parcialmente a Laura Borràs, condenada por corrupción.",
+    resumen: "El Consejo de Ministros indultó en junio de 2021 a los nueve condenados a prisión en el juicio del procés (Junqueras, Forn, Turull, Romeva, Rull, Bassa, Forcadell, Sànchez y Cuixart), pese al informe contrario del tribunal sentenciador. El indulto fue parcial: perdonó la cárcel, pero mantuvo la inhabilitación. Los socios independentistas eran apoyos parlamentarios del Gobierno.",
+    personas: ["Pedro Sánchez"],
+    eventos: [
+      { f: "2021-05-26", t: "informe", h: "El Supremo se opone a indultar a los doce condenados del procés: no ve arrepentimiento ni razones de justicia", s: [
+        "https://www.elindependiente.com/espana/2021/05/26/el-tribunal-supremo-se-opone-a-conceder-el-indulto-a-los-12-presos-por-el-proces/"
+      ] },
+      { f: "2021-06-22", t: "decisión política", h: "El Gobierno indulta a los nueve condenados a prisión por el procés", s: [
+        "https://www.newtral.es/indulto-presos-proces-gobierno/20210622/",
+        "https://www.elespanol.com/espana/politica/20210608/indulto-librara-junqueras-dias-prision-cumplido-condena/587192707_0.html"
+      ] },
+      { f: "2022-01-20", t: "decisión judicial", h: "El Supremo rechaza los recursos contra los indultos porque PP, Vox y Ciudadanos no podían recurrir", s: [
+        "https://www.eldiario.es/politica/supremo-rechaza-recursos-indultos-proces-falta-legitimacion_1_8673403.html"
+      ] },
+      { f: "2023-09-14", t: "decisión judicial", h: "El Supremo, tras estudiar el fondo de la legitimación, vuelve a tumbar los recursos contra los indultos", s: [
+        "https://www.eldiario.es/catalunya/supremo-vuelve-tumbar-recursos-derechas-indultos-proces_1_10505266.html",
+        "https://www.infobae.com/espana/2023/09/14/el-tribunal-supremo-rechaza-los-recursos-contra-los-indultos-a-los-lideres-del-proces/"
+      ] },
+      { f: "2025-05-07", t: "informe", h: "El tribunal del procés se opone a un segundo indulto a Junqueras para perdonarle la inhabilitación", s: [
+        "https://www.elespanol.com/espana/tribunales/20250507/tribunal-proces-opone-segundo-indulto-oriol-junqueras-vulneraria-forma-flagrante-prohibicion-legal/1003743746618_0.html",
+        "https://www.infobae.com/espana/agencias/2025/05/07/el-supremo-se-opone-a-dar-un-segundo-indulto-a-junqueras-para-perdonar-la-pena-de-inhabilitacion-del-proces/"
+      ] },
+      { f: "2026-07-28", t: "decisión política", h: "El Gobierno indulta parcialmente a Laura Borràs, condenada por trocear contratos, a propuesta del propio TSJ de Cataluña", s: [
+        "https://www.infobae.com/espana/2026/07/28/el-gobierno-indulta-parcialmente-a-la-expresidenta-del-parlament-laura-borras-y-rebaja-su-pena-de-prision-de-cuatro-anos-y-medio-a-dos-tras-la-propuesta-del-tsjc/",
+        "https://www.elespanol.com/espana/politica/20260729/sanchez-indulta-lider-separatista-laura-borras-condenados-corrupcion-vinculados-psoe/1003744337260_0.html"
+      ] },
+      { f: "2026-09-04", t: "decisión judicial", h: "El TSJ de Cataluña aplica el indulto y deja en dos años la pena de prisión de Borràs", s: [
+        "https://confilegal.com/20260904-el-tsjc-aplica-el-indulto-a-laura-borras-y-reduce-su-pena-de-prision-a-2-anos/",
+        "https://www.eldiario.es/catalunya/justicia-da-conmutada-pena-prision-corrupcion-laura-borras-indulto-gobierno_1_13486760.html"
+      ] }
+    ]
+  },
+  {
+    id: "bildu-presos-eta",
+    titulo: "Los acuerdos con EH Bildu y la política sobre presos de ETA",
+    clase: "suceso",
+    ambito: "gobierno",
+    estado: "Decisiones políticas y legislativas sin causa judicial. EH Bildu no forma parte del Gobierno, pero ha apoyado las investiduras de Sánchez, presupuestos y leyes; el PSN le dio en 2023 la Alcaldía de Pamplona.",
+    resumen: "EH Bildu, coalición de la izquierda abertzale, es socio parlamentario del Gobierno. Sus acuerdos con el PSOE han sido objeto de fuerte polémica por la presencia de condenados por pertenencia o colaboración con ETA en sus listas y por las decisiones sobre los presos de la banda: fin de la dispersión, traspaso de las prisiones al Gobierno vasco y una ley que permite descontar las penas cumplidas en Francia.",
+    personas: ["Pedro Sánchez", "Fernando Grande-Marlaska"],
+    eventos: [
+      { f: "2020-05-20", t: "decisión política", h: "PSOE y Podemos firman con Bildu derogar íntegramente la reforma laboral; Moncloa anula el punto horas después", s: [
+        "https://www.elindependiente.com/politica/2020/05/20/psoe-y-podemos-pactan-con-bildu-derogar-la-reforma-laboral-del-pp-de-forma-urgente/"
+      ] },
+      { f: "2021-10-01", t: "decisión política", h: "El Gobierno vasco asume la gestión de las prisiones tras el traspaso del Estado", s: [
+        "https://www.elespanol.com/espana/politica/20211001/pais-vasco-gestion-prisiones-cesion-gobierno-historico/616188722_0.html",
+        "https://www.infolibre.es/politica/gobierno-vasco-sella-acuerdo-ejecutivo-traspaso-competencias-prisiones-euskadi_1_1197494.html"
+      ] },
+      { f: "2021-10-20", t: "declaración", h: "Otegi: «Si para sacar a los 200 presos hay que votar los presupuestos, pues votamos»", s: [
+        "https://www.elindependiente.com/espana/2021/10/20/otegi-si-para-sacar-a-los-200-presos-hay-que-votar-los-presupuestos-pues-votamos/",
+        "https://www.libertaddigital.com/espana/2021-10-20/otegi-si-para-sacar-a-los-200-presos-hay-que-votar-los-presupuestos-pues-votamos-6829204/"
+      ] },
+      { f: "2023-03-24", t: "decisión política", h: "Interior traslada a los últimos presos de ETA a cárceles vascas y pone fin a la dispersión", s: [
+        "https://www.elespanol.com/espana/20230324/interior-dispersion-presos-eta-acercado-pais-vasco/750925219_0.html",
+        "https://www.libertaddigital.com/espana/2023-03-24/marlaska-traslada-a-los-ultimos-etarras-y-acaba-con-34-anos-de-dispersion-de-terroristas-de-eta-6999260/"
+      ] },
+      { f: "2023-05-09", t: "revelación", h: "EH Bildu incluye en sus listas municipales a 44 condenados por pertenencia o colaboración con ETA, siete por delitos de sangre", s: [
+        "https://www.libertaddigital.com/espana/2023-05-09/eh-bildu-integra-a-44-condenados-por-colaborar-o-pertenecer-a-eta-en-sus-listas-para-el-28m-7012603/"
+      ] },
+      { f: "2023-05", t: "decisión política", h: "Los siete candidatos de Bildu condenados por delitos de sangre renuncian a ser concejales", s: [
+        "https://www.canalsur.es/noticias/los-siete-candidatos-de-eh-bildu-condenados-por-delitos-de-sangre-renunciaran-si-son-elegidos/1932729.html",
+        "https://www.servimedia.es/noticias/renuncian-listas-eh-bildu-siete-candidatos-fueron-condenados-delitos-sangre/3693083"
+      ] },
+      { f: "2023-11-16", t: "decisión política", h: "Bildu vota a favor de la investidura de Sánchez", s: [
+        "https://www.ultimahora.es/noticias/elecciones-23j/2023/11/16/2051149/investidura-bildu-confirma-voto-pedro-sanchez-para-frenar-extremas-derechas.html"
+      ] },
+      { f: "2023-12-13", t: "decisión política", h: "El PSN accede a dar la Alcaldía de Pamplona a EH Bildu con una moción de censura contra UPN", s: [
+        "https://www.eldiario.es/navarra/psn-accede-dar-alcaldia-pamplona-eh-bildu-apoyara-mocion-censura-upn_1_10762240.html",
+        "https://www.noticiasdenavarra.com/pamplona/2023/12/28/joseba-asiron-nuevo-alcalde-pamplona-7688444.html"
+      ] },
+      { f: "2024-10-19", t: "decisión política", h: "El BOE publica la ley que permite a presos de ETA descontar penas cumplidas en Francia, aprobada en el Congreso con los votos de todos los grupos", s: [
+        "https://www.elespanol.com/espana/politica/20241019/boe-publica-ley-beneficia-presos-eta/894660548_0.html",
+        "https://www.eldiario.es/politica/pp-aferra-eta-espantar-ruido-interno-ley-convalida-penas-extranjero_1_11717427.html",
+        "https://www.infobae.com/espana/agencias/2024/10/13/cargos-del-pp-temen-que-el-senado-resucite-este-lunes-el-fiasco-del-partido-con-la-ley-que-favorece-a-presos-de-eta/"
+      ] },
+      { f: "2024-11-26", t: "revelación", h: "La Audiencia Nacional recibe las primeras peticiones de presos de ETA para descontar sus penas en Francia", s: [
+        "https://www.infobae.com/espana/2024/11/26/la-audiencia-nacional-recibe-las-primeras-peticiones-de-presos-de-eta-para-descontar-sus-penas-en-francia/"
+      ] }
+    ]
   }
 ];
