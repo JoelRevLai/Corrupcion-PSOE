@@ -43,7 +43,22 @@
     "rtve.es": "RTVE",
     "europapress.es": "Europa Press",
     "20minutos.es": "20minutos",
-    "elperiodico.com": "El Periódico"
+    "elperiodico.com": "El Periódico",
+    "infobae.com": "Infobae",
+    "newtral.es": "Newtral",
+    "maldita.es": "Maldita.es",
+    "civio.es": "Civio",
+    "confilegal.com": "Confilegal",
+    "telemadrid.es": "Telemadrid",
+    "canalsur.es": "Canal Sur",
+    "ultimahora.es": "Última Hora",
+    "valenciaplaza.com": "Valencia Plaza",
+    "diarioinformacion.com": "Información",
+    "mundiario.com": "Mundiario",
+    "soydemadrid.com": "SoyDe",
+    "elpespunte.es": "El Pespunte",
+    "servimedia.es": "Servimedia",
+    "noticiasdenavarra.com": "Noticias de Navarra"
   };
 
   // Cuentas de X de los diarios cuya web no se enlaza directamente.
