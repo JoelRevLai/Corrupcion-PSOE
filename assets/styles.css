@@ -1,0 +1,625 @@
+:root {
+  --bg: #edeef1;
+  --surface: #fafbfc;
+  --ink: #16191e;
+  --muted: #59606b;
+  --rule: #cbd0d7;
+  --rule-strong: #9aa1ab;
+  --accent: #8e1b2e;
+  --suceso: #7a5c0c;
+  --judicial: #1e4f86;
+  --sentencia: #8e1b2e;
+  --suceso-bg: #f3ecd9;
+  --judicial-bg: #dfe8f3;
+  --sentencia-bg: #f3dfe2;
+  --focus: #1e4f86;
+  --shadow: 0 1px 0 rgba(22, 25, 30, .04), 0 6px 18px -12px rgba(22, 25, 30, .25);
+
+  --f-display: "Bodoni Moda", "Didot", "Bodoni 72", "Times New Roman", serif;
+  --f-body: "Public Sans", "Helvetica Neue", Arial, system-ui, sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #0f1114;
+    --surface: #171a1f;
+    --ink: #e6e8eb;
+    --muted: #9ba2ad;
+    --rule: #2a2f37;
+    --rule-strong: #4a515c;
+    --accent: #e8788a;
+    --suceso: #d9b24f;
+    --judicial: #7aaee8;
+    --sentencia: #e8788a;
+    --suceso-bg: #2a2413;
+    --judicial-bg: #16243a;
+    --sentencia-bg: #33181e;
+    --focus: #7aaee8;
+    --shadow: none;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0f1114;
+  --surface: #171a1f;
+  --ink: #e6e8eb;
+  --muted: #9ba2ad;
+  --rule: #2a2f37;
+  --rule-strong: #4a515c;
+  --accent: #e8788a;
+  --suceso: #d9b24f;
+  --judicial: #7aaee8;
+  --sentencia: #e8788a;
+  --suceso-bg: #2a2413;
+  --judicial-bg: #16243a;
+  --sentencia-bg: #33181e;
+  --focus: #7aaee8;
+  --shadow: none;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--f-body);
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+a { color: inherit; }
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.page {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-inline: 20px;
+  padding-block: 40px 64px;
+}
+
+/* ---------- Cabecera ---------- */
+
+.masthead {
+  display: grid;
+  gap: 14px;
+  padding-bottom: 28px;
+  border-bottom: 3px double var(--rule-strong);
+}
+
+.eyebrow,
+.label,
+.field label {
+  font-family: var(--f-mono);
+  font-size: .72rem;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0;
+}
+
+h1 {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: clamp(2.3rem, 6.4vw, 4.4rem);
+  line-height: .98;
+  letter-spacing: -.01em;
+  margin: 0;
+  text-wrap: balance;
+  font-optical-sizing: auto;
+}
+
+.lede {
+  margin: 0;
+  max-width: 62ch;
+  font-size: 1.06rem;
+  color: var(--ink);
+}
+
+.tally {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 28px;
+  margin: 8px 0 0;
+}
+.tally div { display: grid; gap: 0; }
+.tally dt {
+  font-family: var(--f-mono);
+  font-size: .7rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  order: 2;
+}
+.tally dd {
+  margin: 0;
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.1;
+  font-variant-numeric: lining-nums tabular-nums;
+  order: 1;
+}
+
+/* ---------- Controles ---------- */
+
+.controls {
+  position: sticky;
+  top: env(safe-area-inset-top, 0px);
+  z-index: 5;
+  background: var(--bg);
+  border-bottom: 1px solid var(--rule);
+  padding-block: 14px 12px;
+  display: grid;
+  gap: 12px;
+}
+
+.controls-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 16px;
+  align-items: end;
+}
+
+.field { display: grid; gap: 4px; min-width: 0; }
+.field-search { flex: 1 1 220px; }
+
+input[type="search"],
+select {
+  font: inherit;
+  font-size: .95rem;
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--rule-strong);
+  border-radius: 3px;
+  padding: 7px 10px;
+  min-height: 38px;
+  width: 100%;
+}
+select { padding-right: 28px; }
+
+.seg {
+  display: inline-flex;
+  border: 1px solid var(--rule-strong);
+  border-radius: 3px;
+  overflow: hidden;
+  background: var(--surface);
+}
+.seg button {
+  font: inherit;
+  font-size: .88rem;
+  color: var(--muted);
+  background: transparent;
+  border: 0;
+  padding: 7px 12px;
+  min-height: 36px;
+  cursor: pointer;
+}
+.seg button + button { border-left: 1px solid var(--rule-strong); }
+.seg button[aria-pressed="true"] {
+  background: var(--ink);
+  color: var(--bg);
+}
+
+.clases {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  --c: var(--ink);
+  --cb: var(--surface);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--f-mono);
+  font-size: .76rem;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  color: var(--c);
+  background: var(--cb);
+  border: 1.5px solid var(--c);
+  border-radius: 2px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.chip .n {
+  font-variant-numeric: tabular-nums;
+  opacity: .8;
+}
+.chip[aria-pressed="false"] {
+  background: transparent;
+  color: var(--muted);
+  border-color: var(--rule-strong);
+  border-style: dashed;
+}
+.chip-suceso { --c: var(--suceso); --cb: var(--suceso-bg); }
+.chip-judicial { --c: var(--judicial); --cb: var(--judicial-bg); }
+.chip-sentencia { --c: var(--sentencia); --cb: var(--sentencia-bg); }
+
+.resultado {
+  margin: 18px 0 0;
+  font-family: var(--f-mono);
+  font-size: .78rem;
+  color: var(--muted);
+  letter-spacing: .03em;
+}
+
+/* ---------- Sellos ---------- */
+
+.sello {
+  --c: var(--ink);
+  display: inline-block;
+  font-family: var(--f-mono);
+  font-weight: 500;
+  font-size: .66rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--c);
+  border: 1.5px solid var(--c);
+  border-radius: 2px;
+  padding: 1px 6px;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+.sello-suceso { --c: var(--suceso); }
+.sello-judicial { --c: var(--judicial); }
+.sello-sentencia { --c: var(--sentencia); }
+
+/* ---------- Cronología ---------- */
+
+.anio {
+  display: grid;
+  grid-template-columns: 7.5rem 1fr;
+  gap: 0 24px;
+  padding-top: 34px;
+}
+.anio > h2 {
+  grid-column: 1 / -1;
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: 2.6rem;
+  line-height: 1;
+  margin: 0 0 10px;
+  font-variant-numeric: lining-nums;
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+}
+.anio > h2 small {
+  font-family: var(--f-mono);
+  font-weight: 400;
+  font-size: .74rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.hitos {
+  grid-column: 1 / -1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hito {
+  display: grid;
+  grid-template-columns: 7.5rem 1fr;
+  gap: 4px 24px;
+  padding: 16px 0;
+  border-top: 1px solid var(--rule);
+}
+
+.hito-fecha {
+  font-family: var(--f-mono);
+  font-size: .82rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  padding-top: 2px;
+  position: relative;
+}
+.hito-fecha::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 8px;
+  vertical-align: 1px;
+  background: var(--dot, var(--muted));
+  border-radius: 50%;
+}
+.hito[data-clase="suceso"] { --dot: var(--suceso); }
+.hito[data-clase="judicial"] { --dot: var(--judicial); }
+.hito[data-clase="sentencia"] { --dot: var(--sentencia); }
+
+.hito-cuerpo { display: grid; gap: 6px; min-width: 0; }
+
+.hito-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 10px;
+  font-size: .84rem;
+  color: var(--muted);
+}
+
+.caso-link {
+  font: inherit;
+  color: var(--ink);
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
+  text-decoration: underline;
+  text-decoration-color: var(--rule-strong);
+  text-underline-offset: 3px;
+}
+.caso-link:hover { text-decoration-color: currentColor; }
+.caso-link .num {
+  font-family: var(--f-mono);
+  font-size: .78rem;
+  color: var(--muted);
+  margin-right: 6px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.tipo {
+  font-family: var(--f-mono);
+  font-size: .68rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.hito h3 {
+  font-family: var(--f-body);
+  font-weight: 600;
+  font-size: 1.04rem;
+  line-height: 1.38;
+  margin: 0;
+  max-width: 68ch;
+  text-wrap: pretty;
+}
+
+.fuentes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  font-size: .86rem;
+}
+.fuentes a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+}
+.fuentes a:hover { border-bottom-color: var(--accent); }
+.fuentes a::after {
+  content: " ↗";
+  font-size: .8em;
+}
+
+/* ---------- Fichas de caso ---------- */
+
+.fichas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 440px), 1fr));
+  gap: 18px;
+  margin-top: 22px;
+  align-items: start;
+}
+
+.ficha {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  box-shadow: var(--shadow);
+  padding: 20px 22px 18px;
+  display: grid;
+  gap: 12px;
+  min-width: 0;
+}
+
+.ficha-cab {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed var(--rule-strong);
+  font-family: var(--f-mono);
+  font-size: .74rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.ficha-cab .sello {
+  font-size: .72rem;
+  padding: 2px 8px;
+  transform: rotate(-2deg);
+}
+
+.ficha h3 {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.12;
+  margin: 0;
+  text-wrap: balance;
+}
+.ficha h3 button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
+}
+.ficha h3 button:hover { text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1px; }
+
+.estado {
+  margin: 0;
+  font-size: .92rem;
+  padding: 8px 10px;
+  background: var(--estado-bg, var(--bg));
+  border-radius: 2px;
+}
+.estado b {
+  font-family: var(--f-mono);
+  font-weight: 500;
+  font-size: .68rem;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  margin-right: 6px;
+  color: var(--estado-c, var(--muted));
+}
+.ficha[data-clase="suceso"] { --estado-bg: var(--suceso-bg); --estado-c: var(--suceso); }
+.ficha[data-clase="judicial"] { --estado-bg: var(--judicial-bg); --estado-c: var(--judicial); }
+.ficha[data-clase="sentencia"] { --estado-bg: var(--sentencia-bg); --estado-c: var(--sentencia); }
+
+.resumen { margin: 0; font-size: .95rem; max-width: 68ch; }
+
+.personas {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.personas li {
+  font-size: .8rem;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  padding: 1px 7px;
+  color: var(--muted);
+}
+
+.ficha details summary {
+  cursor: pointer;
+  font-family: var(--f-mono);
+  font-size: .76rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.ficha details[open] summary { margin-bottom: 4px; }
+
+.mini-hitos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+}
+.mini-hitos li {
+  display: grid;
+  grid-template-columns: 6.6rem 1fr;
+  gap: 2px 14px;
+  padding: 9px 0;
+  border-top: 1px solid var(--rule);
+  font-size: .9rem;
+}
+.mini-hitos .f {
+  font-family: var(--f-mono);
+  font-size: .78rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  padding-top: 2px;
+}
+.mini-hitos .fuentes { font-size: .82rem; margin-top: 3px; }
+
+/* ---------- Foco en un caso ---------- */
+
+.focus {
+  margin-top: 22px;
+  display: grid;
+  gap: 10px;
+}
+.focus .ficha { border-color: var(--rule-strong); }
+.focus-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-family: var(--f-mono);
+  font-size: .76rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.btn-quitar {
+  font: inherit;
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--rule-strong);
+  border-radius: 3px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.vacio {
+  padding: 40px 0;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+/* ---------- Notas ---------- */
+
+.notas {
+  margin-top: 56px;
+  padding-top: 24px;
+  border-top: 3px double var(--rule-strong);
+  display: grid;
+  gap: 14px;
+  font-size: .92rem;
+  color: var(--ink);
+}
+.notas h2 {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: 1.7rem;
+  margin: 0;
+}
+.notas p { margin: 0; max-width: 72ch; }
+.criterios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  gap: 16px 24px;
+  margin: 4px 0 8px;
+}
+.criterios div { display: grid; gap: 6px; align-content: start; }
+.criterios dd { margin: 0; color: var(--muted); }
+
+/* ---------- Pantallas estrechas ---------- */
+
+@media (max-width: 640px) {
+  .page { padding-block: 24px 48px; padding-inline: 16px; }
+  .controls { position: static; }
+  .anio { grid-template-columns: 1fr; }
+  .hito { grid-template-columns: 1fr; gap: 6px; }
+  .mini-hitos li { grid-template-columns: 1fr; }
+  .ficha { padding: 16px; }
+  .field:not(.field-search) { flex: 1 1 140px; }
+  .seg { display: flex; }
+  .seg button { flex: 1; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hito, .ficha { animation: aparecer .25s ease-out both; }
+  @keyframes aparecer { from { transform: translateY(3px); } to { transform: none; } }
+}

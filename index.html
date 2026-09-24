@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Registro de escándalos del PSOE</title>
+<meta name="description" content="Registro hemerográfico, ordenado cronológicamente, de los casos de corrupción y escándalos del PSOE y del Gobierno desde la llegada de Pedro Sánchez al poder en junio de 2018, con enlaces a la prensa.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500;6..96,700&family=IBM+Plex+Mono:wght@400;500&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<!--CONTENT-START-->
+<div class="page">
+  <header class="masthead">
+    <p class="eyebrow">Registro hemerográfico · junio 2018 – <span data-actualizado-mes>septiembre 2026</span></p>
+    <h1>Registro de escándalos del PSOE</h1>
+    <p class="lede">Casos de corrupción y escándalos que afectan al PSOE, a sus cargos y al Gobierno desde que Pedro Sánchez llegó a la Moncloa el 2 de junio de 2018. Cada hito enlaza a la noticia publicada en prensa.</p>
+    <dl class="tally" id="tally" aria-label="Resumen del registro"></dl>
+  </header>
+
+  <section class="controls" aria-label="Filtros">
+    <div class="controls-row">
+      <div class="field field-search">
+        <label for="q">Buscar</label>
+        <input id="q" type="search" placeholder="Persona, caso, medio…" autocomplete="off">
+      </div>
+      <div class="field">
+        <label for="ambito">Ámbito</label>
+        <select id="ambito"></select>
+      </div>
+      <div class="field">
+        <label for="anio">Año</label>
+        <select id="anio"></select>
+      </div>
+      <div class="field field-view" role="group" aria-label="Vista">
+        <span class="label">Vista</span>
+        <div class="seg">
+          <button type="button" id="vista-crono" data-vista="crono">Cronología</button>
+          <button type="button" id="vista-casos" data-vista="casos">Casos</button>
+        </div>
+      </div>
+      <div class="field field-view" role="group" aria-label="Orden">
+        <span class="label">Orden</span>
+        <div class="seg">
+          <button type="button" id="orden-asc" data-orden="asc">Antiguos</button>
+          <button type="button" id="orden-desc" data-orden="desc">Recientes</button>
+        </div>
+      </div>
+    </div>
+    <div class="clases" id="clases" role="group" aria-label="Clasificación"></div>
+  </section>
+
+  <div class="focus" id="focus" hidden></div>
+  <p class="resultado" id="resultado" aria-live="polite"></p>
+
+  <main id="lista"></main>
+
+  <footer class="notas" id="metodo">
+    <h2>Criterios del registro</h2>
+    <dl class="criterios">
+      <div>
+        <dt><span class="sello sello-suceso">Suceso</span></dt>
+        <dd>Hechos documentados por la prensa (dimisiones, revelaciones, decisiones políticas) sin causa penal abierta contra las personas señaladas. Incluye causas que se archivaron.</dd>
+      </div>
+      <div>
+        <dt><span class="sello sello-judicial">Judicial en curso</span></dt>
+        <dd>Hay una causa penal abierta: diligencias, imputación, procesamiento o juicio pendiente. Ninguna persona investigada ha sido condenada en ese procedimiento.</dd>
+      </div>
+      <div>
+        <dt><span class="sello sello-sentencia">Con sentencia</span></dt>
+        <dd>Existe al menos una sentencia. El estado de cada caso indica si es firme, si está recurrida o si un tribunal superior la ha modificado.</dd>
+      </div>
+    </dl>
+    <p><strong>Presunción de inocencia.</strong> Salvo sentencia firme, las personas citadas son inocentes. Los titulares de cada hito son de redacción propia y resumen lo publicado; las afirmaciones de acusados o testigos se recogen como tales, no como hechos probados. Donde hubo archivos, absoluciones o rectificaciones judiciales, también se registran.</p>
+    <p><strong>Ámbitos.</strong> <em>Partido</em>: dirección y estructura del PSOE. <em>Gobierno</em>: ministros, altos cargos, empresas públicas y Fiscalía. <em>Entorno</em>: familiares del presidente o de otros dirigentes. <em>Territorial</em>: federaciones, comunidades autónomas, diputaciones y ayuntamientos.</p>
+    <p><strong>Fuentes.</strong> Solo se enlazan noticias de prensa escrita; no se enlazan vídeos. Algunos casos proceden de hechos anteriores a 2018 cuyas sentencias se dictaron después (ERE, Faffe). Actualizado a <span data-actualizado>24 de septiembre de 2026</span>.</p>
+  </footer>
+</div>
+<!--CONTENT-END-->
+<script src="data/casos.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
