@@ -46,12 +46,35 @@
     "elperiodico.com": "El Periódico"
   };
 
+  // Cuentas de X de los diarios cuya web no se enlaza directamente.
+  // El enlace apunta a la publicación del diario, que remite a la noticia.
+  var CUENTAS_X = {
+    "elmundoes": "El Mundo",
+    "elmundoespana": "El Mundo",
+    "el_pais": "El País",
+    "elpais_espana": "El País",
+    "abc_es": "ABC",
+    "abc_espana": "ABC",
+    "elconfidencial": "El Confidencial",
+    "larazon_es": "La Razón",
+    "lavanguardia": "La Vanguardia",
+    "elperiodico": "El Periódico",
+    "20m": "20minutos",
+    "europapress": "Europa Press"
+  };
+
   var MESES = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"];
   var MESES_LARGOS = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
 
   function medio(url) {
     var host;
-    try { host = new URL(url).hostname.replace(/^www\./, ""); } catch (e) { return "Enlace"; }
+    var u;
+    try { u = new URL(url); } catch (e) { return "Enlace"; }
+    host = u.hostname.replace(/^(www|mobile)\./, "");
+    if (host === "x.com" || host === "twitter.com") {
+      var cuenta = u.pathname.split("/")[1] || "";
+      return (CUENTAS_X[cuenta.toLowerCase()] || "@" + cuenta) + " (X)";
+    }
     if (MEDIOS[host]) return MEDIOS[host];
     var partes = host.split(".");
     for (var i = 1; i < partes.length - 1; i++) {
