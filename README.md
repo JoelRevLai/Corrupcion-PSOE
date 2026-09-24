@@ -2,7 +2,7 @@
 
 Registro hemerográfico, ordenado cronológicamente, de los casos de corrupción y escándalos que afectan al PSOE, a sus cargos y al Gobierno desde que Pedro Sánchez llegó a la Moncloa (2 de junio de 2018). Cada hito enlaza a la noticia publicada en prensa. No se enlazan vídeos.
 
-Actualizado a 24 de septiembre de 2026: 41 casos, 192 hitos y 389 noticias enlazadas.
+Actualizado a 24 de septiembre de 2026: 41 casos, 192 hitos y 385 noticias enlazadas.
 
 ## Qué hace la página
 
@@ -60,4 +60,4 @@ Todo el contenido está en `data/casos.js`. Cada caso tiene esta forma:
 
 Las noticias enlazadas proceden de El Español, elDiario.es, The Objective, Vozpópuli, El Independiente, El Debate, Público, infoLibre, elEconomista, Libertad Digital, COPE y Canarias7. Todas las URL se han obtenido de resultados de búsqueda; ninguna se ha construido a mano.
 
-Las webs de El País, El Mundo, ABC, El Confidencial, La Razón, 20minutos y Europa Press no se pudieron consultar directamente. Para esos diarios se enlaza la publicación de su cuenta oficial en X (@el_pais, @elmundoes, @abc_es, @elconfidencial, @larazon_es, @20m, @europapress), que remite a la noticia. Solo se han incluido publicaciones cuya fecha, deducida del identificador del tuit, coincide con la del hito o difiere de ella en uno o dos días y cuyo texto trata el mismo hecho. Son 33 publicaciones repartidas en 27 hitos, casi todas de 2024 a 2026: las publicaciones anteriores apenas aparecen en los buscadores.
+Las noticias de El País, El Mundo, ABC, El Confidencial, La Razón y 20minutos se han localizado a través de las publicaciones de sus cuentas oficiales en X (@el_pais, @elmundoes, @abc_es, @elconfidencial, @larazon_es, @20m). De cada tuit se ha tomado el enlace que contiene y se ha seguido hasta la URL definitiva del artículo, así que se enlaza la noticia, no el tuit. Solo se han usado tuits cuya fecha, deducida de su identificador, coincide con la del hito o difiere de ella en uno o dos días, y cuyo texto trata el mismo hecho. Se descartaron los tuits que solo contenían vídeo. Hay una excepción: el artículo de ABC sobre la sentencia de los ERE (2022) entra en un bucle de redirecciones, así que ahí se enlaza el tuit, marcado «ABC (X)». Son 29 enlaces en 27 hitos, casi todos de 2024 a 2026.
