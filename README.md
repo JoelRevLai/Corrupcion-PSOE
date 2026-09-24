@@ -7,6 +7,7 @@ Actualizado a 24 de septiembre de 2026: 41 casos, 192 hitos y 356 noticias enlaz
 ## Qué hace la página
 
 - **Cronología**: todos los hitos (dimisiones, imputaciones, detenciones, sentencias…) ordenados por fecha y agrupados por año.
+- **Hitos por año**: gráfico de barras en la portada; al pulsar un año se filtra el registro.
 - **Casos**: una ficha por caso con su número de expediente, clasificación, estado actual, resumen, personas señaladas y sus hitos.
 - **Filtros**: clasificación, ámbito (partido, Gobierno, entorno, territorial), año y búsqueda libre por persona, caso o medio.
 - Cada caso tiene un enlace directo: `index.html#caso-<id>` (por ejemplo, `#caso-koldo-mascarillas`).
@@ -24,13 +25,19 @@ Salvo sentencia firme, rige la presunción de inocencia. Los archivos, absolucio
 ## Estructura
 
 ```
-index.html        página
-assets/styles.css estilos (tema claro y oscuro)
-assets/app.js     lógica de filtros y vistas
-data/casos.js     datos: casos, hitos y enlaces
+index.html          página
+assets/styles.css   estilos (tema claro y oscuro)
+assets/app.js       lógica de filtros, gráfico y vistas
+assets/rosa.svg     logotipo: la rosa
+assets/favicon.svg  icono de la pestaña
+data/casos.js       datos: casos, hitos y enlaces
 ```
 
 No necesita servidor ni compilación: basta con abrir `index.html` o publicar la carpeta en GitHub Pages (Settings → Pages → rama y carpeta raíz).
+
+## Diseño
+
+Web limpia y funcional con una rosa roja como logotipo (dibujo propio, no el logotipo oficial del PSOE). Fondo blanco, tinta casi negra y un único acento rojo (`#D4192C`). Tipografías Geist y Geist Mono (Google Fonts). Las clasificaciones usan ámbar (suceso), azul (judicial en curso) y rojo oscuro (con sentencia). En pantallas estrechas los filtros se abren con el botón «Filtros».
 
 ## Cómo añadir o corregir datos
 
