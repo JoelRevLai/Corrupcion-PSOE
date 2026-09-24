@@ -1215,5 +1215,444 @@ window.CASOS = [
         "https://www.elespanol.com/reportajes/20260627/compra-votos-facturas-falsas-dedazos-ayuntamientos-diputaciones-psoe-copian-corrupcion-ferraz/1003744300410_0.html"
       ] }
     ]
+  },
+  {
+    id: "covid-gestion",
+    titulo: "Gestión de la pandemia de COVID-19",
+    clase: "sentencia",
+    ambito: "gobierno",
+    estado: "El Constitucional declaró inconstitucionales el confinamiento del primer estado de alarma (julio de 2021) y la prórroga de seis meses del segundo (octubre de 2021); en 2024, con otra mayoría, cambió su doctrina. En lo penal, el Supremo inadmitió en 2020 las querellas contra el Gobierno y la causa del 8M contra el delegado en Madrid se archivó.",
+    resumen: "Críticas a la respuesta del Gobierno ante la llegada del coronavirus: el mensaje inicial de Sanidad, la autorización de manifestaciones masivas como la del 8M días antes del estado de alarma, la compra de test rápidos defectuosos y la opacidad sobre el «comité de expertos» de la desescalada. Las compras de mascarillas investigadas judicialmente están en los expedientes del caso Koldo, Canarias y Baleares.",
+    personas: ["Pedro Sánchez", "Salvador Illa", "Fernando Simón", "José Manuel Franco"],
+    eventos: [
+      { f: "2020-01-31", t: "declaración", h: "Fernando Simón: «España no va a tener más allá de algún caso diagnosticado»", s: [
+        "https://www.libertaddigital.com/ciencia-tecnologia/salud/2020-06-04/fernando-simon-el-31-de-enero-espana-no-va-a-tener-mas-alla-de-algun-caso-diagnosticado-6074129/"
+      ] },
+      { f: "2020-03-25", t: "decisión judicial", h: "Una jueza abre diligencias contra el delegado del Gobierno en Madrid por permitir el 8M", s: [
+        "https://www.elespanol.com/espana/tribunales/20200325/diligencias-delegado-gobierno-madrid-investigar-permitir-delito/477453063_0.html",
+        "https://www.publico.es/politica/coronavirus-jueza-investiga-delegado-gobierno-madrid-permitir-8m.html",
+        "https://cronicaglobal.elespanol.com/vida/jueza-investiga-prevaricacion-gobierno-en-8-m_331452_102.html"
+      ] },
+      { f: "2020-03-26", t: "revelación", h: "Sanidad devuelve los primeros test rápidos comprados en China: detectaban menos del 30 % de los positivos", s: [
+        "https://www.eleconomista.es/nacional/noticias/10442502/03/20/Los-test-rapidos-comprados-en-China-para-detectar-coronavirus-no-valen-tienen-una-sensibilidad-inferior-al-30.html",
+        "https://www.infolibre.es/noticias/politica/2020/03/26/la_embajada_china_dice_que_bioeasy_biotechnology_que_vendio_espana_tests_no_validos_no_tiene_licencia_105327_1012.html",
+        "https://www.elindependiente.com/politica/2020/03/26/china-asegura-que-espana-compro-los-test-fallidos-a-una-empresa-sin-licencia/",
+        "https://eldiario.es/sociedad/pasado-primer-rapidos-Sanidad-devolver_0_1009999747.html"
+      ] },
+      { f: "2020-05-25", t: "imputación", h: "La jueza cita como investigado al delegado del Gobierno en Madrid, José Manuel Franco, por el 8M", s: [
+        "https://www.elespanol.com/espana/tribunales/20200525/juez-imputa-delegado-gobierno-madrid-permitir/492701274_0.html",
+        "https://www.eldiario.es/politica/imputado-delegado-gobierno-madrid-manifestacion_1_5976621.html",
+        "https://www.publico.es/politica/jueza-investiga-manifestaciones-8m-madrid-cita-imputado-delegado-gobierno.html"
+      ] },
+      { f: "2020-06-12", t: "archivo", h: "La jueza archiva la causa del 8M al no ver indicios suficientes de delito contra Franco", s: [
+        "https://www.eldiario.es/politica/archiva-investigacion-delegado-gobierno-madrid_1_6020976.html",
+        "https://www.elindependiente.com/politica/2020/06/12/la-juez-del-8-m-archiva-el-caso-al-no-apreciar-suficientes-indicios-de-delito/",
+        "https://www.eleconomista.es/politica/noticias/10601530/06/20/La-juez-del-8M-archiva-la-causa-contra-el-delegado-del-Gobierno-en-Madrid.html",
+        "https://www.infolibre.es/politica/jueza-8m-archiva-causa-delegado-gobierno_1_1184063.html"
+      ] },
+      { f: "2020-07-28", t: "revelación", h: "Sanidad responde a Transparencia que no existe un comité de expertos que decida la desescalada", s: [
+        "https://www.elespanol.com/espana/politica/20200728/sanidad-niega-creara-comite-expertos-decidir-desescalada/508700084_0.html",
+        "https://www.eleconomista.es/politica/noticias/10693998/07/20/El-Gobierno-niega-al-Consejo-de-Transparencia-la-existencia-del-Comite-de-Expertos-del-confinamiento.html",
+        "https://www.vozpopuli.com/espana/sanidad-comite-expertos_0_1377463690.html",
+        "https://www.libertaddigital.com/ciencia-tecnologia/salud/2020-07-28/nunca-existio-un-comite-de-expertos-que-decidiera-sobre-la-desescalada-la-respuesta-del-gobierno-a-transparencia-1276661738/"
+      ] },
+      { f: "2020-12-18", t: "archivo", h: "El Supremo inadmite 20 querellas y 30 denuncias contra el Gobierno por la pandemia y envía parte a los juzgados ordinarios", s: [
+        "https://www.elespanol.com/espana/tribunales/20201218/ts-rechaza-querellas-gobierno-gestion-pandemia-fiscal/544445778_0.html",
+        "https://www.infolibre.es/noticias/politica/2020/12/18/el_supremo_inadmite_las_querellas_contra_gobierno_por_gestion_pandemia_pero_las_remite_juzgados_ordinarios_114605_1012.html",
+        "https://www.elindependiente.com/espana/2020/12/18/el-supremo-rechaza-por-ahora-las-querellas-por-la-gestion-de-la-pandemia-contra-el-gobierno/",
+        "https://www.cope.es/actualidad/espana/noticias/supremo-inadmite-las-denuncias-querellas-contra-gestion-del-gobierno-pandemia-20201218_1052325"
+      ] },
+      { f: "2020-12-29", t: "revelación", h: "Sanidad entrega a Transparencia los nombres de los expertos que elaboraron los informes de la desescalada", s: [
+        "https://www.libertaddigital.com/ciencia-tecnologia/salud/2020-12-29/sanidad-revela-meses-despues-los-miembros-del-comite-de-expertos-que-no-existia-6694012/",
+        "https://www.publico.es/sociedad/sanidad-comunica-transparencia-nombres-expertos-elaboraron-informes-desescalada.html"
+      ] },
+      { f: "2021-07-14", t: "sentencia", h: "El Constitucional declara inconstitucional el confinamiento del primer estado de alarma por 6 votos a 5", s: [
+        "https://www.elindependiente.com/espana/2021/07/14/el-constitucional-declara-ilegal-el-confinamiento-del-primer-estado-de-alarma/",
+        "https://theobjective.com/espana/2021-07-14/el-tc-declara-inconstitucional-el-primer-estado-de-alarma-de-la-pandemia/",
+        "https://www.eleconomista.es/politica/noticias/11324862/07/21/El-TC-declara-inconstitucional-el-confinamiento-general-decretado-en-el-primer-estado-de-alarma.html",
+        "https://www.cope.es/actualidad/espana/noticias/tribunal-constitucional-declara-inconstitucional-primer-estado-alarma-20210714_1401034"
+      ] },
+      { f: "2021-10-27", t: "sentencia", h: "El Constitucional anula la prórroga de seis meses del segundo estado de alarma y la delegación en las comunidades", s: [
+        "https://www.elespanol.com/espana/tribunales/20211027/tc-declara-inconstitucional-segundo-alarma-sanchez-votos/622688116_0.html",
+        "https://www.eldiario.es/politica/constitucional-dividido-vuelve-dar-razon-vox-anula-medidas-segundo-alarma_1_8434642.html",
+        "https://www.elindependiente.com/espana/2021/10/27/nuevo-reves-al-gobierno-el-tc-tambien-declara-inconstitucional-el-segundo-estado-de-alarma/",
+        "https://www.publico.es/politica/constitucional-tumba-segundo-alarma.html"
+      ] },
+      { f: "2021-11-10", t: "sentencia", h: "La sentencia reprocha que el Congreso quedara seis meses sin poder controlar las medidas del Gobierno", s: [
+        "https://www.eldebate.com/espana/20211110/sentencia-anula-segundo-alarma-afea-gobierno-incoherente-constitucion.html",
+        "https://www.libertaddigital.com/espana/2021-11-10/sentencia-tribunal-constitucional-segundo-estado-alarma-prorroga-inconsistente-6836132/"
+      ] },
+      { f: "2024-11", t: "decisión judicial", h: "El Constitucional, con nueva mayoría, cambia su doctrina y avala ahora los confinamientos", s: [
+        "https://www.eleconomista.es/legal/noticias/13069263/11/24/el-constitucional-cambia-su-doctrina-sobre-el-estado-de-alarma-y-avala-ahora-los-confinamientos.html"
+      ] }
+    ]
+  },
+  {
+    id: "dana-valencia",
+    titulo: "La dana de Valencia: el papel del Gobierno central",
+    clase: "suceso",
+    ambito: "gobierno",
+    estado: "Sin causa penal contra cargos del Gobierno central. El Supremo archivó en julio de 2025 las querellas contra Sánchez y seis ministros. La jueza de Catarroja, que investiga la gestión de la Generalitat, y la Audiencia de Valencia han rechazado imputar al presidente de la Confederación Hidrográfica del Júcar y a la delegada del Gobierno.",
+    resumen: "La riada del 29 de octubre de 2024 causó más de 220 muertos en la provincia de Valencia, unos 200 en la cuenca del barranco del Poyo. La instrucción penal se centra en la Generalitat Valenciana. Al Gobierno central se le reprochan los avisos de la Confederación Hidrográfica del Júcar (dependiente de Transición Ecológica) sobre el Poyo, las obras de encauzamiento que nunca se ejecutaron y la frase de Sánchez «si necesitan más recursos, que los pidan».",
+    personas: ["Pedro Sánchez", "Teresa Ribera", "Miguel Polo", "Pilar Bernabé"],
+    eventos: [
+      { f: "2024-10-30", t: "catástrofe", h: "La dana deja al menos 95 muertos, 92 de ellos en Valencia; Paiporta es el epicentro", s: [
+        "https://www.elespanol.com/espana/20241030/dana-lleva-caos-destruccion-media-espana-varios-muertos-valencia-desaparecidos-albacete/897160844_0.html",
+        "https://www.eldiario.es/comunitat-valenciana/guardia-civil-confirma-13-muertos-comunitat-valenciana-temporal_1_11776247.html",
+        "https://www.publico.es/sociedad/directo-aumentan-95-muertos-dana-92-pais-valencia.html"
+      ] },
+      { f: "2024-11-02", t: "declaración", h: "Sánchez a la Generalitat: «Si necesitan más recursos, que los pidan»", s: [
+        "https://www.eldebate.com/espana/20241114/juristas-apuntan-necesitan-recursos-pidan-sanchez-puede-llevar-condena-gobierno_244748.html"
+      ] },
+      { f: "2025-05-08", t: "decisión judicial", h: "La jueza de la dana rechaza de nuevo imputar al presidente de la Confederación del Júcar", s: [
+        "https://theobjective.com/espana/tribunales/2025-05-08/juez-rechaza-imputar-presidente-confederacion-jucar/",
+        "https://www.eldiario.es/comunitat-valenciana/jueza-dana-rechaza-nuevo-imputar-presidente-confederacion-jucar-diana-preferida-pp-mazon_1_12324725.html"
+      ] },
+      { f: "2025-06-09", t: "revelación", h: "El Gobierno tenía registradas 68 inundaciones históricas en el Poyo cuando descartó las obras", s: [
+        "https://www.elespanol.com/valencia/20250609/gobierno-registros-inundaciones-historicas-significativas-barranco-poyo-descarto-obras/1003743792669_0.html"
+      ] },
+      { f: "2025-07-25", t: "informe", h: "Un informe de la Guardia Civil señala dos horas sin avisos de la CHJ sobre la crecida del Poyo", s: [
+        "https://www.libertaddigital.com/espana/2025-07-25/la-guardia-civil-destaca-que-hubo-dos-horas-sin-avisos-de-la-chj-sobre-el-barranco-del-poyo-el-dia-de-la-dana-7280236/",
+        "https://www.elespanol.com/valencia/20250726/informe-guardia-civil-desmonta-relato-gobierno-dana-apunta-miguel-polo-presidente-chj/1003743863304_0.html",
+        "https://www.eldiario.es/comunitat-valenciana/guardia-civil-cree-peor-momento-dana-confederacion-jucar-no-controlo-caudal-poyo_1_12492207.html",
+        "https://www.publico.es/politica/tribunales/guardia-civil-da-oxigeno-mazon-acusar-aemet-confederacion-jucar-inexistencia-avisos-sobre-dana.html"
+      ] },
+      { f: "2025-07-30", t: "decisión judicial", h: "La jueza califica de «erróneo e incompleto» el informe de la Guardia Civil y descarta un apagón informativo de la CHJ", s: [
+        "https://www.elespanol.com/valencia/20250730/jueza-dana-ve-erroneo-incompleto-informe-guardia-civil-senalo-falta-avisos-chj/1003743868142_0.html",
+        "https://www.eldebate.com/espana/comunidad-valenciana/20250730/juez-dana-considera-ultimo-informe-presentado-guardia-civil-erroneo-incompleto-no-corresponde-acordado-juzgado_321825.html",
+        "https://www.eldiario.es/comunitat-valenciana/jueza-dana-arremete-informe-erroneo-guardia-civil-barranco-poyo_1_12502055.html",
+        "https://www.publico.es/politica/tribunales/jueza-dana-califica-erroneo-informe-guardia-civil-senalaba-gobierno-central.html"
+      ] },
+      { f: "2025-07-30", t: "archivo", h: "El Supremo archiva las querellas y denuncias contra Sánchez y seis ministros por la dana", s: [
+        "https://theobjective.com/espana/tribunales/2025-07-30/supremo-archiva-denuncias-querellas-gobierno-dana/",
+        "https://www.cope.es/actualidad/espana/noticias/supremo-archiva-querellas-denuncias-pedro-sanchez-6-ministros-gestion-dana-20250730_3193109.html",
+        "https://www.infolibre.es/politica/supremo-archiva-querellas-denuncias-pedro-sanchez-6-ministros-dana_1_2039922.html",
+        "https://www.eldiario.es/politica/supremo-rechaza-querellas-pedro-sanchez-gobierno-dana_1_12503550.html"
+      ] },
+      { f: "2025-09-09", t: "revelación", h: "El Gobierno admite que ningún policía de aguas de la CHJ trabajó la tarde de la dana", s: [
+        "https://www.elespanol.com/valencia/20250909/gobierno-reconoce-ahora-ninguno-policias-agua-encargados-vigilar-barrancos-trabajo-tarde-dana/1003743918282_0.html",
+        "https://www.eldebate.com/espana/comunidad-valenciana/20250909/confederacion-hidrografica-jucar-admite-no-centro-atencion-barranco-poyo-dia-dana_332950.html"
+      ] },
+      { f: "2025-10-21", t: "decisión judicial", h: "La Audiencia de Valencia respalda a la jueza y rechaza imputar a Bernabé y al presidente de la CHJ", s: [
+        "https://www.eldebate.com/espana/comunidad-valenciana/20251021/audiencia-valencia-respalda-jueza-dana-rechaza-imputar-presidente-confederacion-jucar_346967.html",
+        "https://www.elplural.com/sociedad/tribunales/audiencia-valencia-respalda-juez-dana-rechaza-imputar-bernabe-presidente-confederacion-jucar_361017102"
+      ] },
+      { f: "2025-10-29", t: "revelación", h: "El Gobierno cifra en 228 millones las obras de encauzamiento del Poyo que no llegaron a ejecutarse", s: [
+        "https://www.elespanol.com/valencia/20251029/millones-evitado-catastrofe-valencia-gobierno-revela-obligacion-inversion-paralizo-ribera/1003743988947_0.html",
+        "https://www.elespanol.com/valencia/20251028/dana-no-negligencia-muertes-poyo-cuenca-encauzo-gobierno/1003743986718_0.html"
+      ] },
+      { f: "2025-12-23", t: "decisión judicial", h: "La Audiencia de Valencia rechaza otra vez imputar al presidente de la CHJ tras su declaración como testigo", s: [
+        "https://www.elespanol.com/valencia/20251223/audiencia-valencia-da-razon-jueza-rechaza-imputacion-presidente-chj-declarar-testigo/1003744067668_0.html",
+        "https://www.eldiario.es/comunitat-valenciana/audiencia-valencia-rechaza-nuevo-imputacion-dana-presidente-confederacion-jucar_1_12867050.html"
+      ] },
+      { f: "2026-04-15", t: "informe", h: "La Confederación del Júcar deja sin ejecutar más de la mitad de las obras previstas para el año posterior a la dana", s: [
+        "https://www.eldebate.com/espana/comunidad-valenciana/20260415/confederacion-jucar-deja-ejecutar-mitad-obras-previstas-ano-despues-dana_406619.html"
+      ] }
+    ]
+  },
+  {
+    id: "adamuz",
+    titulo: "El accidente ferroviario de Adamuz",
+    clase: "judicial",
+    ambito: "gobierno",
+    estado: "El juzgado de Montoro (Córdoba) instruye la causa del accidente. La Audiencia Nacional rechazó en marzo de 2026 la denuncia por homicidio imprudente contra Óscar Puente por falta de competencia, ya que como ministro es aforado ante el Supremo. Puente sigue en el cargo pese a que las víctimas piden su dimisión.",
+    resumen: "El 18 de enero de 2026 un Iryo Málaga-Madrid descarriló en Adamuz e invadió la vía contigua, donde chocó con un Alvia de Renfe: 46 muertos. El ministro habló de un accidente «extraño» en una vía «renovada»; documentos de Adif mostraron que en ese punto no se cambiaron los carriles. La Guardia Civil y los peritos judiciales sitúan la causa en la rotura de una soldadura, en un punto con un defecto de nivelación detectado meses antes. Adif sostiene que los valores estaban dentro de la norma.",
+    personas: ["Óscar Puente", "Luis Pedro Marco de la Peña"],
+    eventos: [
+      { f: "2026-01-18", t: "accidente", h: "Un Iryo descarrila en Adamuz (Córdoba) y choca con un Alvia de Renfe: 46 muertos", s: [
+        "https://www.elespanol.com/invertia/20260118/suspendida-circulacion-ave-madrid-andalucia-descarrilar-trenes-varias-personas-resultan-heridas/1003744094248_0.html",
+        "https://www.eleconomista.es/transportes-turismo/noticias/13732914/01/26/descarrilan-dos-trenes-de-iryo-y-renfe-en-adamuz-cordoba.html",
+        "https://www.canarias7.es/sociedad/trenes-alta-velocidad-descarrilan-adamuz-cordoba-siete-20260118222929-dirc.html"
+      ] },
+      { f: "2026-01-19", t: "declaración", h: "Puente: «Es un accidente muy extraño, con un tren nuevo, en una recta y en una vía que terminó de renovarse en mayo»", s: [
+        "https://www.elespanol.com/invertia/20260119/oscar-puente-accidente-extrano-tren-nuevo-recta-via-termino-renovarse-mayo/1003744094361_0.html",
+        "https://www.eleconomista.es/transportes-turismo/noticias/13733078/01/26/las-incognitas-de-la-tragedia-ferroviaria-de-adamuz-por-que-descarrilo-el-tren-de-iryo-que-desencadeno-la-tragedia.html"
+      ] },
+      { f: "2026-01-19", t: "revelación", h: "Adif había registrado incidencias técnicas en el tramo en los meses previos al choque", s: [
+        "https://www.elespanol.com/reportajes/20260119/adif-notifico-incidencias-tecnicas-tramo-adamuz-meses-previos-choque-mortal-trenes/1003744094397_0.html",
+        "https://theobjective.com/sociedad/suceso/2026-01-19/tren-iryo-adamuz-problemas/"
+      ] },
+      { f: "2026-01-25", t: "declaración", h: "El PP acusa al Gobierno de ocultar información sobre el accidente y pide la dimisión de Puente", s: [
+        "https://www.eldebate.com/espana/20260125/pp-acusa-gobierno-ocultar-informacion-accidente-adamuz-exige-dimision-puente_378006.html"
+      ] },
+      { f: "2026-01-27", t: "decisión judicial", h: "La Audiencia Nacional pide informe a la Fiscalía sobre una denuncia por homicidio imprudente contra Puente", s: [
+        "https://www.elespanol.com/espana/tribunales/20260127/audiencia-nacional-pide-fiscal-opinion-denuncia-homicidios-puente-accidente-adamuz/1003744105762_0.html",
+        "https://theobjective.com/espana/tribunales/2026-01-27/audiencia-nacional-puente-homicidio-adamuz/",
+        "https://www.vozpopuli.com/tribunales/la-audiencia-nacional-abre-diligencias-contra-oscar-puente-por-el-accidente-de-adamuz.html"
+      ] },
+      { f: "2026-01-28", t: "revelación", h: "Documentos de Adif muestran que en el punto del accidente no se renovaron los carriles", s: [
+        "https://theobjective.com/espana/2026-01-28/documentos-adif-adamuz-tramo-accidente/",
+        "https://www.eldiario.es/politica/pp-acusa-puente-mentir-renovacion-total-via-adamuz-exige-dimision_1_12933988.html"
+      ] },
+      { f: "2026-01-29", t: "declaración", h: "Puente admite en el Senado que faltaban por renovar elementos sensibles de la vía", s: [
+        "https://theobjective.com/economia/transporte/2026-01-29/puente-falta-renovar-elementos-sensibles-via-adamuz/"
+      ] },
+      { f: "2026-03-06", t: "archivo", h: "La Audiencia Nacional rechaza la denuncia contra Puente y remite lo actuado al juzgado de Montoro", s: [
+        "https://www.eldiario.es/politica/audiencia-nacional-rechaza-denuncia-oscar-puente-accidente-ferroviario-adamuz_1_13047317.html",
+        "https://www.libertaddigital.com/espana/2026-03-06/la-audiencia-nacional-archiva-la-denuncia-contra-puente-por-adamuz-pero-remite-la-competencia-al-juzgado-de-montoro-7370485/",
+        "https://theobjective.com/espana/tribunales/2026-03-06/audiencia-nacional-oscar-puente-adamuz/",
+        "https://www.infolibre.es/politica/audiencia-nacional-rechaza-denuncia-puente-accidente-adamuz_1_2157362.html"
+      ] },
+      { f: "2026-05-25", t: "declaración", h: "Las víctimas piden en el Senado la dimisión de Puente y del presidente de Adif; el ministro les respondió: «Yo no he soldado el raíl»", s: [
+        "https://www.publico.es/politica/victimas-descarrilamiento-adamuz-piden-dimision-oscar-puente-presidente-adif.html",
+        "https://www.elindependiente.com/espana/2026/05/25/victimas-accidente-adamuz-exigen-dimision-puente-ruido-politico-provoca-dolor/",
+        "https://www.cope.es/actualidad/espana/noticias/puente-victimas-adamuz-piden-dimision-no-he-soldado-rail-20260525_3371210.html",
+        "https://www.eldebate.com/economia/20260525/victimas-adamuz-exigen-dimision-puente-presidente-adif-daria-algo-paz_421266.html"
+      ] },
+      { f: "2026-06-21", t: "informe", h: "La comisión del Senado sobre Adamuz denuncia presiones del Gobierno y falta de medios en la CIAF", s: [
+        "https://www.elespanol.com/espana/politica/20260621/comision-senado-accidente-adamuz-denuncia-presiones-gobierno-falta-personal-ciaf/1003744293596_0.html"
+      ] },
+      { f: "2026-07-14", t: "decisión judicial", h: "La jueza reclama a Adif cinco expedientes clave tras el análisis de los peritos", s: [
+        "https://www.elespanol.com/invertia/observatorios/movilidad/20260714/jueza-reclama-adif-expedientes-clave-accidente-adamuz-analisis-peritos/1003744320845_0.html"
+      ] },
+      { f: "2026-07-18", t: "declaración", h: "Seis meses después, las víctimas denuncian el «desamparo» del ministerio", s: [
+        "https://www.libertaddigital.com/espana/politica/2026-07-18/las-victimas-de-adamuz-denuncian-el-desamparo-de-puente-seis-meses-despues-no-se-han-asumido-responsabilidades-7437622/"
+      ] },
+      { f: "2026-09-03", t: "informe", h: "La Guardia Civil concluye que la rotura de una soldadura causó el accidente; los peritos ven un defecto de nivelación de 6,4 mm", s: [
+        "https://www.eldebate.com/espana/andalucia/20260903/informe-definitivo-guardia-civil-concluye-rotura-soldadura-provoco-tragedia-adamuz_454855.html",
+        "https://www.elespanol.com/invertia/20260903/peritos-adamuz-creen-defecto-nivelacion-mm-via-contribuyo-rotura-provoco-tragedia/1003744371653_0.html",
+        "https://cordopolis.eldiario.es/cordoba-hoy/tribunales/peritos-senalan-defecto-6-4-milimetros-carril-pudo-contribuir-accidente-adamuz_1_13486177.html",
+        "https://www.cope.es/emisoras/andalucia/cordoba-provincia/cordoba/noticias/peritos-senalan-defecto-6-4-mm-carril-pudo-contribuir-rotura-20260904_3430345.html"
+      ] },
+      { f: "2026-09-04", t: "declaración", h: "Puente llama «bulo» al informe de la Guardia Civil y Adif defiende que los defectos estaban dentro de los límites", s: [
+        "https://www.eldebate.com/economia/20260904/puente-rebaja-bulo-nuevo-informe-guardia-civil-apunta-rotura-via-adamuz_455256.html",
+        "https://www.elespanol.com/invertia/observatorios/movilidad/20260904/adif-defiende-cumplio-normativa-problemas-via-adamuz-dentro-limites-seguridad/1003744373479_0.html",
+        "https://www.libertaddigital.com/espana/2026-09-04/feijoo-califica-a-puente-como-ministro-indigno-y-moreno-exige-toda-la-verdad-sobre-el-accidente-de-adamuz-7455288/"
+      ] },
+      { f: "2026-09-21", t: "declaración", h: "El PP acusa a Puente de mostrar tras el accidente la inspección de otro carril y de restringir la documentación técnica", s: [
+        "https://theobjective.com/economia/transporte/2026-09-21/puente-soldadura-adamuz-pp/"
+      ] }
+    ]
+  },
+  {
+    id: "ley-nietos",
+    titulo: "La «ley de nietos» y el censo electoral",
+    clase: "judicial",
+    ambito: "gobierno",
+    estado: "Un juzgado de instrucción de Madrid tiene abiertas diligencias contra Sofía Puente por prevaricación. El Supremo suspendió cautelarmente en septiembre de 2026 la inscripción en el censo de residentes ausentes (CERA) de los nacionalizados que no acrediten el exilio de sus ascendientes; la Abogacía del Estado ha criticado la medida.",
+    resumen: "La Ley de Memoria Democrática (octubre de 2022) permitió optar a la nacionalidad a hijos y nietos de exiliados por razones políticas. Una instrucción de la Dirección General de Seguridad Jurídica y Fe Pública, dirigida por Sofía Puente —hermana del ministro de Transportes—, presumió exiliado a todo español que salió del país entre 1936 y 1955. Las solicitudes superaron los 2,4 millones. La oposición acusa al Gobierno de querer alterar el censo electoral; el Gobierno lo niega y lo presenta como reparación histórica.",
+    personas: ["Sofía Puente"],
+    eventos: [
+      { f: "2022-10-05", t: "decisión política", h: "El Senado aprueba definitivamente la Ley de Memoria Democrática, que abre la nacionalidad a descendientes de exiliados", s: [
+        "https://www.eldiario.es/sociedad/aprobada-definitivamente-nueva-ley-memoria-democratica-declara-ilegal-dictadura-franquista_1_9597256.html",
+        "https://www.elespanol.com/espana/20221005/senado-polemica-ley-memoria-democratica-psoe-bildu/708429454_0.html",
+        "https://theobjective.com/espana/2022-10-05/senado-memoria-democratica/",
+        "https://www.infolibre.es/politica/senado-aprueba-definitivamente-nueva-ley-memoria-democratica_1_1333631.html"
+      ] },
+      { f: "2026-06-23", t: "revelación", h: "El Gobierno aflora 200.000 solicitudes más de «nietos» ocho meses después de cerrarse el plazo", s: [
+        "https://www.elespanol.com/espana/politica/20260623/gobierno-saca-cajon-consulados-nietos-meses-acabar-plazo-pedir-nacionalidad/1003744295940_0.html"
+      ] },
+      { f: "2026-06-29", t: "informe", h: "544.722 descendientes de exiliados tienen ya aprobada la nacionalidad española", s: [
+        "https://www.elindependiente.com/espana/2026/06/29/un-total-de-544-722-descendientes-de-exiliados-ya-tienen-aprobada-la-nacionalidad-espanola/"
+      ] },
+      { f: "2026-07-01", t: "querella", h: "Hazte Oír se querella contra Sofía Puente por prevaricación por la instrucción que amplió la ley", s: [
+        "https://theobjective.com/espana/tribunales/2026-07-01/hazte-oir-querella-puente-prevaricacion-nietos/",
+        "https://www.libertaddigital.com/espana/2026-07-01/no-publicar-ln-7429046/"
+      ] },
+      { f: "2026-07-02", t: "revelación", h: "Un certificado emitido por el PSOE sirve para acreditar la condición de exiliado", s: [
+        "https://theobjective.com/espana/2026-07-02/ley-nietos-certificado-psoe-exiliado/"
+      ] },
+      { f: "2026-07-05", t: "revelación", h: "The Objective publica que Sofía Puente retocó la aplicación de la ley a espaldas de la entonces ministra de Justicia", s: [
+        "https://theobjective.com/espana/politica/2026-07-05/puente-ley-nietos/"
+      ] },
+      { f: "2026-07-11", t: "declaración", h: "Funcionarios de los registros denuncian la instrucción que modificó la ley", s: [
+        "https://theobjective.com/espana/politica/2026-07-11/funcionarios-instruccion-puente-ley-de-nietos/"
+      ] },
+      { f: "2026-07-17", t: "decisión", h: "La mayoría de la Junta Electoral Central ve ilegal la ampliación, pero no se cree facultada para actuar", s: [
+        "https://www.elespanol.com/espana/politica/20260717/mayoria-junta-electoral-ve-ilegal-ampliacion-ley-nietos-sofia-puente-no-cree-facultada-actuar/1003744324131_0.html"
+      ] },
+      { f: "2026-07-22", t: "decisión judicial", h: "Un juzgado de Madrid abre diligencias contra Sofía Puente por prevaricación", s: [
+        "https://theobjective.com/espana/tribunales/2026-07-22/juez-diligencias-hermana-puente-prevaricacion-ley-nietos/",
+        "https://www.vozpopuli.com/tribunales/la-juez-da-el-primer-paso-para-investigar-a-sofia-puente-por-prevaricacion-con-la-ley-de-nietos.html"
+      ] },
+      { f: "2026-09-02", t: "recurso", h: "El Supremo admite a trámite el recurso de Hazte Oír sobre el censo; las solicitudes ya superan los 2,4 millones", s: [
+        "https://www.eldebate.com/espana/20260902/supremo-admite-recurso-hazte-oir-contra-ley-nietos-decidira-sobre-suspension-provisional-misma_454408.html",
+        "https://www.eldebate.com/espana/20260902/salto-olimpico-ley-nietos-876321-24-millones_454358.html"
+      ] },
+      { f: "2026-09-08", t: "decisión judicial", h: "El Supremo suspende la inscripción en el censo electoral de los nacionalizados que no acrediten el exilio", s: [
+        "https://www.eldiario.es/politica/supremo-prohibe-forma-cautelar-votar-nacionalizados-ley-nietos-salvo-demuestren-exiliados_1_13492943.html",
+        "https://www.elespanol.com/espana/tribunales/20260908/ts-suspende-inscripcion-censo-electoral-nacionalizados-ley-nietos-salvo-acrediten-exilio/1003744376058_0.html",
+        "https://www.eleconomista.es/legal/noticias/14013130/09/26/el-tribunal-supremo-ve-indicios-de-que-se-concedio-la-nacionalidad-a-descendientes-de-emigrantes-economicos-sin-prueba.html",
+        "https://diariodeavisos.elespanol.com/2026/09/supremo-suspende-voto-ley-de-nietos-censo-cera/"
+      ] },
+      { f: "2026-09-11", t: "declaración", h: "Indignación en el Gobierno con los argumentos del Supremo: «Es atroz»", s: [
+        "https://www.elindependiente.com/espana/2026/09/11/indignacion-gobierno-psoe-supremo-ley-nietos-atroz-imparcialidad/"
+      ] },
+      { f: "2026-09-11", t: "recurso", h: "Sofía Puente pide anular la querella alegando que el asunto ya fue juzgado", s: [
+        "https://www.libertaddigital.com/espana/2026-09-11/sofia-puente-intenta-anular-la-querella-por-la-ley-de-nietos-admitiendo-que-su-instruccion-pudo-ser-desacertada-7458577/",
+        "https://theobjective.com/espana/tribunales/2026-09-10/querella-sofia-puente-tsupremo-ley-nietos/"
+      ] },
+      { f: "2026-09-15", t: "declaración", h: "Sofía Puente reconoce que su instrucción amplió los supuestos de la ley y rechaza que la defienda la Abogacía del Estado", s: [
+        "https://www.eldebate.com/espana/20260915/sofia-puente-reconoce-instruccion-sobre-ley-nietos-amplio-casos-previstos-norma_458939.html",
+        "https://theobjective.com/espana/tribunales/2026-09-15/puente-abogacia-estado-ley-nietos/"
+      ] },
+      { f: "2026-09-21", t: "recurso", h: "La Abogacía del Estado critica los «excesos» del Supremo y avisa de que los consulados no podrán certificar a tiempo", s: [
+        "https://theobjective.com/espana/tribunales/2026-09-21/abogacia-estado-paralizacion-efectos-electorales-ley-nietos/",
+        "https://www.eldiario.es/politica/gobierno-carga-excesos-supremo-ley-nietos-dice-nadie-predecir-votarian_1_13526571.html",
+        "https://www.elespanol.com/espana/tribunales/20260922/gobierno-avisa-supremo-consules-no-tiempo-certificar-nietos-probado-derecho-voto/1003744391724_0.html"
+      ] }
+    ]
+  },
+  {
+    id: "casa-47",
+    titulo: "Casa 47: la empresa pública de vivienda",
+    clase: "suceso",
+    ambito: "gobierno",
+    estado: "En funcionamiento. El Gobierno promete 100.000 alquileres en diez años; el portal arrancó en septiembre de 2026 con 800 viviendas anunciadas, de las que unas 640 estaban disponibles y ninguna en Madrid, Barcelona, Valencia, Sevilla o Málaga.",
+    resumen: "El Gobierno transformó en diciembre de 2025 la entidad pública de suelo Sepes en Casa 47, con 13.000 millones de inversión prevista en diez años y 40.000 viviendas procedentes de la Sareb. Su portal de alquiler nació con una oferta escasa y alejada de las grandes ciudades, que la propia empresa atribuyó a que la Sareb ya había vendido los pisos mejor situados. El Observatorio del Alquiler sostiene que ninguna vivienda cumple el criterio de asequibilidad de la Ley de Vivienda.",
+    personas: ["Pedro Sánchez", "Isabel Rodríguez"],
+    eventos: [
+      { f: "2025-12", t: "decisión política", h: "El Consejo de Ministros convierte el Sepes en Casa 47, con 13.000 millones de inversión prevista", s: [
+        "https://www.infolibre.es/politica/gobierno-aprueba-casa-47-nueva-empresa-estatal-quiere-aumentar-inversion-vivienda-publica_1_2111664.html",
+        "https://www.eldiario.es/economia/gobierno-aprueba-cobertura-impagos-alquiler-ayudar-jovenes-vulnerables_1_12830466.html",
+        "https://www.eleconomista.es/vivienda-inmobiliario/noticias/13689568/12/25/casa-47-la-nueva-empresa-publica-de-vivienda-y-suelo-ya-es-realidad.html",
+        "https://www.publico.es/economia/vivienda/100-millones-oferta-vivienda-publica-alquileres-75-anos-sepes-pasa-casa-47.html"
+      ] },
+      { f: "2026-03-13", t: "decisión política", h: "Casa 47 convoca 100 millones para comprar viviendas privadas y destinarlas a alquiler", s: [
+        "https://www.elespanol.com/invertia/observatorios/vivienda/20260313/casa-lanza-convocatoria-millones-comprar-viviendas-privadas-destinarlas-alquiler-asequible/1003744168127_0.html"
+      ] },
+      { f: "2026-09-07", t: "decisión política", h: "Sánchez presenta el portal de Casa 47: unas 640 viviendas disponibles y ninguna en las grandes capitales", s: [
+        "https://www.eldebate.com/economia/20260907/sanchez-presenta-portal-casa-47-apenas-645-viviendas-disponibles_456164.html",
+        "https://www.elindependiente.com/economia/2026/09/07/portal-inmobiliario-sanchez-casas-alquiler-ciudades/",
+        "https://www.elespanol.com/invertia/observatorios/vivienda/20260907/pedro-sanchez-anuncia-nuevas-viviendas-casa-defiende-intervenir-mercado-roto-dislocado/1003744374751_0.html",
+        "https://www.publico.es/economia/vivienda/gobierno-presenta-nuevo-portal-casa-47-nace-800-viviendas.html",
+        "https://www.eleconomista.es/vivienda-inmobiliario/noticias/14012197/09/26/el-gobierno-lanza-un-idealista-publico-con-800-viviendas-disponbibles.html"
+      ] },
+      { f: "2026-09-08", t: "declaración", h: "Casa 47 justifica la escasa oferta: «Las viviendas de las mejores zonas fueron vendidas» por la Sareb", s: [
+        "https://www.elindependiente.com/economia/2026/09/08/viviendas-gobierno-fiasco-plataforma-alquiler/",
+        "https://www.eleconomista.es/vivienda-inmobiliario/noticias/14013584/09/26/el-gobierno-promete-100000-alquileres-publicos-en-10-anos-a-traves-de-casa-47.html"
+      ] },
+      { f: "2026-09-08", t: "declaración", h: "Podemos, socio del Gobierno, carga contra Casa 47 y exige expropiar viviendas a los fondos", s: [
+        "https://theobjective.com/espana/politica/2026-09-08/podemos-casa-47-expropiar-vivienda-fondos-buitre/"
+      ] },
+      { f: "2026-09-09", t: "informe", h: "De 184.000 viviendas prometidas a las 800 del portal: cinco años de anuncios de vivienda pública sin cumplir", s: [
+        "https://www.eldebate.com/economia/20260909/184000-viviendas-nunca-llegaron-solo-800-ofrece-casa-47-cinco-anos-promesas-fallidas-sanchismo_456659.html"
+      ] },
+      { f: "2026-09-10", t: "revelación", h: "Detectan irregularidades en los anuncios del portal, como gastos de comunidad no incluidos en el precio", s: [
+        "https://theobjective.com/economia/2026-09-10/irregularidades-anuncios-portal-vivienda-casa-47/",
+        "https://www.libertaddigital.com/libremercado/2026-09-10/por-que-no-vas-a-conseguir-una-vivienda-asequible-en-casa-47-7457253/"
+      ] },
+      { f: "2026-09-22", t: "informe", h: "El Observatorio del Alquiler denuncia que ninguna vivienda de Casa 47 cumple el criterio de asequibilidad", s: [
+        "https://www.eldebate.com/economia/20260922/observatorio-alquiler-denuncia-ninguna-vivienda-casa-47-cumple-criterio-asequible_461279.html"
+      ] },
+      { f: "2026-09-23", t: "revelación", h: "Libre Mercado publica que Casa 47 incumple su propia norma sobre los precios", s: [
+        "https://www.libertaddigital.com/libremercado/2026-09-23/la-farsa-la-empresa-de-vivienda-de-sanchez-casa-47-se-salta-su-propia-norma-sobre-los-precios-7464130/"
+      ] }
+    ]
+  },
+  {
+    id: "apagon",
+    titulo: "El apagón del 28 de abril de 2025",
+    clase: "suceso",
+    ambito: "gobierno",
+    estado: "El comité del Gobierno (junio de 2025) repartió la responsabilidad entre Red Eléctrica y las eléctricas; el informe final europeo habló de múltiples causas encadenadas. La comisión de investigación del Senado, con mayoría del PP, declaró responsables al Gobierno, a Red Eléctrica y a la CNMC.",
+    resumen: "A las 12.33 del 28 de abril de 2025 la península ibérica perdió de golpe unos 15 GW, el 60 % de la demanda, y quedó horas sin suministro. Se atribuyeron al menos siete muertes en España. El debate se centró en el control de tensión, la programación del sistema por Red Eléctrica —presidida por la exministra socialista Beatriz Corredor— y el peso de las renovables en el mix.",
+    personas: ["Sara Aagesen", "Beatriz Corredor"],
+    eventos: [
+      { f: "2025-04-28", t: "apagón", h: "Un apagón deja sin luz a toda la península; Sánchez comparece por la noche", s: [
+        "https://www.publico.es/sociedad/directo-apagon-inicio-desaparecer-subitamente-60-energia-demandada.html",
+        "https://www.elespanol.com/sociedad/20250429/apagon-masivo-espana-causas-detras-corte-luz-historico-dejo-millones-personas-sin-electricidad/1003743734546_0.html",
+        "https://www.cope.es/actualidad/espana/al-minuto/ultima-hora-gran-apagon-electrico-espana-20250429_3140762.html"
+      ] },
+      { f: "2025-06-17", t: "informe", h: "El informe del Gobierno culpa del apagón a Red Eléctrica y a las eléctricas", s: [
+        "https://www.elespanol.com/invertia/empresas/energia/20250617/informe-apagon-detecta-poca-generacion-convencional-desconexiones-indebidas-llevaron-cero-energetico/1003743808369_0.html",
+        "https://www.cope.es/actualidad/espana/noticias/gobierno-culpa-apagon-red-electrica-operadoras-privadas-partes-iguales-20250617_3171176.html",
+        "https://www.elespanol.com/invertia/empresas/energia/20250617/sector-electrico-senala-red-electrica-conocer-informe-comision-investigacion-liderada-gobierno/1003743808614_0.html"
+      ] },
+      { f: "2026-03", t: "informe", h: "El informe final europeo apunta a una cadena de fallos sin un único culpable", s: [
+        "https://www.eleconomista.es/energia/noticias/13833318/03/26/el-informe-europeo-del-apagon-no-logra-establecer-un-unico-culpable-y-apunta-a-multiples-causas.html"
+      ] },
+      { f: "2026-04-15", t: "informe", h: "La comisión del Senado declara responsables del apagón al Gobierno, a Red Eléctrica y a la CNMC", s: [
+        "https://www.elespanol.com/invertia/empresas/energia/20260415/senado-declara-responsables-apagon-gobierno-red-electrica-cnmc/1003744207471_0.html",
+        "https://www.eldiario.es/economia/comision-investigacion-apagon-pp-senado-culpa-gobierno-red-electrica-apunta-cnmc_1_13144358.amp.html"
+      ] }
+    ]
+  },
+  {
+    id: "pulseras",
+    titulo: "Los fallos de las pulseras antimaltrato",
+    clase: "suceso",
+    ambito: "gobierno",
+    estado: "Ana Redondo sigue como ministra de Igualdad pese a su reprobación. El Tribunal de Cuentas aprecia en septiembre de 2026 «graves deficiencias» en contratos por valor de 102,6 millones.",
+    resumen: "En el cambio de adjudicataria del servicio Cometa (de Telefónica a Vodafone y Securitas), en marzo de 2024, se perdieron durante meses los datos de localización anteriores, lo que según la Fiscalía provocó una «gran cantidad» de absoluciones y sobreseimientos de maltratadores. Igualdad negó que las pulseras fallaran y defendió que ninguna mujer protegida con ellas fue asesinada.",
+    personas: ["Ana Redondo"],
+    eventos: [
+      { f: "2025-09-19", t: "declaración", h: "Redondo: «No hay fallo en las pulseras, han funcionado en todo momento»", s: [
+        "https://www.elespanol.com/castilla-y-leon/region/20250919/ana-redondo-no-fallo-pulseras-funcionado-momento-siguen-funcionando-funcionaran/1003743932259_0.html",
+        "https://www.eldiario.es/sociedad/paso-existiera-fallo-servicio-pulseras-control-maltratadores-debe-preocuparnos_129_12615581.html",
+        "https://www.eldiario.es/sociedad/preguntas-respuestas-polemica-pulseras-control-maltratadores_1_12622711.html"
+      ] },
+      { f: "2025-09-22", t: "revelación", h: "El CGPJ había avisado dos veces a Igualdad; las trabajadoras alertaron de los fallos desde el inicio", s: [
+        "https://www.libertaddigital.com/espana/politica/2025-09-22/el-consejo-general-del-poder-judicial-tambien-aviso-dos-veces-a-igualdad-de-los-fallos-en-las-pulseras-antimaltrato-7298760/",
+        "https://www.eldiario.es/sociedad/trabajadoras-avisaron-inicio-fallos-pulseras-antimaltrato-no-son-errores-puntuales_1_12622893.html",
+        "https://www.elindependiente.com/espana/2025/09/23/el-desastre-de-las-pulseras-antimaltrato-un-nuevo-golpe-para-las-mujeres-del-psoe/"
+      ] },
+      { f: "2025-10-01", t: "decisión política", h: "Tras su reprobación en el Congreso, el Senado exige la dimisión de Redondo", s: [
+        "https://theobjective.com/espana/politica/2025-10-01/senado-dimision-ana-redondo-pulseras/",
+        "https://theobjective.com/espana/politica/2025-09-28/redondo-pulseras-antimaltrato/"
+      ] },
+      { f: "2025-11-11", t: "revelación", h: "Una caída del sistema durante horas obliga a activar el protocolo de protección a las víctimas", s: [
+        "https://www.elespanol.com/espana/20251111/ministerio-igualdad-avisa-pulseras-antimaltratadores-sufrido-fallo-sobrecarga-sistema/1003744009049_0.html",
+        "https://www.eldiario.es/sociedad/sistema-pulseras-control-maltratadores-sufre-caida-durante-horas_1_12759295.html",
+        "https://www.eldebate.com/sociedad/20251111/pulseras-antimaltrato-dejan-funcionar-durante-varias-horas-despues-igualdad-diga-estaban-arregladas_354042.html"
+      ] },
+      { f: "2026-03-10", t: "revelación", h: "Sentencias que absuelven a maltratadores por la falta de datos de las pulseras", s: [
+        "https://www.eldebate.com/sociedad/20260310/sentencias-prueban-maltratadores-estan-siendo-absueltos-fallos-pulseras-gobierno_393762.html"
+      ] },
+      { f: "2026-09-11", t: "informe", h: "La Fiscalía vuelve a alertar de fallos y de desigualdad territorial en el uso de las pulseras", s: [
+        "https://www.eldebate.com/sociedad/20260911/fiscalia-revela-pulseras-antimaltrato-fallan-han-absuelto-gran-cantidad-maltratadores_457667.html",
+        "https://www.elespanol.com/espana/tribunales/20260912/fiscalia-vuelve-alertar-caos-pulseras-antimaltrato-desigualdad-territorial-carencias-uso/1003744378078_0.html"
+      ] },
+      { f: "2026-09-16", t: "decisión judicial", h: "La Audiencia de Málaga reprocha a Igualdad «errores de geolocalización» en las pulseras", s: [
+        "https://www.eldebate.com/espana/andalucia/malaga/20260916/audiencia-malaga-saca-colores-igualdad-pulseras-antimaltrato-errores-geolocalizacion_459239.html"
+      ] },
+      { f: "2026-09-23", t: "informe", h: "El Tribunal de Cuentas detecta «graves deficiencias» en los contratos de las pulseras", s: [
+        "https://www.elespanol.com/espana/tribunales/20260923/cuentas-pone-entredicho-gestion-ana-redondo-pulseras-antimaltrato-graves-deficiencias-riesgo/1003744394171_0.html",
+        "https://www.eldiario.es/sociedad/tribunal-cuentas-detecta-graves-deficiencias-pulseras-antimaltrato-cuestiona-actuacion-igualdad_1_13531652.html",
+        "https://www.libertaddigital.com/espana/2026-09-23/el-tribunal-de-cuentas-detecta-deficiencias-en-contratos-por-valor-de-100-millones-en-las-pulseras-antimaltrato-7464758/"
+      ] }
+    ]
+  },
+  {
+    id: "solo-si-es-si",
+    titulo: "Las rebajas de penas de la ley del «solo sí es sí»",
+    clase: "suceso",
+    ambito: "gobierno",
+    estado: "La ley se reformó en abril de 2023 con los votos de PSOE y PP. Según el CGPJ, hasta julio de 2023 se habían acordado 1.155 rebajas de condena y 117 excarcelaciones.",
+    resumen: "La Ley de Garantía Integral de la Libertad Sexual, impulsada por el Ministerio de Igualdad de Irene Montero y aprobada por el Gobierno de coalición, unificó abuso y agresión y rebajó las penas mínimas de varios tipos. Como el Código Penal obliga a aplicar retroactivamente la norma más favorable al reo, los tribunales revisaron miles de condenas. El PSOE reformó la ley con el apoyo del PP y el voto en contra de Unidas Podemos.",
+    personas: ["Irene Montero", "Pedro Sánchez"],
+    eventos: [
+      { f: "2022-11-15", t: "decisión judicial", h: "La Audiencia de Madrid aplica las primeras rebajas de condena por la nueva ley", s: [
+        "https://theobjective.com/espana/2022-11-15/rebaja-condena-agresion-sexual/",
+        "https://www.vozpopuli.com/espana/ley-solo-si-es-si-tribunales-rebajas-delito-sexual.html",
+        "https://www.libertaddigital.com/espana/politica/2022-11-15/la-justicia-deja-en-evidencia-a-montero-y-confirma-la-primera-rebaja-de-condena-por-la-ley-del-solo-si-es-si-6954521/"
+      ] },
+      { f: "2022-11-16", t: "declaración", h: "Sánchez pide «sensibilidad» a los tribunales ante las rebajas", s: [
+        "https://theobjective.com/espana/2022-11-16/sanchez-rebajas-si-es-si/"
+      ] },
+      { f: "2022-11-29", t: "decisión judicial", h: "El Supremo avala rebajar penas por la ley, pero caso a caso", s: [
+        "https://theobjective.com/espana/2022-11-29/supremo-rebaja-penas-solo-si/"
+      ] },
+      { f: "2023-03-02", t: "informe", h: "El CGPJ cifra en 721 las rebajas de penas y en 74 las excarcelaciones", s: [
+        "https://theobjective.com/espana/tribunales/2023-03-02/cgpj-rebajas-penas-excarcelaciones-si-es-si/"
+      ] },
+      { f: "2023-03-07", t: "decisión política", h: "El PSOE inicia la reforma en el Congreso con el apoyo del PP y el rechazo de Podemos", s: [
+        "https://www.elindependiente.com/espana/2023/03/07/el-psoe-inicia-la-reforma-del-si-es-si-en-el-congreso-con-el-apoyo-del-pp-y-el-veto-podemos/",
+        "https://www.eldiario.es/politica/psoe-pide-unidas-soluciones-no-peroratas-si-si-e-irene-montero-le-acusa-mano-pp_1_10012296.html"
+      ] },
+      { f: "2023-04-20", t: "decisión política", h: "El Congreso aprueba la reforma de la ley con los votos de PSOE y PP", s: [
+        "https://theobjective.com/espana/politica/2023-04-20/congreso-aprueba-reforma-solo-si/",
+        "https://www.elindependiente.com/espana/2023/04/20/el-congreso-aprueba-la-reforma-del-si-es-si-del-psoe-tras-rebajas-de-penas/",
+        "https://www.eldiario.es/politica/psoe-pp-aprueban-reforma-ley-si-si-voto-unidas-erc-eh-bildu_1_10135971.html"
+      ] },
+      { f: "2023-06-09", t: "informe", h: "El CGPJ eleva a 1.127 las rebajas de pena y a 115 las excarcelaciones", s: [
+        "https://theobjective.com/espana/tribunales/2023-06-09/cgpj-rebajas-pena-ley-si/",
+        "https://www.elespanol.com/espana/tribunales/20230609/rebaja-penas-alza-condenas-revisadas-agresores-libres/770173181_0.html"
+      ] },
+      { f: "2023-07-05", t: "informe", h: "Las rebajas llegan a 1.155 y las excarcelaciones a 117", s: [
+        "https://www.elespanol.com/espana/tribunales/20230705/violadores-liberados-aplicacion-ley-rebajas-penas/776672589_0.html",
+        "https://www.vozpopuli.com/espana/si-es-si-cgpj-rebajas-pena-excarcelaciones-ley-montero.html"
+      ] }
+    ]
   }
 ];

@@ -61,6 +61,7 @@
         if (partes[0] === "cronicaglobal") return "Crónica Global";
         if (partes[0] === "ecodiario") return "elEconomista";
         if (partes[0] === "eldiariocantabria") return "El Diario Cantabria";
+        if (partes[0] === "cordopolis") return "Cordópolis";
         return MEDIOS[base];
       }
     }
