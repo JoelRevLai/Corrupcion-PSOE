@@ -20,7 +20,9 @@
  *     s  enlaces a noticias de prensa (nunca vídeos)
  *
  * Para añadir un enlace de otro diario (ABC, El Mundo, El País…) basta con
- * añadir la URL al array "s" del hito correspondiente.
+ * añadir la URL al array "s" del hito correspondiente. También se admite la
+ * publicación del diario en X (https://x.com/<cuenta>/status/<id>): el medio
+ * se deduce de la cuenta (CUENTAS_X en assets/app.js).
  */
 window.ACTUALIZADO = "2026-09-24";
 
@@ -155,7 +157,8 @@ window.CASOS = [
       { f: "2022-07-26", t: "sentencia", h: "El Supremo confirma por mayoría las condenas de Griñán y Chaves", s: [
         "https://www.elespanol.com/espana/tribunales/20220726/mayoria-supremo-confirmar-condena-grinan-chaves-ere/686931736_0.html",
         "https://www.elindependiente.com/espana/2022/07/26/el-supremo-confirma-la-sentencia-de-los-ere-y-coloca-a-grinan-a-un-paso-de-la-carcel/",
-        "https://www.eldiario.es/andalucia/sentencia-supremo-confirma-condenas-ere-andalucia-actuaron-conocimiento-irregularidades_1_9314597.html"
+        "https://www.eldiario.es/andalucia/sentencia-supremo-confirma-condenas-ere-andalucia-actuaron-conocimiento-irregularidades_1_9314597.html",
+        "https://x.com/abc_es/status/1551885046679801857"
       ] },
       { f: "2024-07-16", t: "sentencia", h: "El Constitucional anula la condena de cárcel de Griñán y rebaja la inhabilitación de Chaves", s: [
         "https://www.eldiario.es/andalucia/constitucional-ordena-rebajar-condena-inhabilitacion-expresidente-chaves-ere-andalucia_1_11525694.html",
@@ -185,7 +188,9 @@ window.CASOS = [
       { f: "2025-12-11", t: "detención", h: "Detenidos el presidente y el consejero delegado de Plus Ultra y el consultor Julio Martínez, amigo de Zapatero", s: [
         "https://www.eleconomista.es/actualidad/noticias/13691063/12/25/julio-martinez-cliente-de-las-hijas-de-zapatero-entre-los-detenidos-en-la-investigacion-a-plus-ultra.html",
         "https://www.vozpopuli.com/espana/detienen-al-cliente-de-las-hijas-de-zapatero-que-se-hizo-broker-aereo-por-el-caso-plus-ultra.html",
-        "https://www.elespanol.com/espana/tribunales/20251213/libertad-leves-medidas-cautelares-ceo-presidente-plus-ultra-empresario-julio-martinez/1003744054181_0.html"
+        "https://www.elespanol.com/espana/tribunales/20251213/libertad-leves-medidas-cautelares-ceo-presidente-plus-ultra-empresario-julio-martinez/1003744054181_0.html",
+        "https://elpais.com/espana/2025-12-12/anticorrupcion-investiga-si-plus-ultra-derivo-dinero-del-rescate-para-blanquear-fondos-de-venezuela-en-francia-suiza-y-espana.html",
+        "https://www.elconfidencial.com/espana/2025-12-11/plus-ultra-rescate-aerolinea-implicacion-zapatero_4264219/"
       ] },
       { f: "2025-12-16", t: "informe", h: "La Policía sitúa a Julio Martínez como testaferro de Zapatero y la UCO recoge reuniones del expresidente con la SEPI", s: [
         "https://theobjective.com/espana/2025-12-16/policia-julio-martinez-testaferro-zapatero-venezuela/",
@@ -197,11 +202,13 @@ window.CASOS = [
       { f: "2026-05-19", t: "imputación", h: "La Audiencia Nacional imputa a Zapatero por organización criminal, tráfico de influencias y falsedad", s: [
         "https://www.eldiario.es/politica/zapatero-imputado-blanqueo-capitales-caso-plus-ultra_1_13231540.html",
         "https://theobjective.com/espana/tribunales/2026-05-19/zapatero-imputado-blanqueo-audiencia-nacional/",
-        "https://www.publico.es/politica/tribunales/zapatero-imputado-caso-plus-ultra-blanqueo-capitales.html"
+        "https://www.publico.es/politica/tribunales/zapatero-imputado-caso-plus-ultra-blanqueo-capitales.html",
+        "https://elpais.com/espana/2026-05-19/el-juez-atribuye-a-zapatero-el-cobro-de-cerca-de-dos-millones-en-comisiones.html"
       ] },
       { f: "2026-07-20", t: "declaración", h: "Julio Martínez declara que Zapatero pactó una comisión del 1 % por el rescate", s: [
         "https://www.libertaddigital.com/espana/2026-07-20/julio-martinez-julito-tira-manta-zapatero-pacto-comision-1-por-rescate-gobierno-plus-ultra-7438278/",
-        "https://www.libertaddigital.com/espana/2026-07-20/plus-ultra-reconoce-que-contrato-a-julito-martinez-por-su-relacion-con-zapatero-7438338/"
+        "https://www.libertaddigital.com/espana/2026-07-20/plus-ultra-reconoce-que-contrato-a-julito-martinez-por-su-relacion-con-zapatero-7438338/",
+        "https://www.elmundo.es/espana/2026/07/21/6a5fbadb21efa0b26b8b458b.html"
       ] },
       { f: "2026-07-24", t: "dimisión", h: "Dimiten el presidente y el consejero delegado de Plus Ultra, investigados por el rescate", s: [
         "https://www.eldiario.es/politica/dimiten-presidente-ceo-plus-ultra-investigados-rescate-aerolinea_1_13406035.html",
@@ -227,7 +234,8 @@ window.CASOS = [
       ] },
       { f: "2025-06-20", t: "informe", h: "La UCO atribuye al exportavoz socialista cobros de la trama e ingresos de 200.000 euros en efectivo", s: [
         "https://theobjective.com/espana/politica/2025-06-20/ex-subdelegado-psoe-valenciano-200-000-euros-efectivo-uco/",
-        "https://www.eldiario.es/comunitat-valenciana/uco-acredita-exportavoz-socialista-ayuntamiento-valencia-cobro-comisiones-300-000-euros_1_12402195.html"
+        "https://www.eldiario.es/comunitat-valenciana/uco-acredita-exportavoz-socialista-ayuntamiento-valencia-cobro-comisiones-300-000-euros_1_12402195.html",
+        "https://www.larazon.es/comunidad-valenciana/uco-senala-otro-socialista-cobrar-comisiones-ilicitas-valencia-rafael-rubio-recibio-300000-750000-euros_202506206855839af68fe227a844ea1a.html"
       ] },
       { f: "2026-09-04", t: "procesamiento", h: "La jueza cierra la instrucción con 38 procesados y aprecia financiación ilegal del PSOE valenciano", s: [
         "https://www.elindependiente.com/espana/2026/09/04/la-jueza-cierra-la-instruccion-del-caso-azud-con-38-imputados-y-ve-financiacion-ilegal-del-psoe-de-valencia/",
@@ -342,7 +350,8 @@ window.CASOS = [
     eventos: [
       { f: "2023-05-24", t: "detención", h: "Detenidos dos candidatos del PSOE en Mojácar por presunta compra de votos", s: [
         "https://www.eldiario.es/andalucia/cuatro-personas-detenidas-compra-votos-mojacar-almeria_1_10232505.html",
-        "https://theobjective.com/espana/2023-05-24/detenidos-compra-votos-mojacar-almeria/"
+        "https://theobjective.com/espana/2023-05-24/detenidos-compra-votos-mojacar-almeria/",
+        "https://elpais.com/espana/2023-05-24/campana-elecciones-28-m-en-directo.html"
       ] },
       { f: "2023-05-26", t: "informe", h: "La Fiscalía cuenta con numerosos testigos y apunta a una trama organizada", s: [
         "https://www.elespanol.com/espana/tribunales/20230526/fiscal-numerosos-testigos-compra-mojacar-apunta-tramaorganizada/766423819_0.html",
@@ -412,7 +421,8 @@ window.CASOS = [
       { f: "2024-02-20", t: "detención", h: "La UCO detiene a Koldo García, asesor de Ábalos, y a Víctor de Aldama en la operación Delorme", s: [
         "https://theobjective.com/espana/politica/2024-02-21/detenido-asesor-abalos-koldo-comisiones/",
         "https://www.eldiario.es/politica/caso-koldo-claves-trama-mascarillas-vinculada-exasesor-abalos_1_10953838.html",
-        "https://www.eldiario.es/economia/abalos-coloco-asesor-consejo-puertos-entidad-publica-mayor-pelotazo-adjudico-trama_1_10949548.html"
+        "https://www.eldiario.es/economia/abalos-coloco-asesor-consejo-puertos-entidad-publica-mayor-pelotazo-adjudico-trama_1_10949548.html",
+        "https://www.elconfidencial.com/espana/2024-02-21/operacion-mascarillas-mujer-abalos-presidente-zamora_3834889/"
       ] },
       { f: "2024-02-27", t: "decisión política", h: "Ábalos se niega a entregar el acta y pasa al Grupo Mixto; el PSOE le suspende de militancia", s: [
         "https://www.elespanol.com/espana/politica/20240227/abalos-no-cede-presion-psoe-conserva-escano-marcha-grupo-mixto-congreso/834917006_0.html",
@@ -441,11 +451,13 @@ window.CASOS = [
       { f: "2025-11-27", t: "prisión", h: "El juez del Supremo envía a prisión a Ábalos y Koldo por riesgo «extremo» de fuga", s: [
         "https://www.eldiario.es/politica/juez-tribunal-supremo-envia-prision-provisional-jose-luis-abalos-koldo-garcia_1_12801994.html",
         "https://www.elindependiente.com/espana/2025/11/27/juez-envia-prision-koldo-abalos-el-primer-diputado-congreso-carcel/",
-        "https://www.publico.es/politica/tribunales/juez-supremo-envia-prision-abalos.html"
+        "https://www.publico.es/politica/tribunales/juez-supremo-envia-prision-abalos.html",
+        "https://www.elconfidencial.com/espana/2025-11-26/abalos-escenario-mas-temido-negar-koldo-riesgo-prision_4255500/"
       ] },
       { f: "2025-12-11", t: "procesamiento", h: "El Supremo abre juicio oral contra Ábalos, Koldo y Aldama y mantiene a los dos primeros en prisión", s: [
         "https://www.elindependiente.com/espana/2025/12/11/el-supremo-envia-a-juicio-a-abalos-y-koldo-garcia-y-les-mantiene-en-prision/",
-        "https://www.eldiario.es/politica/supremo-abre-juicio-oral-abalos-aldama-koldo-contratos-mascarillas_1_12836439.html"
+        "https://www.eldiario.es/politica/supremo-abre-juicio-oral-abalos-aldama-koldo-contratos-mascarillas_1_12836439.html",
+        "https://www.larazon.es/espana/supremo-abre-juicio-oral-abalos-koldo-aldama-contratos-mascarillas_20251211693a8fb822f0db7dafed4c46.html"
       ] },
       { f: "2026-01-28", t: "dimisión", h: "Ábalos renuncia a su escaño de diputado", s: [
         "https://www.elindependiente.com/espana/2026/01/28/abalos-renuncia-a-su-acta-de-diputado-en-el-congreso-y-libera-su-escano-para-el-psoe/",
@@ -453,7 +465,8 @@ window.CASOS = [
       ] },
       { f: "2026-04-06", t: "juicio", h: "Comienza en el Supremo el juicio de las mascarillas", s: [
         "https://theobjective.com/espana/tribunales/2026-04-06/abalos-koldo-supremo-juicio-mascarillas/",
-        "https://www.vozpopuli.com/espana/juicio-a-abalos-koldo-y-aldama-por-el-caso-mascarillas-en-directo-declaraciones-en-el-supremo-y-reacciones.html"
+        "https://www.vozpopuli.com/espana/juicio-a-abalos-koldo-y-aldama-por-el-caso-mascarillas-en-directo-declaraciones-en-el-supremo-y-reacciones.html",
+        "https://elpais.com/espana/2026-04-07/primer-juicio-contra-abalos-koldo-y-aldama-por-la-trama-de-las-mascarillas-en-directo.html"
       ] },
       { f: "2026-04-08", t: "juicio", h: "La expareja de Ábalos reconoce en el juicio que cobró de dos empresas públicas sin ir a trabajar", s: [
         "https://www.eldiario.es/politica/expareja-abalos-reconoce-juicio-cobro-sueldo-empresas-publicas-trabajar_1_13124782.html",
@@ -463,7 +476,8 @@ window.CASOS = [
         "https://www.elespanol.com/espana/tribunales/20260622/supremo-condena-abalos-anos-prision-liderar-grupo-criminal-koldo-libra-aldama-carcel-ayudar-justicia/1003744278646_0.html",
         "https://www.elindependiente.com/espana/2026/06/22/supremo-condena-abalos-koldo-prision-por-mordidas-contratos-mascarillas/",
         "https://www.eldebate.com/espana/20260622/supremo-condena-24-anos-carcel-abalos-19-koldo-4-medio-aldama_425000.html",
-        "https://theobjective.com/espana/tribunales/2026-06-22/sentencia-tribunal-supremo-abalos-koldo-aldama/"
+        "https://theobjective.com/espana/tribunales/2026-06-22/sentencia-tribunal-supremo-abalos-koldo-aldama/",
+        "https://www.elmundo.es/espana/2026/06/22/6a38dae6fdddffed398b4578.html"
       ] }
     ]
   },
@@ -510,7 +524,9 @@ window.CASOS = [
         "https://www.eldiario.es/politica/santos-cerdan-dimite-secretario-organizacion-entrega-acta-diputado_1_12379618.html",
         "https://theobjective.com/espana/politica/2025-06-12/santos-cerdan-dimite/",
         "https://www.eldiario.es/economia/13-obras-recoge-informe-uco-tumbado-cerdan-suman-637-millones-e-incluyen-fondos-europeos_1_12380100.html",
-        "https://www.publico.es/politica/tribunales/claves-informe-uco-santos-cerdan-acorrala-psoe.html"
+        "https://www.publico.es/politica/tribunales/claves-informe-uco-santos-cerdan-acorrala-psoe.html",
+        "https://www.elconfidencial.com/espana/2025-06-12/mensaje-santos-cerdan-amano-primarias-sanchez_4149852/",
+        "https://www.elmundo.es/espana/2025/06/11/6849c42ffdddff59958b458d.html"
       ] },
       { f: "2025-06-15", t: "revelación", h: "Los audios grabados por Koldo que implican a Ábalos, Cerdán y Koldo", s: [
         "https://theobjective.com/espana/tribunales/2025-06-15/diez-audios-corrupcion-abalos-cerdan-koldo/",
@@ -523,7 +539,8 @@ window.CASOS = [
       ] },
       { f: "2025-07-09", t: "decisión política", h: "Sánchez comparece en el Congreso, admite que se planteó dimitir y anuncia un plan anticorrupción", s: [
         "https://www.eldiario.es/politica/sanchez-anuncia-plan-anticorrupcion-15-medidas-escandalo-santos_1_12449609.html",
-        "https://www.elespanol.com/espana/politica/20250709/sanchez-revela-planteo-dimitir-informe-uco-cerdan-decidio-no-hacerlo-oir/1003743840007_0.html"
+        "https://www.elespanol.com/espana/politica/20250709/sanchez-revela-planteo-dimitir-informe-uco-cerdan-decidio-no-hacerlo-oir/1003743840007_0.html",
+        "https://www.elconfidencial.com/espana/2025-07-09/comparecencia-pedro-sanchez-directo_4168520/"
       ] },
       { f: "2025-11", t: "informe", h: "La UCO pide investigar la adjudicación de los túneles de Belate a la UTE de Acciona y Servinabar", s: [
         "https://www.eldiario.es/navarra/uco-pide-juez-supremo-investigar-adjudicacion-belate-ute-acciona-servinabar-2000_1_12778045.html",
@@ -543,7 +560,8 @@ window.CASOS = [
       ] },
       { f: "2026-07-22", t: "imputación", h: "El juez ordena investigar las cuentas de la mujer, la hermana y el cuñado de Cerdán", s: [
         "https://www.elindependiente.com/espana/2026/07/22/audiencia-nacional-cuentas-familia-santos-cerdan-caso-koldo/",
-        "https://www.libertaddigital.com/espana/2026-07-23/el-juez-ordena-investigar-las-cuentas-de-la-mujer-la-hermana-y-el-cunado-de-cerdan-por-comisiones-de-obra-publica-7439750/"
+        "https://www.libertaddigital.com/espana/2026-07-23/el-juez-ordena-investigar-las-cuentas-de-la-mujer-la-hermana-y-el-cunado-de-cerdan-por-comisiones-de-obra-publica-7439750/",
+        "https://www.elmundo.es/espana/2026/07/22/6a610bf4e9cf4a3b3e8b45b6.html"
       ] },
       { f: "2026-07-28", t: "informe", h: "La investigación se extiende a los túneles de Belate y alcanza al Gobierno de Chivite", s: [
         "https://www.cope.es/emisoras/navarra/noticias/investigacion-caso-koldo-extiende-tuneles-belate-acorrala-chivite-20260728_3411466.html",
@@ -601,7 +619,8 @@ window.CASOS = [
         "https://www.elindependiente.com/espana/2026/03/21/sobre-aldama-resto-pistas-apuntan-financiacion-irregular-psoe/"
       ] },
       { f: "2026-04-09", t: "juicio", h: "Carmen Pano ratifica en el juicio del Supremo que llevó 90.000 euros a la sede del PSOE", s: [
-        "https://theobjective.com/espana/tribunales/2026-04-09/carmen-pano-ferraz-claudio-rivas/"
+        "https://theobjective.com/espana/tribunales/2026-04-09/carmen-pano-ferraz-claudio-rivas/",
+        "https://www.larazon.es/espana/quien-carmen-pano-empresaria-que-asegura-haber-dejado-90000-euros-ferraz-que-hoy-vuelve-centro-caso_2026040969d708d3097ebe16ad71f152.html"
       ] },
       { f: "2026-04-22", t: "declaración", h: "El exgerente del PSOE reconoce que pudo gestionar «algún ingreso atípico»", s: [
         "https://theobjective.com/espana/tribunales/2026-04-22/exgerente-psoe-ingreso-atipico/"
@@ -641,16 +660,19 @@ window.CASOS = [
       ] },
       { f: "2025-11-11", t: "revelación", h: "Se publica la grabación de Leire Díez con el fiscal Stampa: «Soy la persona que ha puesto el PSOE»", s: [
         "https://www.elespanol.com/espana/tribunales/20251111/escuche-audio-leire-fiscal-stampa-persona-puesto-psoe-saber-detras/1003744008771_0.html",
-        "https://www.eldebate.com/espana/20251111/claves-caso-fontanera-leire-diez-maniobras-contra-uco-e-intentos-soborno-fiscales_352267.html"
+        "https://www.eldebate.com/espana/20251111/claves-caso-fontanera-leire-diez-maniobras-contra-uco-e-intentos-soborno-fiscales_352267.html",
+        "https://www.20minutos.es/nacional/reunion-fontanera-psoe-fiscal-stampa-presidente-dice-que-hay-que-acabar-con-esta-mierda_6881140_0.html"
       ] },
       { f: "2026-05-27", t: "imputación", h: "La UCO registra Ferraz durante doce horas; el juez imputa a Cerdán, a la gerente del PSOE y a Zarrías", s: [
         "https://www.publico.es/politica/uco-entra-sede-psoe-ferraz-pedir-informacion-presuntos-pagos-leire-diez.html",
         "https://theobjective.com/espana/tribunales/2026-05-27/uco-sale-ferraz-12-horas-registro-psoe/",
         "https://www.infolibre.es/politica/uco-entra-sede-psoe-ferraz-marco-diligencias-secretas-juez-pedraz_1_2199454.html",
-        "https://www.eldebate.com/espana/20260527/audiencia-nacional-imputa-cerdan-gerente-psoe-zarrias-caso-leire_422078.html"
+        "https://www.eldebate.com/espana/20260527/audiencia-nacional-imputa-cerdan-gerente-psoe-zarrias-caso-leire_422078.html",
+        "https://www.elmundo.es/espana/2026/05/27/6a16cb38fc6c833e078b45b0.html"
       ] },
       { f: "2026-05-27", t: "revelación", h: "La trama ofreció 50.000 euros a Carmen Pano para que no ratificara la entrega de dinero en Ferraz", s: [
-        "https://www.elespanol.com/espana/tribunales/20260527/trama-leire-cerdan-ofrecio-euros-carmen-pano-no-ratificase-entrego-dinero-psoe/1003744262257_0.html"
+        "https://www.elespanol.com/espana/tribunales/20260527/trama-leire-cerdan-ofrecio-euros-carmen-pano-no-ratificase-entrego-dinero-psoe/1003744262257_0.html",
+        "https://elpais.com/espana/2026-05-27/el-juez-senala-que-la-trama-liderada-por-cerdan-ofrecio-50000-euros-a-carmen-pano-para-que-negase-haber-llevado-dinero-a-ferraz.html"
       ] },
       { f: "2026-06-03", t: "informe", h: "La UCO sostiene que la trama buscaba «proteger al PSOE, al Gobierno y a su presidente»", s: [
         "https://www.elespanol.com/espana/tribunales/20260603/uco-sostiene-actuacion-trama-leire-buscaba-proteger-psoe-gobierno-presidente/1003744272032_0.html",
@@ -731,7 +753,8 @@ window.CASOS = [
     eventos: [
       { f: "2024-04-24", t: "imputación", h: "Se conoce la investigación judicial a Begoña Gómez; Sánchez se retira cinco días a reflexionar", s: [
         "https://www.publico.es/politica/lee-carta-integra-pedro-sanchez-ciudadania-citacion-juez-begona-gomez.html",
-        "https://www.elespanol.com/espana/politica/20241225/presidente-gobierno-encerro-dias-reflexionar-necesito-parar/911408982_0.html"
+        "https://www.elespanol.com/espana/politica/20241225/presidente-gobierno-encerro-dias-reflexionar-necesito-parar/911408982_0.html",
+        "https://elpais.com/espana/2024-04-24/la-investigacion-a-begona-gomez-un-trafico-de-influencias-sin-pruebas-conocidas.html"
       ] },
       { f: "2024-06-04", t: "informe", h: "El juez estudia si las cartas de Begoña Gómez a favor de Barrabés buscaban influir en la mesa de contratación", s: [
         "https://theobjective.com/espana/2024-06-04/juez-cartas-begona-gomez-influir/",
@@ -743,7 +766,8 @@ window.CASOS = [
       ] },
       { f: "2024-07-30", t: "declaración", h: "Sánchez se acoge en Moncloa a su derecho a no declarar como testigo", s: [
         "https://www.eldiario.es/politica/pedro-sanchez-acoge-derecho-no-declarar-causa-mujer_1_11558233.html",
-        "https://www.vozpopuli.com/espana/declaracion-pedro-sanchez-juez-peinado.html"
+        "https://www.vozpopuli.com/espana/declaracion-pedro-sanchez-juez-peinado.html",
+        "https://www.elmundo.es/espana/2024/07/30/66a8aa1be9cf4aa4478b4574.html"
       ] },
       { f: "2025-05", t: "imputación", h: "Peinado imputa al delegado del Gobierno en Madrid por la contratación de la asesora", s: [
         "https://www.eldiario.es/politica/juez-peinado-imputa-delegado-gobierno-madrid-contratacion-asistente-begona-gomez_1_12275310.html"
@@ -757,7 +781,8 @@ window.CASOS = [
       ] },
       { f: "2025-08", t: "imputación", h: "Peinado imputa a Begoña Gómez y a su asesora por malversación", s: [
         "https://www.eleconomista.es/economia/noticias/13509296/08/25/el-juez-peinado-imputa-a-begona-gomez-y-su-asesora-por-malversacion.html",
-        "https://www.eldebate.com/espana/20250820/penas-enfrenta-begona-gomez-delito-malversacion-le-imputa-juez-peinado_326922.html"
+        "https://www.eldebate.com/espana/20250820/penas-enfrenta-begona-gomez-delito-malversacion-le-imputa-juez-peinado_326922.html",
+        "https://elpais.com/espana/2025-08-18/el-juez-peinado-imputa-a-begona-gomez-y-a-su-asesora-en-la-moncloa-por-malversacion.html"
       ] },
       { f: "2025-09-10", t: "declaración", h: "Begoña Gómez y su asesora declaran como investigadas por malversación", s: [
         "https://www.cope.es/actualidad/espana/noticias/begona-gomez-asesora-moncloa-declaran-investigadas-presunta-malversacion-20250910_3211023.html"
@@ -770,7 +795,8 @@ window.CASOS = [
         "https://www.elespanol.com/espana/tribunales/20260505/begona-gomez-declara-fiscalia-europea-no-intervino-barrabes-lograse-contratos-publicos/1003744234164_0.html"
       ] },
       { f: "2026-06-26", t: "informe", h: "Correos internos de Red.es recogidos por la UCO apuntan a un amaño a favor de Barrabés", s: [
-        "https://www.elespanol.com/espana/tribunales/20260626/mails-prueban-amano-favor-barrabes-contratos-avalo-begona-bajar/1003744300782_0.html"
+        "https://www.elespanol.com/espana/tribunales/20260626/mails-prueban-amano-favor-barrabes-contratos-avalo-begona-bajar/1003744300782_0.html",
+        "https://www.elmundo.es/espana/2026/06/26/6a3ea72fe9cf4a87458b4590.html"
       ] },
       { f: "2026-07-16", t: "procesamiento", h: "La Audiencia de Madrid avala que Begoña Gómez sea juzgada por un jurado", s: [
         "https://theobjective.com/espana/tribunales/2026-07-16/audiencia-madrid-juicio-jurado-begona-gomez/",
@@ -854,7 +880,8 @@ window.CASOS = [
       { f: "2026-07-14", t: "sentencia", h: "La Audiencia de Badajoz condena a David Sánchez a nueve años de inhabilitación por prevaricación", s: [
         "https://www.elindependiente.com/espana/2026/07/14/david-sanchez-condenado-inhabilitacion-prevaricacion-contratacion-badajoz/",
         "https://www.eldiario.es/extremadura/consulta-integra-sentencia-caso-david-sanchez-hermano-presidente_1_13378172.html",
-        "https://www.vozpopuli.com/tribunales/9-anos-de-inhabilitacion-para-david-sanchez-primera-condena-al-hermano-de-un-presidente-del-gobierno-por-corrupcion.html"
+        "https://www.vozpopuli.com/tribunales/9-anos-de-inhabilitacion-para-david-sanchez-primera-condena-al-hermano-de-un-presidente-del-gobierno-por-corrupcion.html",
+        "https://www.larazon.es/espana/lea-sentencia-integra-condena-hermano-pedro-sanchez_202607146a5617a6c48a78681b88f69a.html"
       ] },
       { f: "2026-09-20", t: "recurso", h: "Las acusaciones populares recurren y piden seis años de prisión para David Sánchez", s: [
         "https://www.libertaddigital.com/espana/2026-09-20/caso-david-sanchez-recurren-la-sentencia-para-exigir-6-anos-de-prision-al-hermano-del-presidente-y-4-a-gallardo-7462037/"
@@ -903,7 +930,8 @@ window.CASOS = [
       ] },
       { f: "2024-11-27", t: "dimisión", h: "Lobato dimite y critica a la dirección del PSOE", s: [
         "https://www.eldiario.es/madrid/lobato-dimite-lider-psoe-madrid-gestion-mensajes-moncloa_1_11856568.html",
-        "https://www.publico.es/politica/claves-caso-lobato-filtracion-sobre-novio-ayuso-notario-ocho-meses-despues-dimision-forzada.html"
+        "https://www.publico.es/politica/claves-caso-lobato-filtracion-sobre-novio-ayuso-notario-ocho-meses-despues-dimision-forzada.html",
+        "https://www.20minutos.es/lainformacion/economia-y-finanzas/sueldo-juan-lobato-conservara-renunciar-puesto-psoe-madrid-5658464/"
       ] },
       { f: "2024-11-29", t: "declaración", h: "Lobato declara en el Supremo y entrega el acta notarial y su móvil", s: [
         "https://www.vozpopuli.com/tribunales/lobato-admite-ante-el-supremo-que-sospecho-de-que-el-origen-de-los-correos-fuera-legitimo.html",
@@ -921,7 +949,8 @@ window.CASOS = [
     personas: ["Ángel Víctor Torres"],
     eventos: [
       { f: "2024-12-05", t: "revelación", h: "Torres, en el foco por las mascarillas y los encuentros en el piso alquilado por Aldama", s: [
-        "https://www.elespanol.com/espana/politica/20241205/angel-victor-torres-foco-mascarillas-encuentros-piso-atocha-alquilado-aldama/906159984_0.html"
+        "https://www.elespanol.com/espana/politica/20241205/angel-victor-torres-foco-mascarillas-encuentros-piso-atocha-alquilado-aldama/906159984_0.html",
+        "https://www.elconfidencial.com/espana/2024-12-04/aldama-victor-torres-contrato-obra-piso-atocha_4017259/"
       ] },
       { f: "2025-11-04", t: "informe", h: "Mensajes de Koldo recogidos por la UCO apuntan a gestiones de Torres para Aldama", s: [
         "https://www.elespanol.com/espana/tribunales/20251104/uco-acorrala-torres-mensajes-koldo-demuestran-gestiones-aldama-implican-mano-derecha/1003743998014_0.html"
@@ -1030,7 +1059,8 @@ window.CASOS = [
     personas: ["Francisco Salazar", "Antonio Hernández"],
     eventos: [
       { f: "2025-07-05", t: "dimisión", h: "Salazar renuncia a su nuevo cargo en Ferraz tras las acusaciones de acoso sexual", s: [
-        "https://www.elespanol.com/espana/politica/20250705/preocupacion-psoe-acusaciones-acoso-sexual-paco-salazar-nuevo-hombre-fuerte-moncloa-ferraz/1003743835415_0.html"
+        "https://www.elespanol.com/espana/politica/20250705/preocupacion-psoe-acusaciones-acoso-sexual-paco-salazar-nuevo-hombre-fuerte-moncloa-ferraz/1003743835415_0.html",
+        "https://elpais.com/espana/2025-07-05/salazar-estrecho-colaborador-de-sanchez-renuncia-a-la-nueva-ejecutiva-del-psoe-tras-las-acusaciones-de-acoso.html"
       ] },
       { f: "2025-11-17", t: "imputación", h: "Declaran secreta la causa contra Salazar por cobrar sin trabajar en Dos Hermanas", s: [
         "https://theobjective.com/espana/tribunales/2025-11-17/juez-salazar-contrato-hermanas/"
@@ -1208,7 +1238,8 @@ window.CASOS = [
     eventos: [
       { f: "2026-06-23", t: "detención", h: "La UCO registra el Ayuntamiento de Soria y detiene a seis personas", s: [
         "https://theobjective.com/espana/2026-06-23/seis-detenidos-operacion-corrupcion-ayuntamiento-soria/",
-        "https://www.eleconomista.es/actualidad/noticias/13983697/06/26/sin-tregua-para-el-psoe-la-uco-registra-el-ayuntamiento-de-soria-y-detiene-a-seis-personas-en-una-operacion-contra-la-corrupcion.html"
+        "https://www.eleconomista.es/actualidad/noticias/13983697/06/26/sin-tregua-para-el-psoe-la-uco-registra-el-ayuntamiento-de-soria-y-detiene-a-seis-personas-en-una-operacion-contra-la-corrupcion.html",
+        "https://www.abc.es/espana/castilla-leon/guardia-civil-investiga-blanqueo-organizacion-criminal-soria-20260623125621-nt.html"
       ] },
       { f: "2026-06-26", t: "informe", h: "El caso de Soria salpica a dos ministerios", s: [
         "https://www.eldebate.com/espana/castilla-y-leon/20260626/caso-corrupcion-psoe-ayuntamiento-soria-salpica-dos-ministerios-gobierno-sanchez_432636.html",
