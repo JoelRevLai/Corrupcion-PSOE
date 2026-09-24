@@ -20,7 +20,9 @@
  *     s  enlaces a noticias de prensa (nunca vídeos)
  *
  * Para añadir un enlace de otro diario (ABC, El Mundo, El País…) basta con
- * añadir la URL al array "s" del hito correspondiente.
+ * añadir la URL al array "s" del hito correspondiente. También se admite la
+ * publicación del diario en X (https://x.com/<cuenta>/status/<id>): el medio
+ * se deduce de la cuenta (CUENTAS_X en assets/app.js).
  */
 window.ACTUALIZADO = "2026-09-24";
 
@@ -155,7 +157,8 @@ window.CASOS = [
       { f: "2022-07-26", t: "sentencia", h: "El Supremo confirma por mayoría las condenas de Griñán y Chaves", s: [
         "https://www.elespanol.com/espana/tribunales/20220726/mayoria-supremo-confirmar-condena-grinan-chaves-ere/686931736_0.html",
         "https://www.elindependiente.com/espana/2022/07/26/el-supremo-confirma-la-sentencia-de-los-ere-y-coloca-a-grinan-a-un-paso-de-la-carcel/",
-        "https://www.eldiario.es/andalucia/sentencia-supremo-confirma-condenas-ere-andalucia-actuaron-conocimiento-irregularidades_1_9314597.html"
+        "https://www.eldiario.es/andalucia/sentencia-supremo-confirma-condenas-ere-andalucia-actuaron-conocimiento-irregularidades_1_9314597.html",
+        "https://x.com/abc_es/status/1551885046679801857"
       ] },
       { f: "2024-07-16", t: "sentencia", h: "El Constitucional anula la condena de cárcel de Griñán y rebaja la inhabilitación de Chaves", s: [
         "https://www.eldiario.es/andalucia/constitucional-ordena-rebajar-condena-inhabilitacion-expresidente-chaves-ere-andalucia_1_11525694.html",
@@ -169,7 +172,7 @@ window.CASOS = [
     titulo: "Rescate de Plus Ultra y caso Zapatero",
     clase: "judicial",
     ambito: "gobierno",
-    estado: "En instrucción en la Audiencia Nacional. Zapatero, imputado desde mayo de 2026; sus hijas, citadas como investigadas el 30 de noviembre de 2026.",
+    estado: "En instrucción en la Audiencia Nacional. Zapatero, imputado desde mayo de 2026; sus hijas, citadas como investigadas el 30 de noviembre de 2026. En pieza separada por presunto contrabando, el juez investiga las joyas halladas en su despacho, tasadas de forma preliminar en 1,32 millones.",
     resumen: "La SEPI rescató en 2021 con 53 millones a una aerolínea con un solo avión operativo. La causa por el rescate se archivó en 2023; una nueva investigación por blanqueo llevó a detenciones en 2025 y a la imputación del expresidente Zapatero por organización criminal, tráfico de influencias y falsedad.",
     personas: ["José Luis Rodríguez Zapatero", "Julio Martínez Martínez", "Julio Martínez Sola", "Roberto Roselli"],
     eventos: [
@@ -185,7 +188,9 @@ window.CASOS = [
       { f: "2025-12-11", t: "detención", h: "Detenidos el presidente y el consejero delegado de Plus Ultra y el consultor Julio Martínez, amigo de Zapatero", s: [
         "https://www.eleconomista.es/actualidad/noticias/13691063/12/25/julio-martinez-cliente-de-las-hijas-de-zapatero-entre-los-detenidos-en-la-investigacion-a-plus-ultra.html",
         "https://www.vozpopuli.com/espana/detienen-al-cliente-de-las-hijas-de-zapatero-que-se-hizo-broker-aereo-por-el-caso-plus-ultra.html",
-        "https://www.elespanol.com/espana/tribunales/20251213/libertad-leves-medidas-cautelares-ceo-presidente-plus-ultra-empresario-julio-martinez/1003744054181_0.html"
+        "https://www.elespanol.com/espana/tribunales/20251213/libertad-leves-medidas-cautelares-ceo-presidente-plus-ultra-empresario-julio-martinez/1003744054181_0.html",
+        "https://elpais.com/espana/2025-12-12/anticorrupcion-investiga-si-plus-ultra-derivo-dinero-del-rescate-para-blanquear-fondos-de-venezuela-en-francia-suiza-y-espana.html",
+        "https://www.elconfidencial.com/espana/2025-12-11/plus-ultra-rescate-aerolinea-implicacion-zapatero_4264219/"
       ] },
       { f: "2025-12-16", t: "informe", h: "La Policía sitúa a Julio Martínez como testaferro de Zapatero y la UCO recoge reuniones del expresidente con la SEPI", s: [
         "https://theobjective.com/espana/2025-12-16/policia-julio-martinez-testaferro-zapatero-venezuela/",
@@ -197,11 +202,16 @@ window.CASOS = [
       { f: "2026-05-19", t: "imputación", h: "La Audiencia Nacional imputa a Zapatero por organización criminal, tráfico de influencias y falsedad", s: [
         "https://www.eldiario.es/politica/zapatero-imputado-blanqueo-capitales-caso-plus-ultra_1_13231540.html",
         "https://theobjective.com/espana/tribunales/2026-05-19/zapatero-imputado-blanqueo-audiencia-nacional/",
-        "https://www.publico.es/politica/tribunales/zapatero-imputado-caso-plus-ultra-blanqueo-capitales.html"
+        "https://www.publico.es/politica/tribunales/zapatero-imputado-caso-plus-ultra-blanqueo-capitales.html",
+        "https://elpais.com/espana/2026-05-19/el-juez-atribuye-a-zapatero-el-cobro-de-cerca-de-dos-millones-en-comisiones.html"
+      ] },
+      { f: "2026-05-26", t: "informe", h: "La tasación pericial valora en 1,32 millones las joyas halladas en la caja fuerte del despacho de Zapatero", s: [
+        "https://maldita.es/desinfo/20260526/el-valor-de-las-joyas-encontradas-en-el-despacho-de-zapatero/"
       ] },
       { f: "2026-07-20", t: "declaración", h: "Julio Martínez declara que Zapatero pactó una comisión del 1 % por el rescate", s: [
         "https://www.libertaddigital.com/espana/2026-07-20/julio-martinez-julito-tira-manta-zapatero-pacto-comision-1-por-rescate-gobierno-plus-ultra-7438278/",
-        "https://www.libertaddigital.com/espana/2026-07-20/plus-ultra-reconoce-que-contrato-a-julito-martinez-por-su-relacion-con-zapatero-7438338/"
+        "https://www.libertaddigital.com/espana/2026-07-20/plus-ultra-reconoce-que-contrato-a-julito-martinez-por-su-relacion-con-zapatero-7438338/",
+        "https://www.elmundo.es/espana/2026/07/21/6a5fbadb21efa0b26b8b458b.html"
       ] },
       { f: "2026-07-24", t: "dimisión", h: "Dimiten el presidente y el consejero delegado de Plus Ultra, investigados por el rescate", s: [
         "https://www.eldiario.es/politica/dimiten-presidente-ceo-plus-ultra-investigados-rescate-aerolinea_1_13406035.html",
@@ -210,6 +220,11 @@ window.CASOS = [
       { f: "2026-09-21", t: "imputación", h: "El juez cita a las hijas de Zapatero como investigadas el 30 de noviembre", s: [
         "https://www.vozpopuli.com/tribunales/la-audiencia-nacional-cita-a-las-hijas-de-zapatero-como-imputadas-en-el-caso-plus-ultra.html",
         "https://www.libertaddigital.com/espana/2026-09-21/el-juez-cita-a-las-hijas-de-zapatero-el-30-de-noviembre-por-el-caso-plus-ultra-7463421/"
+      ] },
+      { f: "2026-09-21", t: "decisión judicial", h: "El juez da tres días a Zapatero para documentar las joyas de su despacho y encarga una nueva pericial", s: [
+        "https://www.infobae.com/espana/2026/09/21/el-juez-calama-da-tres-dias-a-zapatero-para-aportar-toda-la-documentacion-sobre-las-joyas-y-encarga-una-nueva-pericial-para-determinar-su-origen-antiguedad-y-valor/",
+        "https://theobjective.com/espana/tribunales/2026-09-21/juez-cita-investigadas-hijas-zapatero/",
+        "https://www.libertaddigital.com/espana/2026-09-21/calama-encarga-un-nuevo-informe-sobre-las-joyas-y-da-3-dias-a-zapatero-para-ofrecer-la-documentacion-que-prometio-7463439/"
       ] }
     ]
   },
@@ -227,7 +242,8 @@ window.CASOS = [
       ] },
       { f: "2025-06-20", t: "informe", h: "La UCO atribuye al exportavoz socialista cobros de la trama e ingresos de 200.000 euros en efectivo", s: [
         "https://theobjective.com/espana/politica/2025-06-20/ex-subdelegado-psoe-valenciano-200-000-euros-efectivo-uco/",
-        "https://www.eldiario.es/comunitat-valenciana/uco-acredita-exportavoz-socialista-ayuntamiento-valencia-cobro-comisiones-300-000-euros_1_12402195.html"
+        "https://www.eldiario.es/comunitat-valenciana/uco-acredita-exportavoz-socialista-ayuntamiento-valencia-cobro-comisiones-300-000-euros_1_12402195.html",
+        "https://www.larazon.es/comunidad-valenciana/uco-senala-otro-socialista-cobrar-comisiones-ilicitas-valencia-rafael-rubio-recibio-300000-750000-euros_202506206855839af68fe227a844ea1a.html"
       ] },
       { f: "2026-09-04", t: "procesamiento", h: "La jueza cierra la instrucción con 38 procesados y aprecia financiación ilegal del PSOE valenciano", s: [
         "https://www.elindependiente.com/espana/2026/09/04/la-jueza-cierra-la-instruccion-del-caso-azud-con-38-imputados-y-ve-financiacion-ilegal-del-psoe-de-valencia/",
@@ -342,7 +358,8 @@ window.CASOS = [
     eventos: [
       { f: "2023-05-24", t: "detención", h: "Detenidos dos candidatos del PSOE en Mojácar por presunta compra de votos", s: [
         "https://www.eldiario.es/andalucia/cuatro-personas-detenidas-compra-votos-mojacar-almeria_1_10232505.html",
-        "https://theobjective.com/espana/2023-05-24/detenidos-compra-votos-mojacar-almeria/"
+        "https://theobjective.com/espana/2023-05-24/detenidos-compra-votos-mojacar-almeria/",
+        "https://elpais.com/espana/2023-05-24/campana-elecciones-28-m-en-directo.html"
       ] },
       { f: "2023-05-26", t: "informe", h: "La Fiscalía cuenta con numerosos testigos y apunta a una trama organizada", s: [
         "https://www.elespanol.com/espana/tribunales/20230526/fiscal-numerosos-testigos-compra-mojacar-apunta-tramaorganizada/766423819_0.html",
@@ -412,7 +429,8 @@ window.CASOS = [
       { f: "2024-02-20", t: "detención", h: "La UCO detiene a Koldo García, asesor de Ábalos, y a Víctor de Aldama en la operación Delorme", s: [
         "https://theobjective.com/espana/politica/2024-02-21/detenido-asesor-abalos-koldo-comisiones/",
         "https://www.eldiario.es/politica/caso-koldo-claves-trama-mascarillas-vinculada-exasesor-abalos_1_10953838.html",
-        "https://www.eldiario.es/economia/abalos-coloco-asesor-consejo-puertos-entidad-publica-mayor-pelotazo-adjudico-trama_1_10949548.html"
+        "https://www.eldiario.es/economia/abalos-coloco-asesor-consejo-puertos-entidad-publica-mayor-pelotazo-adjudico-trama_1_10949548.html",
+        "https://www.elconfidencial.com/espana/2024-02-21/operacion-mascarillas-mujer-abalos-presidente-zamora_3834889/"
       ] },
       { f: "2024-02-27", t: "decisión política", h: "Ábalos se niega a entregar el acta y pasa al Grupo Mixto; el PSOE le suspende de militancia", s: [
         "https://www.elespanol.com/espana/politica/20240227/abalos-no-cede-presion-psoe-conserva-escano-marcha-grupo-mixto-congreso/834917006_0.html",
@@ -441,11 +459,13 @@ window.CASOS = [
       { f: "2025-11-27", t: "prisión", h: "El juez del Supremo envía a prisión a Ábalos y Koldo por riesgo «extremo» de fuga", s: [
         "https://www.eldiario.es/politica/juez-tribunal-supremo-envia-prision-provisional-jose-luis-abalos-koldo-garcia_1_12801994.html",
         "https://www.elindependiente.com/espana/2025/11/27/juez-envia-prision-koldo-abalos-el-primer-diputado-congreso-carcel/",
-        "https://www.publico.es/politica/tribunales/juez-supremo-envia-prision-abalos.html"
+        "https://www.publico.es/politica/tribunales/juez-supremo-envia-prision-abalos.html",
+        "https://www.elconfidencial.com/espana/2025-11-26/abalos-escenario-mas-temido-negar-koldo-riesgo-prision_4255500/"
       ] },
       { f: "2025-12-11", t: "procesamiento", h: "El Supremo abre juicio oral contra Ábalos, Koldo y Aldama y mantiene a los dos primeros en prisión", s: [
         "https://www.elindependiente.com/espana/2025/12/11/el-supremo-envia-a-juicio-a-abalos-y-koldo-garcia-y-les-mantiene-en-prision/",
-        "https://www.eldiario.es/politica/supremo-abre-juicio-oral-abalos-aldama-koldo-contratos-mascarillas_1_12836439.html"
+        "https://www.eldiario.es/politica/supremo-abre-juicio-oral-abalos-aldama-koldo-contratos-mascarillas_1_12836439.html",
+        "https://www.larazon.es/espana/supremo-abre-juicio-oral-abalos-koldo-aldama-contratos-mascarillas_20251211693a8fb822f0db7dafed4c46.html"
       ] },
       { f: "2026-01-28", t: "dimisión", h: "Ábalos renuncia a su escaño de diputado", s: [
         "https://www.elindependiente.com/espana/2026/01/28/abalos-renuncia-a-su-acta-de-diputado-en-el-congreso-y-libera-su-escano-para-el-psoe/",
@@ -453,7 +473,8 @@ window.CASOS = [
       ] },
       { f: "2026-04-06", t: "juicio", h: "Comienza en el Supremo el juicio de las mascarillas", s: [
         "https://theobjective.com/espana/tribunales/2026-04-06/abalos-koldo-supremo-juicio-mascarillas/",
-        "https://www.vozpopuli.com/espana/juicio-a-abalos-koldo-y-aldama-por-el-caso-mascarillas-en-directo-declaraciones-en-el-supremo-y-reacciones.html"
+        "https://www.vozpopuli.com/espana/juicio-a-abalos-koldo-y-aldama-por-el-caso-mascarillas-en-directo-declaraciones-en-el-supremo-y-reacciones.html",
+        "https://elpais.com/espana/2026-04-07/primer-juicio-contra-abalos-koldo-y-aldama-por-la-trama-de-las-mascarillas-en-directo.html"
       ] },
       { f: "2026-04-08", t: "juicio", h: "La expareja de Ábalos reconoce en el juicio que cobró de dos empresas públicas sin ir a trabajar", s: [
         "https://www.eldiario.es/politica/expareja-abalos-reconoce-juicio-cobro-sueldo-empresas-publicas-trabajar_1_13124782.html",
@@ -463,7 +484,8 @@ window.CASOS = [
         "https://www.elespanol.com/espana/tribunales/20260622/supremo-condena-abalos-anos-prision-liderar-grupo-criminal-koldo-libra-aldama-carcel-ayudar-justicia/1003744278646_0.html",
         "https://www.elindependiente.com/espana/2026/06/22/supremo-condena-abalos-koldo-prision-por-mordidas-contratos-mascarillas/",
         "https://www.eldebate.com/espana/20260622/supremo-condena-24-anos-carcel-abalos-19-koldo-4-medio-aldama_425000.html",
-        "https://theobjective.com/espana/tribunales/2026-06-22/sentencia-tribunal-supremo-abalos-koldo-aldama/"
+        "https://theobjective.com/espana/tribunales/2026-06-22/sentencia-tribunal-supremo-abalos-koldo-aldama/",
+        "https://www.elmundo.es/espana/2026/06/22/6a38dae6fdddffed398b4578.html"
       ] }
     ]
   },
@@ -510,7 +532,9 @@ window.CASOS = [
         "https://www.eldiario.es/politica/santos-cerdan-dimite-secretario-organizacion-entrega-acta-diputado_1_12379618.html",
         "https://theobjective.com/espana/politica/2025-06-12/santos-cerdan-dimite/",
         "https://www.eldiario.es/economia/13-obras-recoge-informe-uco-tumbado-cerdan-suman-637-millones-e-incluyen-fondos-europeos_1_12380100.html",
-        "https://www.publico.es/politica/tribunales/claves-informe-uco-santos-cerdan-acorrala-psoe.html"
+        "https://www.publico.es/politica/tribunales/claves-informe-uco-santos-cerdan-acorrala-psoe.html",
+        "https://www.elconfidencial.com/espana/2025-06-12/mensaje-santos-cerdan-amano-primarias-sanchez_4149852/",
+        "https://www.elmundo.es/espana/2025/06/11/6849c42ffdddff59958b458d.html"
       ] },
       { f: "2025-06-15", t: "revelación", h: "Los audios grabados por Koldo que implican a Ábalos, Cerdán y Koldo", s: [
         "https://theobjective.com/espana/tribunales/2025-06-15/diez-audios-corrupcion-abalos-cerdan-koldo/",
@@ -523,7 +547,8 @@ window.CASOS = [
       ] },
       { f: "2025-07-09", t: "decisión política", h: "Sánchez comparece en el Congreso, admite que se planteó dimitir y anuncia un plan anticorrupción", s: [
         "https://www.eldiario.es/politica/sanchez-anuncia-plan-anticorrupcion-15-medidas-escandalo-santos_1_12449609.html",
-        "https://www.elespanol.com/espana/politica/20250709/sanchez-revela-planteo-dimitir-informe-uco-cerdan-decidio-no-hacerlo-oir/1003743840007_0.html"
+        "https://www.elespanol.com/espana/politica/20250709/sanchez-revela-planteo-dimitir-informe-uco-cerdan-decidio-no-hacerlo-oir/1003743840007_0.html",
+        "https://www.elconfidencial.com/espana/2025-07-09/comparecencia-pedro-sanchez-directo_4168520/"
       ] },
       { f: "2025-11", t: "informe", h: "La UCO pide investigar la adjudicación de los túneles de Belate a la UTE de Acciona y Servinabar", s: [
         "https://www.eldiario.es/navarra/uco-pide-juez-supremo-investigar-adjudicacion-belate-ute-acciona-servinabar-2000_1_12778045.html",
@@ -543,7 +568,8 @@ window.CASOS = [
       ] },
       { f: "2026-07-22", t: "imputación", h: "El juez ordena investigar las cuentas de la mujer, la hermana y el cuñado de Cerdán", s: [
         "https://www.elindependiente.com/espana/2026/07/22/audiencia-nacional-cuentas-familia-santos-cerdan-caso-koldo/",
-        "https://www.libertaddigital.com/espana/2026-07-23/el-juez-ordena-investigar-las-cuentas-de-la-mujer-la-hermana-y-el-cunado-de-cerdan-por-comisiones-de-obra-publica-7439750/"
+        "https://www.libertaddigital.com/espana/2026-07-23/el-juez-ordena-investigar-las-cuentas-de-la-mujer-la-hermana-y-el-cunado-de-cerdan-por-comisiones-de-obra-publica-7439750/",
+        "https://www.elmundo.es/espana/2026/07/22/6a610bf4e9cf4a3b3e8b45b6.html"
       ] },
       { f: "2026-07-28", t: "informe", h: "La investigación se extiende a los túneles de Belate y alcanza al Gobierno de Chivite", s: [
         "https://www.cope.es/emisoras/navarra/noticias/investigacion-caso-koldo-extiende-tuneles-belate-acorrala-chivite-20260728_3411466.html",
@@ -601,7 +627,8 @@ window.CASOS = [
         "https://www.elindependiente.com/espana/2026/03/21/sobre-aldama-resto-pistas-apuntan-financiacion-irregular-psoe/"
       ] },
       { f: "2026-04-09", t: "juicio", h: "Carmen Pano ratifica en el juicio del Supremo que llevó 90.000 euros a la sede del PSOE", s: [
-        "https://theobjective.com/espana/tribunales/2026-04-09/carmen-pano-ferraz-claudio-rivas/"
+        "https://theobjective.com/espana/tribunales/2026-04-09/carmen-pano-ferraz-claudio-rivas/",
+        "https://www.larazon.es/espana/quien-carmen-pano-empresaria-que-asegura-haber-dejado-90000-euros-ferraz-que-hoy-vuelve-centro-caso_2026040969d708d3097ebe16ad71f152.html"
       ] },
       { f: "2026-04-22", t: "declaración", h: "El exgerente del PSOE reconoce que pudo gestionar «algún ingreso atípico»", s: [
         "https://theobjective.com/espana/tribunales/2026-04-22/exgerente-psoe-ingreso-atipico/"
@@ -641,16 +668,19 @@ window.CASOS = [
       ] },
       { f: "2025-11-11", t: "revelación", h: "Se publica la grabación de Leire Díez con el fiscal Stampa: «Soy la persona que ha puesto el PSOE»", s: [
         "https://www.elespanol.com/espana/tribunales/20251111/escuche-audio-leire-fiscal-stampa-persona-puesto-psoe-saber-detras/1003744008771_0.html",
-        "https://www.eldebate.com/espana/20251111/claves-caso-fontanera-leire-diez-maniobras-contra-uco-e-intentos-soborno-fiscales_352267.html"
+        "https://www.eldebate.com/espana/20251111/claves-caso-fontanera-leire-diez-maniobras-contra-uco-e-intentos-soborno-fiscales_352267.html",
+        "https://www.20minutos.es/nacional/reunion-fontanera-psoe-fiscal-stampa-presidente-dice-que-hay-que-acabar-con-esta-mierda_6881140_0.html"
       ] },
       { f: "2026-05-27", t: "imputación", h: "La UCO registra Ferraz durante doce horas; el juez imputa a Cerdán, a la gerente del PSOE y a Zarrías", s: [
         "https://www.publico.es/politica/uco-entra-sede-psoe-ferraz-pedir-informacion-presuntos-pagos-leire-diez.html",
         "https://theobjective.com/espana/tribunales/2026-05-27/uco-sale-ferraz-12-horas-registro-psoe/",
         "https://www.infolibre.es/politica/uco-entra-sede-psoe-ferraz-marco-diligencias-secretas-juez-pedraz_1_2199454.html",
-        "https://www.eldebate.com/espana/20260527/audiencia-nacional-imputa-cerdan-gerente-psoe-zarrias-caso-leire_422078.html"
+        "https://www.eldebate.com/espana/20260527/audiencia-nacional-imputa-cerdan-gerente-psoe-zarrias-caso-leire_422078.html",
+        "https://www.elmundo.es/espana/2026/05/27/6a16cb38fc6c833e078b45b0.html"
       ] },
       { f: "2026-05-27", t: "revelación", h: "La trama ofreció 50.000 euros a Carmen Pano para que no ratificara la entrega de dinero en Ferraz", s: [
-        "https://www.elespanol.com/espana/tribunales/20260527/trama-leire-cerdan-ofrecio-euros-carmen-pano-no-ratificase-entrego-dinero-psoe/1003744262257_0.html"
+        "https://www.elespanol.com/espana/tribunales/20260527/trama-leire-cerdan-ofrecio-euros-carmen-pano-no-ratificase-entrego-dinero-psoe/1003744262257_0.html",
+        "https://elpais.com/espana/2026-05-27/el-juez-senala-que-la-trama-liderada-por-cerdan-ofrecio-50000-euros-a-carmen-pano-para-que-negase-haber-llevado-dinero-a-ferraz.html"
       ] },
       { f: "2026-06-03", t: "informe", h: "La UCO sostiene que la trama buscaba «proteger al PSOE, al Gobierno y a su presidente»", s: [
         "https://www.elespanol.com/espana/tribunales/20260603/uco-sostiene-actuacion-trama-leire-buscaba-proteger-psoe-gobierno-presidente/1003744272032_0.html",
@@ -731,7 +761,8 @@ window.CASOS = [
     eventos: [
       { f: "2024-04-24", t: "imputación", h: "Se conoce la investigación judicial a Begoña Gómez; Sánchez se retira cinco días a reflexionar", s: [
         "https://www.publico.es/politica/lee-carta-integra-pedro-sanchez-ciudadania-citacion-juez-begona-gomez.html",
-        "https://www.elespanol.com/espana/politica/20241225/presidente-gobierno-encerro-dias-reflexionar-necesito-parar/911408982_0.html"
+        "https://www.elespanol.com/espana/politica/20241225/presidente-gobierno-encerro-dias-reflexionar-necesito-parar/911408982_0.html",
+        "https://elpais.com/espana/2024-04-24/la-investigacion-a-begona-gomez-un-trafico-de-influencias-sin-pruebas-conocidas.html"
       ] },
       { f: "2024-06-04", t: "informe", h: "El juez estudia si las cartas de Begoña Gómez a favor de Barrabés buscaban influir en la mesa de contratación", s: [
         "https://theobjective.com/espana/2024-06-04/juez-cartas-begona-gomez-influir/",
@@ -743,7 +774,8 @@ window.CASOS = [
       ] },
       { f: "2024-07-30", t: "declaración", h: "Sánchez se acoge en Moncloa a su derecho a no declarar como testigo", s: [
         "https://www.eldiario.es/politica/pedro-sanchez-acoge-derecho-no-declarar-causa-mujer_1_11558233.html",
-        "https://www.vozpopuli.com/espana/declaracion-pedro-sanchez-juez-peinado.html"
+        "https://www.vozpopuli.com/espana/declaracion-pedro-sanchez-juez-peinado.html",
+        "https://www.elmundo.es/espana/2024/07/30/66a8aa1be9cf4aa4478b4574.html"
       ] },
       { f: "2025-05", t: "imputación", h: "Peinado imputa al delegado del Gobierno en Madrid por la contratación de la asesora", s: [
         "https://www.eldiario.es/politica/juez-peinado-imputa-delegado-gobierno-madrid-contratacion-asistente-begona-gomez_1_12275310.html"
@@ -757,7 +789,8 @@ window.CASOS = [
       ] },
       { f: "2025-08", t: "imputación", h: "Peinado imputa a Begoña Gómez y a su asesora por malversación", s: [
         "https://www.eleconomista.es/economia/noticias/13509296/08/25/el-juez-peinado-imputa-a-begona-gomez-y-su-asesora-por-malversacion.html",
-        "https://www.eldebate.com/espana/20250820/penas-enfrenta-begona-gomez-delito-malversacion-le-imputa-juez-peinado_326922.html"
+        "https://www.eldebate.com/espana/20250820/penas-enfrenta-begona-gomez-delito-malversacion-le-imputa-juez-peinado_326922.html",
+        "https://elpais.com/espana/2025-08-18/el-juez-peinado-imputa-a-begona-gomez-y-a-su-asesora-en-la-moncloa-por-malversacion.html"
       ] },
       { f: "2025-09-10", t: "declaración", h: "Begoña Gómez y su asesora declaran como investigadas por malversación", s: [
         "https://www.cope.es/actualidad/espana/noticias/begona-gomez-asesora-moncloa-declaran-investigadas-presunta-malversacion-20250910_3211023.html"
@@ -770,7 +803,8 @@ window.CASOS = [
         "https://www.elespanol.com/espana/tribunales/20260505/begona-gomez-declara-fiscalia-europea-no-intervino-barrabes-lograse-contratos-publicos/1003744234164_0.html"
       ] },
       { f: "2026-06-26", t: "informe", h: "Correos internos de Red.es recogidos por la UCO apuntan a un amaño a favor de Barrabés", s: [
-        "https://www.elespanol.com/espana/tribunales/20260626/mails-prueban-amano-favor-barrabes-contratos-avalo-begona-bajar/1003744300782_0.html"
+        "https://www.elespanol.com/espana/tribunales/20260626/mails-prueban-amano-favor-barrabes-contratos-avalo-begona-bajar/1003744300782_0.html",
+        "https://www.elmundo.es/espana/2026/06/26/6a3ea72fe9cf4a87458b4590.html"
       ] },
       { f: "2026-07-16", t: "procesamiento", h: "La Audiencia de Madrid avala que Begoña Gómez sea juzgada por un jurado", s: [
         "https://theobjective.com/espana/tribunales/2026-07-16/audiencia-madrid-juicio-jurado-begona-gomez/",
@@ -854,7 +888,8 @@ window.CASOS = [
       { f: "2026-07-14", t: "sentencia", h: "La Audiencia de Badajoz condena a David Sánchez a nueve años de inhabilitación por prevaricación", s: [
         "https://www.elindependiente.com/espana/2026/07/14/david-sanchez-condenado-inhabilitacion-prevaricacion-contratacion-badajoz/",
         "https://www.eldiario.es/extremadura/consulta-integra-sentencia-caso-david-sanchez-hermano-presidente_1_13378172.html",
-        "https://www.vozpopuli.com/tribunales/9-anos-de-inhabilitacion-para-david-sanchez-primera-condena-al-hermano-de-un-presidente-del-gobierno-por-corrupcion.html"
+        "https://www.vozpopuli.com/tribunales/9-anos-de-inhabilitacion-para-david-sanchez-primera-condena-al-hermano-de-un-presidente-del-gobierno-por-corrupcion.html",
+        "https://www.larazon.es/espana/lea-sentencia-integra-condena-hermano-pedro-sanchez_202607146a5617a6c48a78681b88f69a.html"
       ] },
       { f: "2026-09-20", t: "recurso", h: "Las acusaciones populares recurren y piden seis años de prisión para David Sánchez", s: [
         "https://www.libertaddigital.com/espana/2026-09-20/caso-david-sanchez-recurren-la-sentencia-para-exigir-6-anos-de-prision-al-hermano-del-presidente-y-4-a-gallardo-7462037/"
@@ -903,7 +938,8 @@ window.CASOS = [
       ] },
       { f: "2024-11-27", t: "dimisión", h: "Lobato dimite y critica a la dirección del PSOE", s: [
         "https://www.eldiario.es/madrid/lobato-dimite-lider-psoe-madrid-gestion-mensajes-moncloa_1_11856568.html",
-        "https://www.publico.es/politica/claves-caso-lobato-filtracion-sobre-novio-ayuso-notario-ocho-meses-despues-dimision-forzada.html"
+        "https://www.publico.es/politica/claves-caso-lobato-filtracion-sobre-novio-ayuso-notario-ocho-meses-despues-dimision-forzada.html",
+        "https://www.20minutos.es/lainformacion/economia-y-finanzas/sueldo-juan-lobato-conservara-renunciar-puesto-psoe-madrid-5658464/"
       ] },
       { f: "2024-11-29", t: "declaración", h: "Lobato declara en el Supremo y entrega el acta notarial y su móvil", s: [
         "https://www.vozpopuli.com/tribunales/lobato-admite-ante-el-supremo-que-sospecho-de-que-el-origen-de-los-correos-fuera-legitimo.html",
@@ -921,7 +957,8 @@ window.CASOS = [
     personas: ["Ángel Víctor Torres"],
     eventos: [
       { f: "2024-12-05", t: "revelación", h: "Torres, en el foco por las mascarillas y los encuentros en el piso alquilado por Aldama", s: [
-        "https://www.elespanol.com/espana/politica/20241205/angel-victor-torres-foco-mascarillas-encuentros-piso-atocha-alquilado-aldama/906159984_0.html"
+        "https://www.elespanol.com/espana/politica/20241205/angel-victor-torres-foco-mascarillas-encuentros-piso-atocha-alquilado-aldama/906159984_0.html",
+        "https://www.elconfidencial.com/espana/2024-12-04/aldama-victor-torres-contrato-obra-piso-atocha_4017259/"
       ] },
       { f: "2025-11-04", t: "informe", h: "Mensajes de Koldo recogidos por la UCO apuntan a gestiones de Torres para Aldama", s: [
         "https://www.elespanol.com/espana/tribunales/20251104/uco-acorrala-torres-mensajes-koldo-demuestran-gestiones-aldama-implican-mano-derecha/1003743998014_0.html"
@@ -1023,14 +1060,15 @@ window.CASOS = [
   {
     id: "salazar",
     titulo: "Paco Salazar: denuncias de acoso y sueldo sin trabajar",
-    clase: "judicial",
+    clase: "suceso",
     ambito: "partido",
-    estado: "Investigado en secreto por un juzgado de Dos Hermanas por malversación. El PSOE le retiró la militancia sin llevar las denuncias de acoso a la Fiscalía.",
+    estado: "Causa archivada en junio de 2026 (auto recurrible): la jueza vio prevaricación en su contratación en Dos Hermanas, pero el delito había prescrito, y descartó la malversación. El PSOE le retiró la militancia sin llevar las denuncias de acoso a la Fiscalía.",
     resumen: "Dos trabajadoras de Moncloa denunciaron en el canal interno del PSOE conductas de acoso sexual del colaborador de Sánchez, que iba a entrar en la Ejecutiva. Después, la UCO investigó si cobró del Ayuntamiento de Dos Hermanas mientras trabajaba en Ferraz.",
-    personas: ["Francisco Salazar", "Antonio Hernández"],
+    personas: ["Francisco Salazar", "Antonio Hernández", "Francisco Toscano"],
     eventos: [
       { f: "2025-07-05", t: "dimisión", h: "Salazar renuncia a su nuevo cargo en Ferraz tras las acusaciones de acoso sexual", s: [
-        "https://www.elespanol.com/espana/politica/20250705/preocupacion-psoe-acusaciones-acoso-sexual-paco-salazar-nuevo-hombre-fuerte-moncloa-ferraz/1003743835415_0.html"
+        "https://www.elespanol.com/espana/politica/20250705/preocupacion-psoe-acusaciones-acoso-sexual-paco-salazar-nuevo-hombre-fuerte-moncloa-ferraz/1003743835415_0.html",
+        "https://elpais.com/espana/2025-07-05/salazar-estrecho-colaborador-de-sanchez-renuncia-a-la-nueva-ejecutiva-del-psoe-tras-las-acusaciones-de-acoso.html"
       ] },
       { f: "2025-11-17", t: "imputación", h: "Declaran secreta la causa contra Salazar por cobrar sin trabajar en Dos Hermanas", s: [
         "https://theobjective.com/espana/tribunales/2025-11-17/juez-salazar-contrato-hermanas/"
@@ -1050,6 +1088,10 @@ window.CASOS = [
       { f: "2025-12-12", t: "decisión política", h: "El PSOE cierra el caso retirando la militancia a Salazar y sin acudir a la Fiscalía", s: [
         "https://www.elespanol.com/espana/politica/20251212/psoe_-partido_socialista_obrero_espanol-francisco_salazar-acoso_sexual-pedro_sanchez-politica/1003744052667_0.html",
         "https://www.eldiario.es/politica/psoe-cierra-caso-salazar-informe-repleto-excusas-da-credibilidad-victimas_1_12842165.html"
+      ] },
+      { f: "2026-06-26", t: "archivo", h: "Archivada la causa contra Salazar y el exalcalde de Dos Hermanas: la jueza ve prevaricación, pero prescrita", s: [
+        "https://www.eldiario.es/sevilla/archivada-causa-salazar-exalcalde-hermanas-prescripcion-delito_1_13335341.html",
+        "https://theobjective.com/espana/tribunales/2026-06-26/archivada-causa-contra-exalto-cargo-moncloa-salazar-prescripcion-del-delito/"
       ] }
     ]
   },
@@ -1058,9 +1100,9 @@ window.CASOS = [
     titulo: "Cascada de denuncias de acoso en el PSOE",
     clase: "suceso",
     ambito: "territorial",
-    estado: "Dimisiones y suspensiones de militancia. En Torremolinos, la Fiscalía abrió diligencias.",
-    resumen: "Tras el caso Salazar afloraron en dos semanas varias denuncias por acoso contra cargos socialistas: el secretario general del PSOE de Torremolinos, un miembro de la Ejecutiva Federal y un alcalde cordobés, entre otros.",
-    personas: ["Antonio Navarro", "Javier Izquierdo"],
+    estado: "Dimisiones y suspensiones de militancia. En Torremolinos y La Algaba, la Fiscalía abrió diligencias.",
+    resumen: "Tras el caso Salazar afloraron en dos semanas varias denuncias por acoso contra cargos socialistas: el secretario general del PSOE de Torremolinos, un miembro de la Ejecutiva Federal y un alcalde cordobés, entre otros. En febrero de 2026 dimitió el alcalde de La Algaba (Sevilla), denunciado por acoso sexual a un menor.",
+    personas: ["Antonio Navarro", "Javier Izquierdo", "Diego Manuel Agüera"],
     eventos: [
       { f: "2025-12-04", t: "revelación", h: "El PSOE de Málaga pide suspender a su líder en Torremolinos tras una denuncia de acoso sexual", s: [
         "https://www.elespanol.com/malaga/torremolinos/20251204/psoe_malaga-torremolinos-acoso_sexual-torremolinos/1003744042591_0.html",
@@ -1074,6 +1116,11 @@ window.CASOS = [
         "https://www.elespanol.com/espana/andalucia/20251212/andalucia-cordoba_-municipio-psoe_-partido_socialista_obrero_espanol-acoso_sexual-andalucia/1003744053255_0.html",
         "https://theobjective.com/espana/2025-12-12/me-too-psoe-denuncias-acoso-sexual/",
         "https://www.infolibre.es/politica/caso-salazar-deriva-cascada-denuncias-acoso-dimisiones-psoe_1_2113822.html"
+      ] },
+      { f: "2026-02-24", t: "decisión política", h: "El PSOE suspende de militancia al alcalde dimitido de La Algaba, denunciado por acoso sexual a un menor", s: [
+        "https://www.telemadrid.es/noticias/nacional/El-PSOE-suspende-cautelarmente-de-militancia-el-alcalde-de-La-Algaba-denunciado-por-acoso-sexual-a-un-menor-0-2865013479--20260224125354.html",
+        "https://www.canalsur.es/noticias/andalucia/sevilla/el-psoe-suspende-de-militancia-al-alcalde-de-la-algaba-denunciado-por-acoso-sexual/2248400.html",
+        "https://www.infobae.com/espana/agencias/2026/02/24/el-psoe-habia-comenzado-el-expediente-de-suspension-de-militancia-del-alcalde-de-algaba-cuando-este-pidio-su-baja/"
       ] }
     ]
   },
@@ -1165,12 +1212,17 @@ window.CASOS = [
     titulo: "Exalcalde de Linares",
     clase: "sentencia",
     ambito: "territorial",
-    estado: "Condena firme: tres años de prisión y siete de inhabilitación por malversación.",
-    resumen: "El exalcalde socialista de Linares (Jaén) Juan Fernández cobró 125.000 euros de más con cargo al Ayuntamiento.",
+    estado: "Condena firme por malversación. En julio de 2026 el Gobierno le concedió un indulto parcial que rebaja la pena de prisión a dos años y evita su ingreso en la cárcel, con la oposición de la Fiscalía.",
+    resumen: "El exalcalde socialista de Linares (Jaén) Juan Fernández cobró durante seis años un sobresueldo de 1.700 euros mensuales con cargo a la cuenta del grupo municipal socialista: 125.377 euros, ya devueltos.",
     personas: ["Juan Fernández"],
     eventos: [
       { f: "2025-07-03", t: "sentencia", h: "El Supremo confirma tres años de cárcel al exalcalde socialista de Linares", s: [
         "https://www.elespanol.com/espana/tribunales/20250703/ts-confirma-anos-alcalde-socialista-cobro-eur-extra-linares-ciudad-paro-espana/1003743833402_0.html"
+      ] },
+      { f: "2026-07-29", t: "decisión política", h: "El Gobierno indulta parcialmente al exalcalde socialista de Linares", s: [
+        "https://www.eldiario.es/andalucia/jaen/gobierno-indulta-juan-fernandez-exalcalde-socialista-linares-condenado-cobrar-sobresueldos_1_13413481.html",
+        "https://www.elespanol.com/espana/politica/20260729/sanchez-indulta-lider-separatista-laura-borras-condenados-corrupcion-vinculados-psoe/1003744337260_0.html",
+        "https://civio.es/el-boe-nuestro-de-cada-dia/2026/07/29/el-gobierno-concede-tres-indultos-a-condenados-por-delitos-de-corrupcion/"
       ] }
     ]
   },
@@ -1208,11 +1260,817 @@ window.CASOS = [
     eventos: [
       { f: "2026-06-23", t: "detención", h: "La UCO registra el Ayuntamiento de Soria y detiene a seis personas", s: [
         "https://theobjective.com/espana/2026-06-23/seis-detenidos-operacion-corrupcion-ayuntamiento-soria/",
-        "https://www.eleconomista.es/actualidad/noticias/13983697/06/26/sin-tregua-para-el-psoe-la-uco-registra-el-ayuntamiento-de-soria-y-detiene-a-seis-personas-en-una-operacion-contra-la-corrupcion.html"
+        "https://www.eleconomista.es/actualidad/noticias/13983697/06/26/sin-tregua-para-el-psoe-la-uco-registra-el-ayuntamiento-de-soria-y-detiene-a-seis-personas-en-una-operacion-contra-la-corrupcion.html",
+        "https://www.abc.es/espana/castilla-leon/guardia-civil-investiga-blanqueo-organizacion-criminal-soria-20260623125621-nt.html"
       ] },
       { f: "2026-06-26", t: "informe", h: "El caso de Soria salpica a dos ministerios", s: [
         "https://www.eldebate.com/espana/castilla-y-leon/20260626/caso-corrupcion-psoe-ayuntamiento-soria-salpica-dos-ministerios-gobierno-sanchez_432636.html",
         "https://www.elespanol.com/reportajes/20260627/compra-votos-facturas-falsas-dedazos-ayuntamientos-diputaciones-psoe-copian-corrupcion-ferraz/1003744300410_0.html"
+      ] }
+    ]
+  },
+  {
+    id: "alqueria",
+    titulo: "Caso Alquería: enchufes en Divalterra (Diputación de Valencia)",
+    clase: "sentencia",
+    ambito: "territorial",
+    estado: "Absolución firme: la Audiencia de Valencia absolvió en 2023 a los catorce acusados y el TSJ valenciano confirmó la sentencia.",
+    resumen: "Anticorrupción investigó la contratación de siete altos cargos en Divalterra, empresa pública de la Diputación de Valencia, sin aval de su consejo de administración, y si se colocó a militantes del PSPV y Compromís. Fue detenido el presidente de la Diputación, el socialista Jorge Rodríguez. El tribunal no vio prevaricación, malversación ni falsedad.",
+    personas: ["Jorge Rodríguez", "Ricard Gallego", "Manuel Reguart", "Josep Ramón Tíller"],
+    eventos: [
+      { f: "2018-06-27", t: "detención", h: "Detenido el presidente de la Diputación de Valencia, el socialista Jorge Rodríguez, en la operación Alquería", s: [
+        "https://www.elespanol.com/espana/politica/20180627/operacion-alqueria-investiga-diputacion-valencia-psoe-compromis/318219072_0.html",
+        "https://www.libertaddigital.com/espana/2018-06-27/detenido-el-presidente-de-la-diputacion-de-valencia-el-socialista-jorge-rodriguez-en-una-operacion-contra-la-corrupcion-1276621159/"
+      ] },
+      { f: "2018-06-28", t: "libertad", h: "Jorge Rodríguez y los otros cinco detenidos quedan en libertad con cargos", s: [
+        "https://www.diarioinformacion.com/politica/2018/06/28/jorge-rodriguez-cinco-detenidos-juez/2037587.html"
+      ] },
+      { f: "2023-05-30", t: "sentencia", h: "La Audiencia de Valencia absuelve a Jorge Rodríguez y a los otros trece acusados", s: [
+        "https://www.ultimahora.es/noticias/comunidades/2023/05/30/1947373/audiencia-absuelve-jorge-rodriguez-otros-acusados-caso-alqueria.html",
+        "https://valenciaplaza.com/la-audiencia-de-valencia-absuelve-a-jorge-rodriguez-y-el-resto-de-acusados-del-caso-alqueria"
+      ] },
+      { f: "2023-07-03", t: "recurso", h: "La Fiscalía pide al TSJ valenciano que repita el juicio", s: [
+        "https://www.ultimahora.es/noticias/comunidades/2023/07/03/1968947/fiscalia-pide-tsjcv-repita-juicio-del-caso-alqueria-absolvio-jorge-rodriguez.html"
+      ] },
+      { f: "2023-12-14", t: "sentencia", h: "El TSJ de la Comunidad Valenciana confirma las absoluciones", s: [
+        "https://www.ultimahora.es/noticias/comunidades/2023/12/14/2068543/tsjcv-confirma-absolucion-jorge-rodriguez-otros-acusados-caso-alqueria.html"
+      ] }
+    ]
+  },
+  {
+    id: "duque-sociedad",
+    titulo: "Pedro Duque y la sociedad de su chalé en Jávea",
+    clase: "suceso",
+    ambito: "gobierno",
+    estado: "Sin consecuencias. Siguió como ministro hasta 2021 y liquidó la sociedad en 2022.",
+    resumen: "Tres meses después de la dimisión de Màxim Huerta por un asunto parecido, se publicó que el ministro de Ciencia y su mujer tenían su chalé de Jávea a nombre de una sociedad patrimonial. Duque negó haber ahorrado impuestos y dijo que hoy no lo volvería a hacer.",
+    personas: ["Pedro Duque"],
+    eventos: [
+      { f: "2018-09-27", t: "revelación", h: "Duque comparece para explicar la sociedad instrumental con la que gestionaba su chalé de Jávea", s: [
+        "https://okdiario.com/investigacion/pedro-duque-chale-lujo-javea-sociedad-instrumental-eludir-pago-4-impuestos-3161571",
+        "https://diarioinformacion.com/nacional/2018/09/27/pedro-duque-comparecera-dar-explicaciones/2067537.html",
+        "https://www.eldiario.es/economia/explicaciones-pedro-duque-sociedad-instrumental_1_1919685.html"
+      ] },
+      { f: "2022-05-10", t: "revelación", h: "Duque liquida la sociedad patrimonial nueve meses después de dejar el Ministerio", s: [
+        "https://www.elindependiente.com/espana/2022/05/10/duque-liquida-la-sociedad-patrimonial-con-la-que-gestionaba-su-chale-de-javea/"
+      ] }
+    ]
+  },
+  {
+    id: "borrell-abengoa",
+    titulo: "Borrell, multado por la CNMV por vender acciones de Abengoa",
+    clase: "suceso",
+    ambito: "gobierno",
+    estado: "Sanción administrativa (no penal) de 30.000 euros. Borrell la pagó y siguió como ministro de Exteriores.",
+    resumen: "La CNMV sancionó al ministro de Asuntos Exteriores por una infracción muy grave por la venta, en noviembre de 2015, de 10.000 acciones de Abengoa con información privilegiada, cuando era consejero de la compañía y días antes de que esta pidiera el preconcurso.",
+    personas: ["Josep Borrell"],
+    eventos: [
+      { f: "2018-11-27", t: "decisión judicial", h: "La CNMV multa a Borrell con 30.000 euros por usar información privilegiada en la venta de acciones de Abengoa", s: [
+        "https://www.elespanol.com/invertia/empresas/20181127/cnmv-multa-borell-euros-venta-acciones-abengoa/356464630_0.html",
+        "https://www.libertaddigital.com/libremercado/2018-11-27/la-cnmv-multa-a-borrell-por-vender-acciones-de-abengoa-con-informacion-privilegiada-1276628917/",
+        "https://www.eleconomista.es/economia/noticias/9545882/11/18/La-CNMV-multa-a-Borrell-con-30000-euros-por-usar-informacion-privilegiada-al-vender-acciones-de-Abengoa.html",
+        "https://www.elplural.com/politica/espana/la-cnmv-multa-a-borrell-por-usar-informacion-privilegiada-en-la-venta-de-abengoa_207093102"
+      ] }
+    ]
+  },
+  {
+    id: "perez-de-los-cobos",
+    titulo: "Caso 8-M: el cese de Pérez de los Cobos",
+    clase: "sentencia",
+    ambito: "gobierno",
+    estado: "El Supremo anuló el cese (2023) y después los ascensos a general concedidos en su lugar. Sentencias contencioso-administrativas, no penales. La causa penal contra el delegado del Gobierno en Madrid se archivó en 2020.",
+    resumen: "Marlaska destituyó al coronel jefe de la Guardia Civil en Madrid por no informarle de la investigación judicial sobre la manifestación del 8 de marzo de 2020, en la que estaba imputado el delegado del Gobierno, José Manuel Franco. El Supremo consideró que el coronel actuaba a las órdenes de la jueza y que el cese fue contrario a la función de la Policía Judicial.",
+    personas: ["Fernando Grande-Marlaska", "José Manuel Franco"],
+    eventos: [
+      { f: "2020-05-25", t: "decisión política", h: "Marlaska cesa al jefe de la Guardia Civil de Madrid por no informarle de la investigación del 8-M", s: [
+        "https://www.elindependiente.com/politica/2020/05/25/interior-cesa-al-jefe-de-la-guardia-civil-en-madrid-por-no-informarle-de-la-investigacion-del-8-m/"
+      ] },
+      { f: "2020-06-12", t: "archivo", h: "La jueza del 8-M archiva la causa contra el delegado del Gobierno en Madrid", s: [
+        "https://www.eldiario.es/politica/archiva-investigacion-delegado-gobierno-madrid_1_6020976.html",
+        "https://www.publico.es/politica/jueza-8-m-archiva-investigacion-franco-tuvo-conocimiento-tecnico-riesgo-salud.html"
+      ] },
+      { f: "2023-03-28", t: "sentencia", h: "El Supremo anula el cese de Pérez de los Cobos: estaba a las órdenes de la jueza «sin injerencia gubernativa admisible»", s: [
+        "https://www.eldiario.es/politica/supremo-anula-cese-perez-cobos-jefe-comandancia-madrid_1_10055787.html",
+        "https://www.libertaddigital.com/espana/2023-03-28/suprem-anula-cese-coronel-perez-cobos-ordenado-marlaska-6999980/",
+        "https://www.libertaddigital.com/espana/2023-03-30/sentencia-perez-cobos-razon-marlaska-cese-contraria-funcion-policia-judicial-7000651/"
+      ] },
+      { f: "2023-09-19", t: "sentencia", h: "El Supremo anula tres ascensos a general tras negar Interior el de Pérez de los Cobos", s: [
+        "https://www.eldiario.es/politica/supremo-obliga-interior-justificar-negativa-ascender-perez-cobos-general-guardia-civil_1_10525705.html",
+        "https://confilegal.com/20230919-nuevo-reves-para-grande-marlaska-el-supremo-sentencia-que-el-coronel-perez-de-los-cobos-tiene-derecho-a-ser-general/"
+      ] },
+      { f: "2024-11-08", t: "decisión judicial", h: "Pérez de los Cobos renuncia a ejecutar tres sentencias a su favor para no perjudicar a los generales ascendidos", s: [
+        "https://www.elespanol.com/espana/tribunales/20241108/perez-cobos-renuncia-ejecucion-sentencias-favor-postergacion-ascenso-general/899660314_0.html"
+      ] }
+    ]
+  },
+  {
+    id: "trenes-cantabria",
+    titulo: "Los trenes de Cantabria y Asturias que no cabían en los túneles",
+    clase: "suceso",
+    ambito: "gobierno",
+    estado: "Sin causa judicial. Dimitieron la secretaria de Estado de Transportes y el presidente de Renfe.",
+    resumen: "Renfe encargó a CAF en 2020 trenes de ancho métrico cuyas dimensiones no eran compatibles con los túneles de la red de Adif en Cantabria y Asturias, pese a los avisos previos. El error retrasó la entrega de 2024 a 2026 como mínimo.",
+    personas: ["Isabel Pardo de Vera", "Isaías Táboas"],
+    eventos: [
+      { f: "2023-02-20", t: "dimisión", h: "Dimiten Isabel Pardo de Vera y el presidente de Renfe por los trenes que no entraban en los túneles", s: [
+        "https://www.elespanol.com/invertia/observatorios/movilidad/20230220/dimiten-isabel-pardo-vera-presidente-renfe-no/742925931_0.html",
+        "https://www.eldiario.es/economia/dimiten-secretaria-transportes-presidente-renfe-polemica-trenes-no-caben-tuneles_1_9968601.html",
+        "https://www.elindependiente.com/economia/2023/02/20/el-presidente-de-renfe-y-pardo-de-vera-dimiten-por-el-fiasco-de-los-trenes-de-cantabria-y-asturias/"
+      ] }
+    ]
+  },
+  {
+    id: "gamez",
+    titulo: "Dimisión de María Gámez, directora de la Guardia Civil",
+    clase: "suceso",
+    ambito: "gobierno",
+    estado: "Causa archivada en 2024 para su marido por motivos procesales (plazo de instrucción vencido), sin entrar en el fondo.",
+    resumen: "La directora general de la Guardia Civil, exdirigente socialista en Málaga, dimitió al conocerse que un juzgado de Sevilla había imputado a su marido por prevaricación, malversación y blanqueo en una pieza sobre fondos públicos andaluces vinculada a Santana Motor.",
+    personas: ["María Gámez", "Juan Carlos Martínez"],
+    eventos: [
+      { f: "2023-03-22", t: "dimisión", h: "Un juez imputa al marido de María Gámez y ella dimite como directora de la Guardia Civil", s: [
+        "https://www.vozpopuli.com/espana/juez-imputa-marido-directora-dimitida-guardia-civil-desvio-fondos.html",
+        "https://www.newtral.es/maria-gamez-dimision-guardia-civil/20230323/"
+      ] },
+      { f: "2023-10-27", t: "decisión judicial", h: "Un error judicial anula la causa contra el marido de la exdirectora: la instrucción había caducado", s: [
+        "https://www.elespanol.com/espana/tribunales/20231027/error-judicial-anula-causa-corrupcion-marido-exdirectora-guardia-civil/805169877_0.html"
+      ] },
+      { f: "2024-06-11", t: "archivo", h: "Archivada la causa contra el marido de María Gámez", s: [
+        "https://www.publico.es/politica/archivada-causa-marido-maria-gamez-exdirectora-guardia-civil-dimitio-imputacion.html",
+        "https://www.eldiario.es/andalucia/exculpado-pieza-caso-ere-marido-exdirectora-guardia-civil-motivo-dimision-ano_1_11439594.html"
+      ] }
+    ]
+  },
+  {
+    id: "hidrocarburos",
+    titulo: "Trama de los hidrocarburos y el chalet de Ábalos",
+    clase: "judicial",
+    ambito: "gobierno",
+    estado: "En instrucción en la Audiencia Nacional (juez Santiago Pedraz), prorrogada hasta diciembre de 2026. Aldama y Claudio Rivas son los principales investigados.",
+    resumen: "Presunto fraude de al menos 182 millones en impuestos de hidrocarburos (2021-2024). La UCO sostiene que la organización de Aldama y Rivas destinó cerca de un millón de euros a comprar la «voluntad» de Ábalos y otros cargos, incluido un chalet en La Alcaidesa (Cádiz), para conseguir la licencia de operador de Villafuel.",
+    personas: ["Víctor de Aldama", "Claudio Rivas", "José Luis Ábalos", "Koldo García"],
+    eventos: [
+      { f: "2024-10-10", t: "prisión", h: "Pedraz envía a prisión a Aldama por el fraude de los hidrocarburos", s: [
+        "https://www.libertaddigital.com/espana/2024-10-10/pedraz-acuerda-prision-incondicional-victor-aldama-fraude-182-millones-impuestos-hidrocarburos-7172684/"
+      ] },
+      { f: "2024-10-21", t: "prisión", h: "La Audiencia Nacional mantiene a Aldama en prisión sin fianza", s: [
+        "https://theobjective.com/espana/tribunales/2024-10-21/audiencia-prision-fianza-aldama-hidrocarburos/"
+      ] },
+      { f: "2024-12-16", t: "detención", h: "La UCO detiene a varios empresarios de la trama que llevó a Aldama a prisión", s: [
+        "https://www.mundiario.com/articulo/politica/guardia-civil-detiene-empresarios-trama-hidrocarburos/20241216172321327694.html"
+      ] },
+      { f: "2025-01-21", t: "informe", h: "La UCO señala a Aldama y Rivas como «codirectores» del fraude de 182 millones", s: [
+        "https://theobjective.com/espana/tribunales/2025-01-21/uco-aldama-socio-ideologos-fraude-hidrocarburos/",
+        "https://www.vozpopuli.com/tribunales/uco-senala-aldama-y-rivas-ideologos-fraude-182-millones-hidrocarburos.html",
+        "https://www.elindependiente.com/espana/tribunales/2025/01/26/aldama-y-rivas-el-tandem-del-fraude-de-hidrocarburos-con-tentaculos-en-el-gobierno/"
+      ] },
+      { f: "2025-12-11", t: "informe", h: "La UCO cree que la trama destinó un millón a comprar la «voluntad» de Ábalos, incluido un chalet en La Alcaidesa", s: [
+        "https://www.eldiario.es/politica/uco-apunta-trama-hidrocarburos-infiltro-cupula-ministerios-transportes-industria-transicion-ecologica_1_12838865.html",
+        "https://www.infobae.com/espana/2025/12/11/la-uco-concluye-que-la-trama-de-hidrocarburos-de-victor-de-aldama-y-claudio-rivas-soborno-con-un-millon-de-euros-al-exministro-abalos/",
+        "https://www.libertaddigital.com/espana/2026-01-01/el-chalet-de-la-alcaidesa-el-millon-de-euros-y-las-influencias-sobre-ribera-y-maroto-asi-es-la-trama-hidrocarburos-7339164/"
+      ] },
+      { f: "2026-06-08", t: "decisión judicial", h: "Pedraz prorroga la instrucción hasta diciembre", s: [
+        "https://theobjective.com/espana/tribunales/2026-06-08/pedraz-diciembre-fraude-hidrocarburos-aldama/"
+      ] },
+      { f: "2026-09-21", t: "declaración", h: "Claudio Rivas anuncia que pedirá declarar ante el juez como investigado", s: [
+        "https://www.infobae.com/espana/agencias/2026/09/21/el-socio-principal-de-aldama-en-el-caso-hidrocarburos-se-abre-a-declarar-en-breve-ante-el-juez-como-imputado/"
+      ] },
+      { f: "2026-09-23", t: "informe", h: "La UCO pide bloquear las cuentas de las empresas portuguesas de Aldama y Rivas", s: [
+        "https://www.infobae.com/espana/agencias/2026/09/23/la-uco-solicita-al-juez-bloquear-cuentas-de-empresas-portuguesas-de-aldama-y-su-socio-en-el-caso-hidrocarburos/"
+      ] }
+    ]
+  },
+  {
+    id: "pulseras",
+    titulo: "Los fallos de las pulseras antimaltrato",
+    clase: "suceso",
+    ambito: "gobierno",
+    estado: "Sin causa penal contra cargos públicos. Ana Redondo sigue como ministra de Igualdad pese a su reprobación en el Congreso (2025). El Tribunal de Cuentas aprecia en septiembre de 2026 «graves deficiencias» en contratos por valor de 102,6 millones. Igualdad volvió a adjudicar el servicio a Vodafone.",
+    resumen: "En el cambio de adjudicataria del servicio Cometa (de Telefónica a Vodafone y Securitas), en marzo de 2024, se perdieron durante meses los datos de localización anteriores, lo que según la Fiscalía provocó una «gran cantidad» de absoluciones y sobreseimientos de maltratadores. Igualdad negó que las pulseras fallaran y defendió que ninguna mujer protegida con ellas fue asesinada.",
+    personas: ["Ana Redondo"],
+    eventos: [
+      { f: "2025-09-19", t: "declaración", h: "Redondo: «No hay fallo en las pulseras, han funcionado en todo momento»", s: [
+        "https://www.elespanol.com/castilla-y-leon/region/20250919/ana-redondo-no-fallo-pulseras-funcionado-momento-siguen-funcionando-funcionaran/1003743932259_0.html",
+        "https://www.eldiario.es/sociedad/paso-existiera-fallo-servicio-pulseras-control-maltratadores-debe-preocuparnos_129_12615581.html",
+        "https://www.eldiario.es/sociedad/preguntas-respuestas-polemica-pulseras-control-maltratadores_1_12622711.html"
+      ] },
+      { f: "2025-09-22", t: "revelación", h: "El CGPJ había avisado dos veces a Igualdad; las trabajadoras alertaron de los fallos desde el inicio", s: [
+        "https://www.libertaddigital.com/espana/politica/2025-09-22/el-consejo-general-del-poder-judicial-tambien-aviso-dos-veces-a-igualdad-de-los-fallos-en-las-pulseras-antimaltrato-7298760/",
+        "https://www.eldiario.es/sociedad/trabajadoras-avisaron-inicio-fallos-pulseras-antimaltrato-no-son-errores-puntuales_1_12622893.html",
+        "https://www.elindependiente.com/espana/2025/09/23/el-desastre-de-las-pulseras-antimaltrato-un-nuevo-golpe-para-las-mujeres-del-psoe/"
+      ] },
+      { f: "2025-09-24", t: "decisión política", h: "El Congreso reprueba a la ministra Ana Redondo por la gestión de las pulseras antimaltrato", s: [
+        "https://www.infobae.com/espana/2025/09/24/el-congreso-reprueba-a-la-ministra-ana-redondo-y-exige-su-cese-por-la-gestion-de-las-pulseras-antimaltrato/",
+        "https://maldita.es/malditobulo/20250925/fallos-pulseras-telematicas-maltratadores/"
+      ] },
+      { f: "2025-10-01", t: "decisión política", h: "Tras su reprobación en el Congreso, el Senado exige la dimisión de Redondo", s: [
+        "https://theobjective.com/espana/politica/2025-10-01/senado-dimision-ana-redondo-pulseras/",
+        "https://theobjective.com/espana/politica/2025-09-28/redondo-pulseras-antimaltrato/"
+      ] },
+      { f: "2025-11-11", t: "revelación", h: "Una caída del sistema durante horas obliga a activar el protocolo de protección a las víctimas", s: [
+        "https://www.elespanol.com/espana/20251111/ministerio-igualdad-avisa-pulseras-antimaltratadores-sufrido-fallo-sobrecarga-sistema/1003744009049_0.html",
+        "https://www.eldiario.es/sociedad/sistema-pulseras-control-maltratadores-sufre-caida-durante-horas_1_12759295.html",
+        "https://www.eldebate.com/sociedad/20251111/pulseras-antimaltrato-dejan-funcionar-durante-varias-horas-despues-igualdad-diga-estaban-arregladas_354042.html"
+      ] },
+      { f: "2026-03-10", t: "revelación", h: "Sentencias que absuelven a maltratadores por la falta de datos de las pulseras", s: [
+        "https://www.eldebate.com/sociedad/20260310/sentencias-prueban-maltratadores-estan-siendo-absueltos-fallos-pulseras-gobierno_393762.html"
+      ] },
+      { f: "2026-09-11", t: "informe", h: "La Fiscalía vuelve a alertar de fallos y de desigualdad territorial en el uso de las pulseras", s: [
+        "https://www.eldebate.com/sociedad/20260911/fiscalia-revela-pulseras-antimaltrato-fallan-han-absuelto-gran-cantidad-maltratadores_457667.html",
+        "https://www.elespanol.com/espana/tribunales/20260912/fiscalia-vuelve-alertar-caos-pulseras-antimaltrato-desigualdad-territorial-carencias-uso/1003744378078_0.html",
+        "https://www.libertaddigital.com/espana/2026-09-14/nuevo-fracaso-de-igualdad-aumentan-los-asesinatos-machistas-mientras-continuan-los-fallos-en-las-pulseras-antimaltrato-7459805/"
+      ] },
+      { f: "2026-09-16", t: "decisión judicial", h: "La Audiencia de Málaga reprocha a Igualdad «errores de geolocalización» en las pulseras", s: [
+        "https://www.eldebate.com/espana/andalucia/malaga/20260916/audiencia-malaga-saca-colores-igualdad-pulseras-antimaltrato-errores-geolocalizacion_459239.html"
+      ] },
+      { f: "2026-09-23", t: "informe", h: "El Tribunal de Cuentas detecta «graves deficiencias» en los contratos de las pulseras", s: [
+        "https://www.elespanol.com/espana/tribunales/20260923/cuentas-pone-entredicho-gestion-ana-redondo-pulseras-antimaltrato-graves-deficiencias-riesgo/1003744394171_0.html",
+        "https://www.eldiario.es/sociedad/tribunal-cuentas-detecta-graves-deficiencias-pulseras-antimaltrato-cuestiona-actuacion-igualdad_1_13531652.html",
+        "https://www.libertaddigital.com/espana/2026-09-23/el-tribunal-de-cuentas-detecta-deficiencias-en-contratos-por-valor-de-100-millones-en-las-pulseras-antimaltrato-7464758/",
+        "https://theobjective.com/espana/politica/2026-09-23/tribunal-cuentas-graves-deficiencias-pulseras-antimaltrato/"
+      ] }
+    ]
+  },
+  {
+    id: "bustos-mercurio",
+    titulo: "Manuel Bustos y el caso Mercurio (Sabadell)",
+    clase: "sentencia",
+    ambito: "territorial",
+    estado: "Varias condenas firmes en distintas piezas del caso Mercurio; ingresó en prisión en 2022. En diciembre de 2025 y junio de 2026 aceptó nuevas condenas por malversación, prevaricación y tráfico de influencias.",
+    resumen: "El exalcalde socialista de Sabadell acumula condenas por las piezas del caso Mercurio, que estalló en 2012: entre ellas, tres años de prisión por ordenar a la Policía Local retirar multas a su mujer y a sus hijos, y otras por cargar gastos a entes públicos y por contrataciones irregulares en el consorcio de residuos.",
+    personas: ["Manuel Bustos"],
+    eventos: [
+      { f: "2021-03", t: "sentencia", h: "El Supremo confirma tres años de prisión a Bustos por hacer retirar multas a su familia", s: [
+        "https://www.eldiario.es/catalunya/supremo-confirma-segunda-condena-corrupcion-exalcalde-sabadell-abre-puerta-ingreso-prision_1_7316398.html",
+        "https://www.vozpopuli.com/espana/supremo-prision-sabadell.html"
+      ] },
+      { f: "2022-01-12", t: "prisión", h: "El exalcalde socialista de Sabadell entra en la cárcel de Lledoners", s: [
+        "https://www.eldiario.es/catalunya/exalcalde-socialista-sabadell-entra-prision-cumplir-condena-caso-mercurio_1_8650324.html"
+      ] },
+      { f: "2025-12-19", t: "sentencia", h: "Bustos acepta seis meses de cárcel por malversación en otra pieza del caso Mercurio", s: [
+        "https://theobjective.com/espana/tribunales/2025-12-19/exalcalde-sabadell-manuel-bustos-carcel-malversacion/",
+        "https://www.eldebate.com/espana/cataluna/barcelona/20251219/exalcalde-sabadell-manuel-bustos-acepta-seis-meses-carcel-piezas-caso-mercurio_367354.html"
+      ] },
+      { f: "2026-06-12", t: "sentencia", h: "Nueva condena de ocho meses por contrataciones irregulares en el consorcio de residuos", s: [
+        "https://www.infobae.com/espana/agencias/2026/06/12/el-exalcalde-socialista-de-sabadell-condenado-de-nuevo-en-otra-derivada-del-caso-mercurio/"
+      ] }
+    ]
+  },
+  {
+    id: "fraile-punica",
+    titulo: "José María Fraile, exalcalde de Parla (trama Púnica)",
+    clase: "sentencia",
+    ambito: "territorial",
+    estado: "Condenado por la Audiencia Nacional en diciembre de 2025 a dos años de prisión y cuatro meses y medio más, tras reconocer los hechos y reparar el daño.",
+    resumen: "Único exalcalde socialista entre los seis condenados en la pieza de la Púnica sobre los contratos de eficiencia energética adjudicados a Cofely a cambio de comisiones entre 2012 y 2014. Se le atribuían más de 600.000 euros en comisiones.",
+    personas: ["José María Fraile"],
+    eventos: [
+      { f: "2025-04-09", t: "juicio", h: "El exalcalde socialista de Parla se declara culpable en el juicio de la Púnica", s: [
+        "https://www.soydemadrid.com/noticia-parla/el-exalcalde-de-parla-se-declara-culpable-en-el-caso-punica-129405.aspx"
+      ] },
+      { f: "2025-12-22", t: "sentencia", h: "La Audiencia Nacional condena a seis exalcaldes madrileños, entre ellos el socialista de Parla", s: [
+        "https://www.publico.es/politica/tribunales/audiencia-nacional-condena-seis-exalcaldes-comunidad-madrid-practicas-corruptas-contratos-punica-cofely.html",
+        "https://www.telemadrid.es/noticias/madrid/Condenados-seis-exalcaldes-de-la-Comunidad-de-Madrid-por-la-trama-de-la-Punica-0-2845815421--20251222054536.html",
+        "https://www.infobae.com/espana/2025/12/22/la-audiencia-nacional-dicta-sentencia-contra-29-personas-en-el-mayor-pelotazo-de-la-trama-punica-condena-a-cinco-exalcaldes-del-pp-uno-del-psoe-y-otro-de-un-partido-local/"
+      ] }
+    ]
+  },
+  {
+    id: "gines",
+    titulo: "Romualdo Garrido, alcalde de Gines",
+    clase: "judicial",
+    ambito: "territorial",
+    estado: "Pendiente de juicio por la Pará de Gines (el juez rechazó la petición de archivo de la Fiscalía) e investigado en la causa de Rafael Pineda. Niega los hechos.",
+    resumen: "El alcalde socialista de Gines (Sevilla) irá a juicio, junto a otros cargos municipales, en una causa con una veintena de acusados por irregularidades en la organización de la Pará de Gines, con un quebranto de unos 860.000 euros. Además, la UCO investiga si presionó a un técnico para agilizar la licencia de un restaurante cuyo dueño estaba investigado por narcotráfico, gestión en la que intermedió Rafael Pineda.",
+    personas: ["Romualdo Garrido"],
+    eventos: [
+      { f: "2026-02-18", t: "imputación", h: "La UCO investiga al alcalde de Gines por prevaricación y cohecho en la licencia de un restaurante", s: [
+        "https://www.elpespunte.es/articulo/gines/alcalde-gines-niega-tener-relacion-hechos-investigados-uco-pone-disposicion-justicia/20260218164519124347.html",
+        "https://okdiario.com/investigacion/uco-acusa-alcalde-socialista-gines-forzar-licencia-narco-saltandose-ley-16665120"
+      ] },
+      { f: "2026-06-10", t: "procesamiento", h: "El juez envía a juicio al alcalde de Gines por la organización de la Pará", s: [
+        "https://www.elespanol.com/sevilla/provincia/20260610/juicio-alcalde-socialista-gines-presuntas-irregularidades-organizacion-evento/1003744280802_0.html"
+      ] }
+    ]
+  },
+  {
+    id: "el-boalo",
+    titulo: "Soledad Ávila, alcaldesa de El Boalo",
+    clase: "judicial",
+    ambito: "territorial",
+    estado: "Investigada en un juzgado de Colmenar Viejo.",
+    resumen: "La alcaldesa socialista de El Boalo, Cerceda y Mataelpino (Madrid), que llegó al cargo por una moción de censura en noviembre de 2025, está investigada por la adjudicación de contratos menores por más de 135.000 euros a seis familiares directos cuando era concejala de Educación (2015-2023).",
+    personas: ["Soledad Ávila"],
+    eventos: [
+      { f: "2026-03-10", t: "imputación", h: "Imputada la alcaldesa de El Boalo por adjudicar 135.000 euros a familiares", s: [
+        "https://www.libertaddigital.com/madrid/2026-03-10/corrupcion-en-el-psoe-imputada-la-alcaldesa-de-el-boalo-por-adjudicar-135-000-euros-a-familiares-7372100/"
+      ] }
+    ]
+  },
+  {
+    id: "frigiliana",
+    titulo: "Registro del Ayuntamiento de Frigiliana",
+    clase: "judicial",
+    ambito: "territorial",
+    estado: "En instrucción en el juzgado de Torrox. El alcalde y cinco concejales, investigados.",
+    resumen: "El alcalde socialista de Frigiliana (Málaga), Alejandro Herrero, y cinco concejales de su equipo figuran como investigados por prevaricación y malversación, entre otros delitos, tras un registro de trece horas en el Ayuntamiento.",
+    personas: ["Alejandro Herrero"],
+    eventos: [
+      { f: "2026-06-30", t: "registro", h: "Registran durante trece horas el Ayuntamiento de Frigiliana; el alcalde y cinco ediles, investigados", s: [
+        "https://theobjective.com/espana/tribunales/2026-07-01/alcalde-ediles-socialistas-frigiliana-malaga/"
+      ] }
+    ]
+  },
+  {
+    id: "la-granja",
+    titulo: "Exalcalde de La Granja de San Ildefonso",
+    clase: "judicial",
+    ambito: "territorial",
+    estado: "El TSJ de Castilla y León ordenó en septiembre de 2026 continuar la causa por procedimiento abreviado; la Fiscalía debe decidir si pide juicio.",
+    resumen: "José Luis Vázquez, alcalde socialista de La Granja (Segovia) entre 2007 y 2019, está investigado por prevaricación y malversación por nombramientos y retribuciones de personal, contratos y pagos aprobados pese a los reparos de la intervención municipal.",
+    personas: ["José Luis Vázquez"],
+    eventos: [
+      { f: "2026-09-01", t: "procesamiento", h: "Siguen adelante las diligencias contra el exalcalde socialista de La Granja", s: [
+        "https://www.infobae.com/espana/agencias/2026/09/01/siguen-diligencias-contra-un-exalcalde-del-psoe-de-la-granja-de-san-ildefonso-segovia-por-prevaricacion-y-malversacion/"
+      ] }
+    ]
+  },
+  {
+    id: "indultos-proces",
+    titulo: "Indultos a los líderes independentistas catalanes",
+    clase: "suceso",
+    ambito: "gobierno",
+    estado: "Decisiones del Gobierno sin causa penal. El Supremo rechazó en 2022 y 2023 los recursos de PP, Vox y Ciudadanos por falta de legitimación. En 2026 el Gobierno indultó parcialmente a Laura Borràs, condenada por corrupción.",
+    resumen: "El Consejo de Ministros indultó en junio de 2021 a los nueve condenados a prisión en el juicio del procés (Junqueras, Forn, Turull, Romeva, Rull, Bassa, Forcadell, Sànchez y Cuixart), pese al informe contrario del tribunal sentenciador. El indulto fue parcial: perdonó la cárcel, pero mantuvo la inhabilitación. Los socios independentistas eran apoyos parlamentarios del Gobierno.",
+    personas: ["Pedro Sánchez"],
+    eventos: [
+      { f: "2021-05-26", t: "informe", h: "El Supremo se opone a indultar a los doce condenados del procés: no ve arrepentimiento ni razones de justicia", s: [
+        "https://www.elindependiente.com/espana/2021/05/26/el-tribunal-supremo-se-opone-a-conceder-el-indulto-a-los-12-presos-por-el-proces/"
+      ] },
+      { f: "2021-06-22", t: "decisión política", h: "El Gobierno indulta a los nueve condenados a prisión por el procés", s: [
+        "https://www.newtral.es/indulto-presos-proces-gobierno/20210622/",
+        "https://www.elespanol.com/espana/politica/20210608/indulto-librara-junqueras-dias-prision-cumplido-condena/587192707_0.html"
+      ] },
+      { f: "2022-01-20", t: "decisión judicial", h: "El Supremo rechaza los recursos contra los indultos porque PP, Vox y Ciudadanos no podían recurrir", s: [
+        "https://www.eldiario.es/politica/supremo-rechaza-recursos-indultos-proces-falta-legitimacion_1_8673403.html"
+      ] },
+      { f: "2023-09-14", t: "decisión judicial", h: "El Supremo, tras estudiar el fondo de la legitimación, vuelve a tumbar los recursos contra los indultos", s: [
+        "https://www.eldiario.es/catalunya/supremo-vuelve-tumbar-recursos-derechas-indultos-proces_1_10505266.html",
+        "https://www.infobae.com/espana/2023/09/14/el-tribunal-supremo-rechaza-los-recursos-contra-los-indultos-a-los-lideres-del-proces/"
+      ] },
+      { f: "2025-05-07", t: "informe", h: "El tribunal del procés se opone a un segundo indulto a Junqueras para perdonarle la inhabilitación", s: [
+        "https://www.elespanol.com/espana/tribunales/20250507/tribunal-proces-opone-segundo-indulto-oriol-junqueras-vulneraria-forma-flagrante-prohibicion-legal/1003743746618_0.html",
+        "https://www.infobae.com/espana/agencias/2025/05/07/el-supremo-se-opone-a-dar-un-segundo-indulto-a-junqueras-para-perdonar-la-pena-de-inhabilitacion-del-proces/"
+      ] },
+      { f: "2026-07-28", t: "decisión política", h: "El Gobierno indulta parcialmente a Laura Borràs, condenada por trocear contratos, a propuesta del propio TSJ de Cataluña", s: [
+        "https://www.infobae.com/espana/2026/07/28/el-gobierno-indulta-parcialmente-a-la-expresidenta-del-parlament-laura-borras-y-rebaja-su-pena-de-prision-de-cuatro-anos-y-medio-a-dos-tras-la-propuesta-del-tsjc/",
+        "https://www.elespanol.com/espana/politica/20260729/sanchez-indulta-lider-separatista-laura-borras-condenados-corrupcion-vinculados-psoe/1003744337260_0.html"
+      ] },
+      { f: "2026-09-04", t: "decisión judicial", h: "El TSJ de Cataluña aplica el indulto y deja en dos años la pena de prisión de Borràs", s: [
+        "https://confilegal.com/20260904-el-tsjc-aplica-el-indulto-a-laura-borras-y-reduce-su-pena-de-prision-a-2-anos/",
+        "https://www.eldiario.es/catalunya/justicia-da-conmutada-pena-prision-corrupcion-laura-borras-indulto-gobierno_1_13486760.html"
+      ] }
+    ]
+  },
+  {
+    id: "bildu-presos-eta",
+    titulo: "Los acuerdos con EH Bildu y la política sobre presos de ETA",
+    clase: "suceso",
+    ambito: "gobierno",
+    estado: "Decisiones políticas y legislativas sin causa judicial. EH Bildu no forma parte del Gobierno, pero ha apoyado las investiduras de Sánchez, presupuestos y leyes; el PSN le dio en 2023 la Alcaldía de Pamplona.",
+    resumen: "EH Bildu, coalición de la izquierda abertzale, es socio parlamentario del Gobierno. Sus acuerdos con el PSOE han sido objeto de fuerte polémica por la presencia de condenados por pertenencia o colaboración con ETA en sus listas y por las decisiones sobre los presos de la banda: fin de la dispersión, traspaso de las prisiones al Gobierno vasco y una ley que permite descontar las penas cumplidas en Francia.",
+    personas: ["Pedro Sánchez", "Fernando Grande-Marlaska"],
+    eventos: [
+      { f: "2020-05-20", t: "decisión política", h: "PSOE y Podemos firman con Bildu derogar íntegramente la reforma laboral; Moncloa anula el punto horas después", s: [
+        "https://www.elindependiente.com/politica/2020/05/20/psoe-y-podemos-pactan-con-bildu-derogar-la-reforma-laboral-del-pp-de-forma-urgente/"
+      ] },
+      { f: "2021-10-01", t: "decisión política", h: "El Gobierno vasco asume la gestión de las prisiones tras el traspaso del Estado", s: [
+        "https://www.elespanol.com/espana/politica/20211001/pais-vasco-gestion-prisiones-cesion-gobierno-historico/616188722_0.html",
+        "https://www.infolibre.es/politica/gobierno-vasco-sella-acuerdo-ejecutivo-traspaso-competencias-prisiones-euskadi_1_1197494.html"
+      ] },
+      { f: "2021-10-20", t: "declaración", h: "Otegi: «Si para sacar a los 200 presos hay que votar los presupuestos, pues votamos»", s: [
+        "https://www.elindependiente.com/espana/2021/10/20/otegi-si-para-sacar-a-los-200-presos-hay-que-votar-los-presupuestos-pues-votamos/",
+        "https://www.libertaddigital.com/espana/2021-10-20/otegi-si-para-sacar-a-los-200-presos-hay-que-votar-los-presupuestos-pues-votamos-6829204/"
+      ] },
+      { f: "2023-03-24", t: "decisión política", h: "Interior traslada a los últimos presos de ETA a cárceles vascas y pone fin a la dispersión", s: [
+        "https://www.elespanol.com/espana/20230324/interior-dispersion-presos-eta-acercado-pais-vasco/750925219_0.html",
+        "https://www.libertaddigital.com/espana/2023-03-24/marlaska-traslada-a-los-ultimos-etarras-y-acaba-con-34-anos-de-dispersion-de-terroristas-de-eta-6999260/"
+      ] },
+      { f: "2023-05-09", t: "revelación", h: "EH Bildu incluye en sus listas municipales a 44 condenados por pertenencia o colaboración con ETA, siete por delitos de sangre", s: [
+        "https://www.libertaddigital.com/espana/2023-05-09/eh-bildu-integra-a-44-condenados-por-colaborar-o-pertenecer-a-eta-en-sus-listas-para-el-28m-7012603/"
+      ] },
+      { f: "2023-05", t: "decisión política", h: "Los siete candidatos de Bildu condenados por delitos de sangre renuncian a ser concejales", s: [
+        "https://www.canalsur.es/noticias/los-siete-candidatos-de-eh-bildu-condenados-por-delitos-de-sangre-renunciaran-si-son-elegidos/1932729.html",
+        "https://www.servimedia.es/noticias/renuncian-listas-eh-bildu-siete-candidatos-fueron-condenados-delitos-sangre/3693083"
+      ] },
+      { f: "2023-11-16", t: "decisión política", h: "Bildu vota a favor de la investidura de Sánchez", s: [
+        "https://www.ultimahora.es/noticias/elecciones-23j/2023/11/16/2051149/investidura-bildu-confirma-voto-pedro-sanchez-para-frenar-extremas-derechas.html"
+      ] },
+      { f: "2023-12-13", t: "decisión política", h: "El PSN accede a dar la Alcaldía de Pamplona a EH Bildu con una moción de censura contra UPN", s: [
+        "https://www.eldiario.es/navarra/psn-accede-dar-alcaldia-pamplona-eh-bildu-apoyara-mocion-censura-upn_1_10762240.html",
+        "https://www.noticiasdenavarra.com/pamplona/2023/12/28/joseba-asiron-nuevo-alcalde-pamplona-7688444.html"
+      ] },
+      { f: "2024-10-19", t: "decisión política", h: "El BOE publica la ley que permite a presos de ETA descontar penas cumplidas en Francia, aprobada en el Congreso con los votos de todos los grupos", s: [
+        "https://www.elespanol.com/espana/politica/20241019/boe-publica-ley-beneficia-presos-eta/894660548_0.html",
+        "https://www.eldiario.es/politica/pp-aferra-eta-espantar-ruido-interno-ley-convalida-penas-extranjero_1_11717427.html",
+        "https://www.infobae.com/espana/agencias/2024/10/13/cargos-del-pp-temen-que-el-senado-resucite-este-lunes-el-fiasco-del-partido-con-la-ley-que-favorece-a-presos-de-eta/"
+      ] },
+      { f: "2024-11-26", t: "revelación", h: "La Audiencia Nacional recibe las primeras peticiones de presos de ETA para descontar sus penas en Francia", s: [
+        "https://www.infobae.com/espana/2024/11/26/la-audiencia-nacional-recibe-las-primeras-peticiones-de-presos-de-eta-para-descontar-sus-penas-en-francia/"
+      ] }
+    ]
+  },
+  {
+    id: "covid-gestion",
+    titulo: "Gestión de la pandemia de COVID-19",
+    clase: "sentencia",
+    ambito: "gobierno",
+    estado: "El Constitucional declaró inconstitucionales el confinamiento del primer estado de alarma (julio de 2021) y la prórroga de seis meses del segundo (octubre de 2021); en 2024, con otra mayoría, cambió su doctrina. En lo penal, el Supremo inadmitió en 2020 las querellas contra el Gobierno y la causa del 8M contra el delegado en Madrid se archivó.",
+    resumen: "Críticas a la respuesta del Gobierno ante la llegada del coronavirus: el mensaje inicial de Sanidad, la autorización de manifestaciones masivas como la del 8M días antes del estado de alarma, la compra de test rápidos defectuosos y la opacidad sobre el «comité de expertos» de la desescalada. Las compras de mascarillas investigadas judicialmente están en los expedientes del caso Koldo, Canarias y Baleares.",
+    personas: ["Pedro Sánchez", "Salvador Illa", "Fernando Simón", "José Manuel Franco"],
+    eventos: [
+      { f: "2020-01-31", t: "declaración", h: "Fernando Simón: «España no va a tener más allá de algún caso diagnosticado»", s: [
+        "https://www.libertaddigital.com/ciencia-tecnologia/salud/2020-06-04/fernando-simon-el-31-de-enero-espana-no-va-a-tener-mas-alla-de-algun-caso-diagnosticado-6074129/"
+      ] },
+      { f: "2020-03-25", t: "decisión judicial", h: "Una jueza abre diligencias contra el delegado del Gobierno en Madrid por permitir el 8M", s: [
+        "https://www.elespanol.com/espana/tribunales/20200325/diligencias-delegado-gobierno-madrid-investigar-permitir-delito/477453063_0.html",
+        "https://www.publico.es/politica/coronavirus-jueza-investiga-delegado-gobierno-madrid-permitir-8m.html",
+        "https://cronicaglobal.elespanol.com/vida/jueza-investiga-prevaricacion-gobierno-en-8-m_331452_102.html"
+      ] },
+      { f: "2020-03-26", t: "revelación", h: "Sanidad devuelve los primeros test rápidos comprados en China: detectaban menos del 30 % de los positivos", s: [
+        "https://www.eleconomista.es/nacional/noticias/10442502/03/20/Los-test-rapidos-comprados-en-China-para-detectar-coronavirus-no-valen-tienen-una-sensibilidad-inferior-al-30.html",
+        "https://www.infolibre.es/noticias/politica/2020/03/26/la_embajada_china_dice_que_bioeasy_biotechnology_que_vendio_espana_tests_no_validos_no_tiene_licencia_105327_1012.html",
+        "https://www.elindependiente.com/politica/2020/03/26/china-asegura-que-espana-compro-los-test-fallidos-a-una-empresa-sin-licencia/",
+        "https://eldiario.es/sociedad/pasado-primer-rapidos-Sanidad-devolver_0_1009999747.html"
+      ] },
+      { f: "2020-05-25", t: "imputación", h: "La jueza cita como investigado al delegado del Gobierno en Madrid, José Manuel Franco, por el 8M", s: [
+        "https://www.elespanol.com/espana/tribunales/20200525/juez-imputa-delegado-gobierno-madrid-permitir/492701274_0.html",
+        "https://www.eldiario.es/politica/imputado-delegado-gobierno-madrid-manifestacion_1_5976621.html",
+        "https://www.publico.es/politica/jueza-investiga-manifestaciones-8m-madrid-cita-imputado-delegado-gobierno.html"
+      ] },
+      { f: "2020-06-12", t: "archivo", h: "La jueza archiva la causa del 8M al no ver indicios suficientes de delito contra Franco", s: [
+        "https://www.eldiario.es/politica/archiva-investigacion-delegado-gobierno-madrid_1_6020976.html",
+        "https://www.elindependiente.com/politica/2020/06/12/la-juez-del-8-m-archiva-el-caso-al-no-apreciar-suficientes-indicios-de-delito/",
+        "https://www.eleconomista.es/politica/noticias/10601530/06/20/La-juez-del-8M-archiva-la-causa-contra-el-delegado-del-Gobierno-en-Madrid.html",
+        "https://www.infolibre.es/politica/jueza-8m-archiva-causa-delegado-gobierno_1_1184063.html"
+      ] },
+      { f: "2020-07-28", t: "revelación", h: "Sanidad responde a Transparencia que no existe un comité de expertos que decida la desescalada", s: [
+        "https://www.elespanol.com/espana/politica/20200728/sanidad-niega-creara-comite-expertos-decidir-desescalada/508700084_0.html",
+        "https://www.eleconomista.es/politica/noticias/10693998/07/20/El-Gobierno-niega-al-Consejo-de-Transparencia-la-existencia-del-Comite-de-Expertos-del-confinamiento.html",
+        "https://www.vozpopuli.com/espana/sanidad-comite-expertos_0_1377463690.html",
+        "https://www.libertaddigital.com/ciencia-tecnologia/salud/2020-07-28/nunca-existio-un-comite-de-expertos-que-decidiera-sobre-la-desescalada-la-respuesta-del-gobierno-a-transparencia-1276661738/"
+      ] },
+      { f: "2020-12-18", t: "archivo", h: "El Supremo inadmite 20 querellas y 30 denuncias contra el Gobierno por la pandemia y envía parte a los juzgados ordinarios", s: [
+        "https://www.elespanol.com/espana/tribunales/20201218/ts-rechaza-querellas-gobierno-gestion-pandemia-fiscal/544445778_0.html",
+        "https://www.infolibre.es/noticias/politica/2020/12/18/el_supremo_inadmite_las_querellas_contra_gobierno_por_gestion_pandemia_pero_las_remite_juzgados_ordinarios_114605_1012.html",
+        "https://www.elindependiente.com/espana/2020/12/18/el-supremo-rechaza-por-ahora-las-querellas-por-la-gestion-de-la-pandemia-contra-el-gobierno/",
+        "https://www.cope.es/actualidad/espana/noticias/supremo-inadmite-las-denuncias-querellas-contra-gestion-del-gobierno-pandemia-20201218_1052325"
+      ] },
+      { f: "2020-12-29", t: "revelación", h: "Sanidad entrega a Transparencia los nombres de los expertos que elaboraron los informes de la desescalada", s: [
+        "https://www.libertaddigital.com/ciencia-tecnologia/salud/2020-12-29/sanidad-revela-meses-despues-los-miembros-del-comite-de-expertos-que-no-existia-6694012/",
+        "https://www.publico.es/sociedad/sanidad-comunica-transparencia-nombres-expertos-elaboraron-informes-desescalada.html"
+      ] },
+      { f: "2021-07-14", t: "sentencia", h: "El Constitucional declara inconstitucional el confinamiento del primer estado de alarma por 6 votos a 5", s: [
+        "https://www.elindependiente.com/espana/2021/07/14/el-constitucional-declara-ilegal-el-confinamiento-del-primer-estado-de-alarma/",
+        "https://theobjective.com/espana/2021-07-14/el-tc-declara-inconstitucional-el-primer-estado-de-alarma-de-la-pandemia/",
+        "https://www.eleconomista.es/politica/noticias/11324862/07/21/El-TC-declara-inconstitucional-el-confinamiento-general-decretado-en-el-primer-estado-de-alarma.html",
+        "https://www.cope.es/actualidad/espana/noticias/tribunal-constitucional-declara-inconstitucional-primer-estado-alarma-20210714_1401034"
+      ] },
+      { f: "2021-10-27", t: "sentencia", h: "El Constitucional anula la prórroga de seis meses del segundo estado de alarma y la delegación en las comunidades", s: [
+        "https://www.elespanol.com/espana/tribunales/20211027/tc-declara-inconstitucional-segundo-alarma-sanchez-votos/622688116_0.html",
+        "https://www.eldiario.es/politica/constitucional-dividido-vuelve-dar-razon-vox-anula-medidas-segundo-alarma_1_8434642.html",
+        "https://www.elindependiente.com/espana/2021/10/27/nuevo-reves-al-gobierno-el-tc-tambien-declara-inconstitucional-el-segundo-estado-de-alarma/",
+        "https://www.publico.es/politica/constitucional-tumba-segundo-alarma.html"
+      ] },
+      { f: "2021-11-10", t: "sentencia", h: "La sentencia reprocha que el Congreso quedara seis meses sin poder controlar las medidas del Gobierno", s: [
+        "https://www.eldebate.com/espana/20211110/sentencia-anula-segundo-alarma-afea-gobierno-incoherente-constitucion.html",
+        "https://www.libertaddigital.com/espana/2021-11-10/sentencia-tribunal-constitucional-segundo-estado-alarma-prorroga-inconsistente-6836132/"
+      ] },
+      { f: "2024-11", t: "decisión judicial", h: "El Constitucional, con nueva mayoría, cambia su doctrina y avala ahora los confinamientos", s: [
+        "https://www.eleconomista.es/legal/noticias/13069263/11/24/el-constitucional-cambia-su-doctrina-sobre-el-estado-de-alarma-y-avala-ahora-los-confinamientos.html"
+      ] }
+    ]
+  },
+  {
+    id: "dana-valencia",
+    titulo: "La dana de Valencia: el papel del Gobierno central",
+    clase: "suceso",
+    ambito: "gobierno",
+    estado: "Sin causa penal contra cargos del Gobierno central. El Supremo archivó en julio de 2025 las querellas contra Sánchez y seis ministros. La jueza de Catarroja, que investiga la gestión de la Generalitat, y la Audiencia de Valencia han rechazado imputar al presidente de la Confederación Hidrográfica del Júcar y a la delegada del Gobierno.",
+    resumen: "La riada del 29 de octubre de 2024 causó más de 220 muertos en la provincia de Valencia, unos 200 en la cuenca del barranco del Poyo. La instrucción penal se centra en la Generalitat Valenciana. Al Gobierno central se le reprochan los avisos de la Confederación Hidrográfica del Júcar (dependiente de Transición Ecológica) sobre el Poyo, las obras de encauzamiento que nunca se ejecutaron y la frase de Sánchez «si necesitan más recursos, que los pidan».",
+    personas: ["Pedro Sánchez", "Teresa Ribera", "Miguel Polo", "Pilar Bernabé"],
+    eventos: [
+      { f: "2024-10-30", t: "catástrofe", h: "La dana deja al menos 95 muertos, 92 de ellos en Valencia; Paiporta es el epicentro", s: [
+        "https://www.elespanol.com/espana/20241030/dana-lleva-caos-destruccion-media-espana-varios-muertos-valencia-desaparecidos-albacete/897160844_0.html",
+        "https://www.eldiario.es/comunitat-valenciana/guardia-civil-confirma-13-muertos-comunitat-valenciana-temporal_1_11776247.html",
+        "https://www.publico.es/sociedad/directo-aumentan-95-muertos-dana-92-pais-valencia.html"
+      ] },
+      { f: "2024-11-02", t: "declaración", h: "Sánchez a la Generalitat: «Si necesitan más recursos, que los pidan»", s: [
+        "https://www.eldebate.com/espana/20241114/juristas-apuntan-necesitan-recursos-pidan-sanchez-puede-llevar-condena-gobierno_244748.html"
+      ] },
+      { f: "2025-05-08", t: "decisión judicial", h: "La jueza de la dana rechaza de nuevo imputar al presidente de la Confederación del Júcar", s: [
+        "https://theobjective.com/espana/tribunales/2025-05-08/juez-rechaza-imputar-presidente-confederacion-jucar/",
+        "https://www.eldiario.es/comunitat-valenciana/jueza-dana-rechaza-nuevo-imputar-presidente-confederacion-jucar-diana-preferida-pp-mazon_1_12324725.html"
+      ] },
+      { f: "2025-06-09", t: "revelación", h: "El Gobierno tenía registradas 68 inundaciones históricas en el Poyo cuando descartó las obras", s: [
+        "https://www.elespanol.com/valencia/20250609/gobierno-registros-inundaciones-historicas-significativas-barranco-poyo-descarto-obras/1003743792669_0.html"
+      ] },
+      { f: "2025-07-25", t: "informe", h: "Un informe de la Guardia Civil señala dos horas sin avisos de la CHJ sobre la crecida del Poyo", s: [
+        "https://www.libertaddigital.com/espana/2025-07-25/la-guardia-civil-destaca-que-hubo-dos-horas-sin-avisos-de-la-chj-sobre-el-barranco-del-poyo-el-dia-de-la-dana-7280236/",
+        "https://www.elespanol.com/valencia/20250726/informe-guardia-civil-desmonta-relato-gobierno-dana-apunta-miguel-polo-presidente-chj/1003743863304_0.html",
+        "https://www.eldiario.es/comunitat-valenciana/guardia-civil-cree-peor-momento-dana-confederacion-jucar-no-controlo-caudal-poyo_1_12492207.html",
+        "https://www.publico.es/politica/tribunales/guardia-civil-da-oxigeno-mazon-acusar-aemet-confederacion-jucar-inexistencia-avisos-sobre-dana.html"
+      ] },
+      { f: "2025-07-30", t: "decisión judicial", h: "La jueza califica de «erróneo e incompleto» el informe de la Guardia Civil y descarta un apagón informativo de la CHJ", s: [
+        "https://www.elespanol.com/valencia/20250730/jueza-dana-ve-erroneo-incompleto-informe-guardia-civil-senalo-falta-avisos-chj/1003743868142_0.html",
+        "https://www.eldebate.com/espana/comunidad-valenciana/20250730/juez-dana-considera-ultimo-informe-presentado-guardia-civil-erroneo-incompleto-no-corresponde-acordado-juzgado_321825.html",
+        "https://www.eldiario.es/comunitat-valenciana/jueza-dana-arremete-informe-erroneo-guardia-civil-barranco-poyo_1_12502055.html",
+        "https://www.publico.es/politica/tribunales/jueza-dana-califica-erroneo-informe-guardia-civil-senalaba-gobierno-central.html"
+      ] },
+      { f: "2025-07-30", t: "archivo", h: "El Supremo archiva las querellas y denuncias contra Sánchez y seis ministros por la dana", s: [
+        "https://theobjective.com/espana/tribunales/2025-07-30/supremo-archiva-denuncias-querellas-gobierno-dana/",
+        "https://www.cope.es/actualidad/espana/noticias/supremo-archiva-querellas-denuncias-pedro-sanchez-6-ministros-gestion-dana-20250730_3193109.html",
+        "https://www.infolibre.es/politica/supremo-archiva-querellas-denuncias-pedro-sanchez-6-ministros-dana_1_2039922.html",
+        "https://www.eldiario.es/politica/supremo-rechaza-querellas-pedro-sanchez-gobierno-dana_1_12503550.html"
+      ] },
+      { f: "2025-09-09", t: "revelación", h: "El Gobierno admite que ningún policía de aguas de la CHJ trabajó la tarde de la dana", s: [
+        "https://www.elespanol.com/valencia/20250909/gobierno-reconoce-ahora-ninguno-policias-agua-encargados-vigilar-barrancos-trabajo-tarde-dana/1003743918282_0.html",
+        "https://www.eldebate.com/espana/comunidad-valenciana/20250909/confederacion-hidrografica-jucar-admite-no-centro-atencion-barranco-poyo-dia-dana_332950.html"
+      ] },
+      { f: "2025-10-21", t: "decisión judicial", h: "La Audiencia de Valencia respalda a la jueza y rechaza imputar a Bernabé y al presidente de la CHJ", s: [
+        "https://www.eldebate.com/espana/comunidad-valenciana/20251021/audiencia-valencia-respalda-jueza-dana-rechaza-imputar-presidente-confederacion-jucar_346967.html",
+        "https://www.elplural.com/sociedad/tribunales/audiencia-valencia-respalda-juez-dana-rechaza-imputar-bernabe-presidente-confederacion-jucar_361017102"
+      ] },
+      { f: "2025-10-29", t: "revelación", h: "El Gobierno cifra en 228 millones las obras de encauzamiento del Poyo que no llegaron a ejecutarse", s: [
+        "https://www.elespanol.com/valencia/20251029/millones-evitado-catastrofe-valencia-gobierno-revela-obligacion-inversion-paralizo-ribera/1003743988947_0.html",
+        "https://www.elespanol.com/valencia/20251028/dana-no-negligencia-muertes-poyo-cuenca-encauzo-gobierno/1003743986718_0.html"
+      ] },
+      { f: "2025-12-23", t: "decisión judicial", h: "La Audiencia de Valencia rechaza otra vez imputar al presidente de la CHJ tras su declaración como testigo", s: [
+        "https://www.elespanol.com/valencia/20251223/audiencia-valencia-da-razon-jueza-rechaza-imputacion-presidente-chj-declarar-testigo/1003744067668_0.html",
+        "https://www.eldiario.es/comunitat-valenciana/audiencia-valencia-rechaza-nuevo-imputacion-dana-presidente-confederacion-jucar_1_12867050.html"
+      ] },
+      { f: "2026-04-15", t: "informe", h: "La Confederación del Júcar deja sin ejecutar más de la mitad de las obras previstas para el año posterior a la dana", s: [
+        "https://www.eldebate.com/espana/comunidad-valenciana/20260415/confederacion-jucar-deja-ejecutar-mitad-obras-previstas-ano-despues-dana_406619.html"
+      ] }
+    ]
+  },
+  {
+    id: "adamuz",
+    titulo: "El accidente ferroviario de Adamuz",
+    clase: "judicial",
+    ambito: "gobierno",
+    estado: "El juzgado de Montoro (Córdoba) instruye la causa del accidente. La Audiencia Nacional rechazó en marzo de 2026 la denuncia por homicidio imprudente contra Óscar Puente por falta de competencia, ya que como ministro es aforado ante el Supremo. Puente sigue en el cargo pese a que las víctimas piden su dimisión.",
+    resumen: "El 18 de enero de 2026 un Iryo Málaga-Madrid descarriló en Adamuz e invadió la vía contigua, donde chocó con un Alvia de Renfe: 46 muertos. El ministro habló de un accidente «extraño» en una vía «renovada»; documentos de Adif mostraron que en ese punto no se cambiaron los carriles. La Guardia Civil y los peritos judiciales sitúan la causa en la rotura de una soldadura, en un punto con un defecto de nivelación detectado meses antes. Adif sostiene que los valores estaban dentro de la norma.",
+    personas: ["Óscar Puente", "Luis Pedro Marco de la Peña"],
+    eventos: [
+      { f: "2026-01-18", t: "accidente", h: "Un Iryo descarrila en Adamuz (Córdoba) y choca con un Alvia de Renfe: 46 muertos", s: [
+        "https://www.elespanol.com/invertia/20260118/suspendida-circulacion-ave-madrid-andalucia-descarrilar-trenes-varias-personas-resultan-heridas/1003744094248_0.html",
+        "https://www.eleconomista.es/transportes-turismo/noticias/13732914/01/26/descarrilan-dos-trenes-de-iryo-y-renfe-en-adamuz-cordoba.html",
+        "https://www.canarias7.es/sociedad/trenes-alta-velocidad-descarrilan-adamuz-cordoba-siete-20260118222929-dirc.html"
+      ] },
+      { f: "2026-01-19", t: "declaración", h: "Puente: «Es un accidente muy extraño, con un tren nuevo, en una recta y en una vía que terminó de renovarse en mayo»", s: [
+        "https://www.elespanol.com/invertia/20260119/oscar-puente-accidente-extrano-tren-nuevo-recta-via-termino-renovarse-mayo/1003744094361_0.html",
+        "https://www.eleconomista.es/transportes-turismo/noticias/13733078/01/26/las-incognitas-de-la-tragedia-ferroviaria-de-adamuz-por-que-descarrilo-el-tren-de-iryo-que-desencadeno-la-tragedia.html"
+      ] },
+      { f: "2026-01-19", t: "revelación", h: "Adif había registrado incidencias técnicas en el tramo en los meses previos al choque", s: [
+        "https://www.elespanol.com/reportajes/20260119/adif-notifico-incidencias-tecnicas-tramo-adamuz-meses-previos-choque-mortal-trenes/1003744094397_0.html",
+        "https://theobjective.com/sociedad/suceso/2026-01-19/tren-iryo-adamuz-problemas/"
+      ] },
+      { f: "2026-01-25", t: "declaración", h: "El PP acusa al Gobierno de ocultar información sobre el accidente y pide la dimisión de Puente", s: [
+        "https://www.eldebate.com/espana/20260125/pp-acusa-gobierno-ocultar-informacion-accidente-adamuz-exige-dimision-puente_378006.html"
+      ] },
+      { f: "2026-01-27", t: "decisión judicial", h: "La Audiencia Nacional pide informe a la Fiscalía sobre una denuncia por homicidio imprudente contra Puente", s: [
+        "https://www.elespanol.com/espana/tribunales/20260127/audiencia-nacional-pide-fiscal-opinion-denuncia-homicidios-puente-accidente-adamuz/1003744105762_0.html",
+        "https://theobjective.com/espana/tribunales/2026-01-27/audiencia-nacional-puente-homicidio-adamuz/",
+        "https://www.vozpopuli.com/tribunales/la-audiencia-nacional-abre-diligencias-contra-oscar-puente-por-el-accidente-de-adamuz.html"
+      ] },
+      { f: "2026-01-28", t: "revelación", h: "Documentos de Adif muestran que en el punto del accidente no se renovaron los carriles", s: [
+        "https://theobjective.com/espana/2026-01-28/documentos-adif-adamuz-tramo-accidente/",
+        "https://www.eldiario.es/politica/pp-acusa-puente-mentir-renovacion-total-via-adamuz-exige-dimision_1_12933988.html"
+      ] },
+      { f: "2026-01-29", t: "declaración", h: "Puente admite en el Senado que faltaban por renovar elementos sensibles de la vía", s: [
+        "https://theobjective.com/economia/transporte/2026-01-29/puente-falta-renovar-elementos-sensibles-via-adamuz/"
+      ] },
+      { f: "2026-03-06", t: "archivo", h: "La Audiencia Nacional rechaza la denuncia contra Puente y remite lo actuado al juzgado de Montoro", s: [
+        "https://www.eldiario.es/politica/audiencia-nacional-rechaza-denuncia-oscar-puente-accidente-ferroviario-adamuz_1_13047317.html",
+        "https://www.libertaddigital.com/espana/2026-03-06/la-audiencia-nacional-archiva-la-denuncia-contra-puente-por-adamuz-pero-remite-la-competencia-al-juzgado-de-montoro-7370485/",
+        "https://theobjective.com/espana/tribunales/2026-03-06/audiencia-nacional-oscar-puente-adamuz/",
+        "https://www.infolibre.es/politica/audiencia-nacional-rechaza-denuncia-puente-accidente-adamuz_1_2157362.html"
+      ] },
+      { f: "2026-05-25", t: "declaración", h: "Las víctimas piden en el Senado la dimisión de Puente y del presidente de Adif; el ministro les respondió: «Yo no he soldado el raíl»", s: [
+        "https://www.publico.es/politica/victimas-descarrilamiento-adamuz-piden-dimision-oscar-puente-presidente-adif.html",
+        "https://www.elindependiente.com/espana/2026/05/25/victimas-accidente-adamuz-exigen-dimision-puente-ruido-politico-provoca-dolor/",
+        "https://www.cope.es/actualidad/espana/noticias/puente-victimas-adamuz-piden-dimision-no-he-soldado-rail-20260525_3371210.html",
+        "https://www.eldebate.com/economia/20260525/victimas-adamuz-exigen-dimision-puente-presidente-adif-daria-algo-paz_421266.html"
+      ] },
+      { f: "2026-06-21", t: "informe", h: "La comisión del Senado sobre Adamuz denuncia presiones del Gobierno y falta de medios en la CIAF", s: [
+        "https://www.elespanol.com/espana/politica/20260621/comision-senado-accidente-adamuz-denuncia-presiones-gobierno-falta-personal-ciaf/1003744293596_0.html"
+      ] },
+      { f: "2026-07-14", t: "decisión judicial", h: "La jueza reclama a Adif cinco expedientes clave tras el análisis de los peritos", s: [
+        "https://www.elespanol.com/invertia/observatorios/movilidad/20260714/jueza-reclama-adif-expedientes-clave-accidente-adamuz-analisis-peritos/1003744320845_0.html"
+      ] },
+      { f: "2026-07-18", t: "declaración", h: "Seis meses después, las víctimas denuncian el «desamparo» del ministerio", s: [
+        "https://www.libertaddigital.com/espana/politica/2026-07-18/las-victimas-de-adamuz-denuncian-el-desamparo-de-puente-seis-meses-despues-no-se-han-asumido-responsabilidades-7437622/"
+      ] },
+      { f: "2026-09-03", t: "informe", h: "La Guardia Civil concluye que la rotura de una soldadura causó el accidente; los peritos ven un defecto de nivelación de 6,4 mm", s: [
+        "https://www.eldebate.com/espana/andalucia/20260903/informe-definitivo-guardia-civil-concluye-rotura-soldadura-provoco-tragedia-adamuz_454855.html",
+        "https://www.elespanol.com/invertia/20260903/peritos-adamuz-creen-defecto-nivelacion-mm-via-contribuyo-rotura-provoco-tragedia/1003744371653_0.html",
+        "https://cordopolis.eldiario.es/cordoba-hoy/tribunales/peritos-senalan-defecto-6-4-milimetros-carril-pudo-contribuir-accidente-adamuz_1_13486177.html",
+        "https://www.cope.es/emisoras/andalucia/cordoba-provincia/cordoba/noticias/peritos-senalan-defecto-6-4-mm-carril-pudo-contribuir-rotura-20260904_3430345.html"
+      ] },
+      { f: "2026-09-04", t: "declaración", h: "Puente llama «bulo» al informe de la Guardia Civil y Adif defiende que los defectos estaban dentro de los límites", s: [
+        "https://www.eldebate.com/economia/20260904/puente-rebaja-bulo-nuevo-informe-guardia-civil-apunta-rotura-via-adamuz_455256.html",
+        "https://www.elespanol.com/invertia/observatorios/movilidad/20260904/adif-defiende-cumplio-normativa-problemas-via-adamuz-dentro-limites-seguridad/1003744373479_0.html",
+        "https://www.libertaddigital.com/espana/2026-09-04/feijoo-califica-a-puente-como-ministro-indigno-y-moreno-exige-toda-la-verdad-sobre-el-accidente-de-adamuz-7455288/"
+      ] },
+      { f: "2026-09-21", t: "declaración", h: "El PP acusa a Puente de mostrar tras el accidente la inspección de otro carril y de restringir la documentación técnica", s: [
+        "https://theobjective.com/economia/transporte/2026-09-21/puente-soldadura-adamuz-pp/"
+      ] }
+    ]
+  },
+  {
+    id: "ley-nietos",
+    titulo: "La «ley de nietos» y el censo electoral",
+    clase: "judicial",
+    ambito: "gobierno",
+    estado: "Un juzgado de instrucción de Madrid tiene abiertas diligencias contra Sofía Puente por prevaricación. El Supremo suspendió cautelarmente en septiembre de 2026 la inscripción en el censo de residentes ausentes (CERA) de los nacionalizados que no acrediten el exilio de sus ascendientes; la Abogacía del Estado ha criticado la medida.",
+    resumen: "La Ley de Memoria Democrática (octubre de 2022) permitió optar a la nacionalidad a hijos y nietos de exiliados por razones políticas. Una instrucción de la Dirección General de Seguridad Jurídica y Fe Pública, dirigida por Sofía Puente —hermana del ministro de Transportes—, presumió exiliado a todo español que salió del país entre 1936 y 1955. Las solicitudes superaron los 2,4 millones. La oposición acusa al Gobierno de querer alterar el censo electoral; el Gobierno lo niega y lo presenta como reparación histórica.",
+    personas: ["Sofía Puente"],
+    eventos: [
+      { f: "2022-10-05", t: "decisión política", h: "El Senado aprueba definitivamente la Ley de Memoria Democrática, que abre la nacionalidad a descendientes de exiliados", s: [
+        "https://www.eldiario.es/sociedad/aprobada-definitivamente-nueva-ley-memoria-democratica-declara-ilegal-dictadura-franquista_1_9597256.html",
+        "https://www.elespanol.com/espana/20221005/senado-polemica-ley-memoria-democratica-psoe-bildu/708429454_0.html",
+        "https://theobjective.com/espana/2022-10-05/senado-memoria-democratica/",
+        "https://www.infolibre.es/politica/senado-aprueba-definitivamente-nueva-ley-memoria-democratica_1_1333631.html"
+      ] },
+      { f: "2026-06-23", t: "revelación", h: "El Gobierno aflora 200.000 solicitudes más de «nietos» ocho meses después de cerrarse el plazo", s: [
+        "https://www.elespanol.com/espana/politica/20260623/gobierno-saca-cajon-consulados-nietos-meses-acabar-plazo-pedir-nacionalidad/1003744295940_0.html"
+      ] },
+      { f: "2026-06-29", t: "informe", h: "544.722 descendientes de exiliados tienen ya aprobada la nacionalidad española", s: [
+        "https://www.elindependiente.com/espana/2026/06/29/un-total-de-544-722-descendientes-de-exiliados-ya-tienen-aprobada-la-nacionalidad-espanola/"
+      ] },
+      { f: "2026-07-01", t: "querella", h: "Hazte Oír se querella contra Sofía Puente por prevaricación por la instrucción que amplió la ley", s: [
+        "https://theobjective.com/espana/tribunales/2026-07-01/hazte-oir-querella-puente-prevaricacion-nietos/",
+        "https://www.libertaddigital.com/espana/2026-07-01/no-publicar-ln-7429046/"
+      ] },
+      { f: "2026-07-02", t: "revelación", h: "Un certificado emitido por el PSOE sirve para acreditar la condición de exiliado", s: [
+        "https://theobjective.com/espana/2026-07-02/ley-nietos-certificado-psoe-exiliado/"
+      ] },
+      { f: "2026-07-05", t: "revelación", h: "The Objective publica que Sofía Puente retocó la aplicación de la ley a espaldas de la entonces ministra de Justicia", s: [
+        "https://theobjective.com/espana/politica/2026-07-05/puente-ley-nietos/"
+      ] },
+      { f: "2026-07-11", t: "declaración", h: "Funcionarios de los registros denuncian la instrucción que modificó la ley", s: [
+        "https://theobjective.com/espana/politica/2026-07-11/funcionarios-instruccion-puente-ley-de-nietos/"
+      ] },
+      { f: "2026-07-17", t: "decisión", h: "La mayoría de la Junta Electoral Central ve ilegal la ampliación, pero no se cree facultada para actuar", s: [
+        "https://www.elespanol.com/espana/politica/20260717/mayoria-junta-electoral-ve-ilegal-ampliacion-ley-nietos-sofia-puente-no-cree-facultada-actuar/1003744324131_0.html"
+      ] },
+      { f: "2026-07-22", t: "decisión judicial", h: "Un juzgado de Madrid abre diligencias contra Sofía Puente por prevaricación", s: [
+        "https://theobjective.com/espana/tribunales/2026-07-22/juez-diligencias-hermana-puente-prevaricacion-ley-nietos/",
+        "https://www.vozpopuli.com/tribunales/la-juez-da-el-primer-paso-para-investigar-a-sofia-puente-por-prevaricacion-con-la-ley-de-nietos.html"
+      ] },
+      { f: "2026-09-02", t: "recurso", h: "El Supremo admite a trámite el recurso de Hazte Oír sobre el censo; las solicitudes ya superan los 2,4 millones", s: [
+        "https://www.eldebate.com/espana/20260902/supremo-admite-recurso-hazte-oir-contra-ley-nietos-decidira-sobre-suspension-provisional-misma_454408.html",
+        "https://www.eldebate.com/espana/20260902/salto-olimpico-ley-nietos-876321-24-millones_454358.html"
+      ] },
+      { f: "2026-09-08", t: "decisión judicial", h: "El Supremo suspende la inscripción en el censo electoral de los nacionalizados que no acrediten el exilio", s: [
+        "https://www.eldiario.es/politica/supremo-prohibe-forma-cautelar-votar-nacionalizados-ley-nietos-salvo-demuestren-exiliados_1_13492943.html",
+        "https://www.elespanol.com/espana/tribunales/20260908/ts-suspende-inscripcion-censo-electoral-nacionalizados-ley-nietos-salvo-acrediten-exilio/1003744376058_0.html",
+        "https://www.eleconomista.es/legal/noticias/14013130/09/26/el-tribunal-supremo-ve-indicios-de-que-se-concedio-la-nacionalidad-a-descendientes-de-emigrantes-economicos-sin-prueba.html",
+        "https://diariodeavisos.elespanol.com/2026/09/supremo-suspende-voto-ley-de-nietos-censo-cera/"
+      ] },
+      { f: "2026-09-11", t: "declaración", h: "Indignación en el Gobierno con los argumentos del Supremo: «Es atroz»", s: [
+        "https://www.elindependiente.com/espana/2026/09/11/indignacion-gobierno-psoe-supremo-ley-nietos-atroz-imparcialidad/"
+      ] },
+      { f: "2026-09-11", t: "recurso", h: "Sofía Puente pide anular la querella alegando que el asunto ya fue juzgado", s: [
+        "https://www.libertaddigital.com/espana/2026-09-11/sofia-puente-intenta-anular-la-querella-por-la-ley-de-nietos-admitiendo-que-su-instruccion-pudo-ser-desacertada-7458577/",
+        "https://theobjective.com/espana/tribunales/2026-09-10/querella-sofia-puente-tsupremo-ley-nietos/"
+      ] },
+      { f: "2026-09-15", t: "declaración", h: "Sofía Puente reconoce que su instrucción amplió los supuestos de la ley y rechaza que la defienda la Abogacía del Estado", s: [
+        "https://www.eldebate.com/espana/20260915/sofia-puente-reconoce-instruccion-sobre-ley-nietos-amplio-casos-previstos-norma_458939.html",
+        "https://theobjective.com/espana/tribunales/2026-09-15/puente-abogacia-estado-ley-nietos/"
+      ] },
+      { f: "2026-09-21", t: "recurso", h: "La Abogacía del Estado critica los «excesos» del Supremo y avisa de que los consulados no podrán certificar a tiempo", s: [
+        "https://theobjective.com/espana/tribunales/2026-09-21/abogacia-estado-paralizacion-efectos-electorales-ley-nietos/",
+        "https://www.eldiario.es/politica/gobierno-carga-excesos-supremo-ley-nietos-dice-nadie-predecir-votarian_1_13526571.html",
+        "https://www.elespanol.com/espana/tribunales/20260922/gobierno-avisa-supremo-consules-no-tiempo-certificar-nietos-probado-derecho-voto/1003744391724_0.html"
+      ] }
+    ]
+  },
+  {
+    id: "casa-47",
+    titulo: "Casa 47: la empresa pública de vivienda",
+    clase: "suceso",
+    ambito: "gobierno",
+    estado: "En funcionamiento. El Gobierno promete 100.000 alquileres en diez años; el portal arrancó en septiembre de 2026 con 800 viviendas anunciadas, de las que unas 640 estaban disponibles y ninguna en Madrid, Barcelona, Valencia, Sevilla o Málaga.",
+    resumen: "El Gobierno transformó en diciembre de 2025 la entidad pública de suelo Sepes en Casa 47, con 13.000 millones de inversión prevista en diez años y 40.000 viviendas procedentes de la Sareb. Su portal de alquiler nació con una oferta escasa y alejada de las grandes ciudades, que la propia empresa atribuyó a que la Sareb ya había vendido los pisos mejor situados. El Observatorio del Alquiler sostiene que ninguna vivienda cumple el criterio de asequibilidad de la Ley de Vivienda.",
+    personas: ["Pedro Sánchez", "Isabel Rodríguez"],
+    eventos: [
+      { f: "2025-12", t: "decisión política", h: "El Consejo de Ministros convierte el Sepes en Casa 47, con 13.000 millones de inversión prevista", s: [
+        "https://www.infolibre.es/politica/gobierno-aprueba-casa-47-nueva-empresa-estatal-quiere-aumentar-inversion-vivienda-publica_1_2111664.html",
+        "https://www.eldiario.es/economia/gobierno-aprueba-cobertura-impagos-alquiler-ayudar-jovenes-vulnerables_1_12830466.html",
+        "https://www.eleconomista.es/vivienda-inmobiliario/noticias/13689568/12/25/casa-47-la-nueva-empresa-publica-de-vivienda-y-suelo-ya-es-realidad.html",
+        "https://www.publico.es/economia/vivienda/100-millones-oferta-vivienda-publica-alquileres-75-anos-sepes-pasa-casa-47.html"
+      ] },
+      { f: "2026-03-13", t: "decisión política", h: "Casa 47 convoca 100 millones para comprar viviendas privadas y destinarlas a alquiler", s: [
+        "https://www.elespanol.com/invertia/observatorios/vivienda/20260313/casa-lanza-convocatoria-millones-comprar-viviendas-privadas-destinarlas-alquiler-asequible/1003744168127_0.html"
+      ] },
+      { f: "2026-09-07", t: "decisión política", h: "Sánchez presenta el portal de Casa 47: unas 640 viviendas disponibles y ninguna en las grandes capitales", s: [
+        "https://www.eldebate.com/economia/20260907/sanchez-presenta-portal-casa-47-apenas-645-viviendas-disponibles_456164.html",
+        "https://www.elindependiente.com/economia/2026/09/07/portal-inmobiliario-sanchez-casas-alquiler-ciudades/",
+        "https://www.elespanol.com/invertia/observatorios/vivienda/20260907/pedro-sanchez-anuncia-nuevas-viviendas-casa-defiende-intervenir-mercado-roto-dislocado/1003744374751_0.html",
+        "https://www.publico.es/economia/vivienda/gobierno-presenta-nuevo-portal-casa-47-nace-800-viviendas.html",
+        "https://www.eleconomista.es/vivienda-inmobiliario/noticias/14012197/09/26/el-gobierno-lanza-un-idealista-publico-con-800-viviendas-disponbibles.html"
+      ] },
+      { f: "2026-09-08", t: "declaración", h: "Casa 47 justifica la escasa oferta: «Las viviendas de las mejores zonas fueron vendidas» por la Sareb", s: [
+        "https://www.elindependiente.com/economia/2026/09/08/viviendas-gobierno-fiasco-plataforma-alquiler/",
+        "https://www.eleconomista.es/vivienda-inmobiliario/noticias/14013584/09/26/el-gobierno-promete-100000-alquileres-publicos-en-10-anos-a-traves-de-casa-47.html"
+      ] },
+      { f: "2026-09-08", t: "declaración", h: "Podemos, socio del Gobierno, carga contra Casa 47 y exige expropiar viviendas a los fondos", s: [
+        "https://theobjective.com/espana/politica/2026-09-08/podemos-casa-47-expropiar-vivienda-fondos-buitre/"
+      ] },
+      { f: "2026-09-09", t: "informe", h: "De 184.000 viviendas prometidas a las 800 del portal: cinco años de anuncios de vivienda pública sin cumplir", s: [
+        "https://www.eldebate.com/economia/20260909/184000-viviendas-nunca-llegaron-solo-800-ofrece-casa-47-cinco-anos-promesas-fallidas-sanchismo_456659.html"
+      ] },
+      { f: "2026-09-10", t: "revelación", h: "Detectan irregularidades en los anuncios del portal, como gastos de comunidad no incluidos en el precio", s: [
+        "https://theobjective.com/economia/2026-09-10/irregularidades-anuncios-portal-vivienda-casa-47/",
+        "https://www.libertaddigital.com/libremercado/2026-09-10/por-que-no-vas-a-conseguir-una-vivienda-asequible-en-casa-47-7457253/"
+      ] },
+      { f: "2026-09-22", t: "informe", h: "El Observatorio del Alquiler denuncia que ninguna vivienda de Casa 47 cumple el criterio de asequibilidad", s: [
+        "https://www.eldebate.com/economia/20260922/observatorio-alquiler-denuncia-ninguna-vivienda-casa-47-cumple-criterio-asequible_461279.html"
+      ] },
+      { f: "2026-09-23", t: "revelación", h: "Libre Mercado publica que Casa 47 incumple su propia norma sobre los precios", s: [
+        "https://www.libertaddigital.com/libremercado/2026-09-23/la-farsa-la-empresa-de-vivienda-de-sanchez-casa-47-se-salta-su-propia-norma-sobre-los-precios-7464130/"
+      ] }
+    ]
+  },
+  {
+    id: "apagon",
+    titulo: "El apagón del 28 de abril de 2025",
+    clase: "suceso",
+    ambito: "gobierno",
+    estado: "El comité del Gobierno (junio de 2025) repartió la responsabilidad entre Red Eléctrica y las eléctricas; el informe final europeo habló de múltiples causas encadenadas. La comisión de investigación del Senado, con mayoría del PP, declaró responsables al Gobierno, a Red Eléctrica y a la CNMC.",
+    resumen: "A las 12.33 del 28 de abril de 2025 la península ibérica perdió de golpe unos 15 GW, el 60 % de la demanda, y quedó horas sin suministro. Se atribuyeron al menos siete muertes en España. El debate se centró en el control de tensión, la programación del sistema por Red Eléctrica —presidida por la exministra socialista Beatriz Corredor— y el peso de las renovables en el mix.",
+    personas: ["Sara Aagesen", "Beatriz Corredor"],
+    eventos: [
+      { f: "2025-04-28", t: "apagón", h: "Un apagón deja sin luz a toda la península; Sánchez comparece por la noche", s: [
+        "https://www.publico.es/sociedad/directo-apagon-inicio-desaparecer-subitamente-60-energia-demandada.html",
+        "https://www.elespanol.com/sociedad/20250429/apagon-masivo-espana-causas-detras-corte-luz-historico-dejo-millones-personas-sin-electricidad/1003743734546_0.html",
+        "https://www.cope.es/actualidad/espana/al-minuto/ultima-hora-gran-apagon-electrico-espana-20250429_3140762.html"
+      ] },
+      { f: "2025-06-17", t: "informe", h: "El informe del Gobierno culpa del apagón a Red Eléctrica y a las eléctricas", s: [
+        "https://www.elespanol.com/invertia/empresas/energia/20250617/informe-apagon-detecta-poca-generacion-convencional-desconexiones-indebidas-llevaron-cero-energetico/1003743808369_0.html",
+        "https://www.cope.es/actualidad/espana/noticias/gobierno-culpa-apagon-red-electrica-operadoras-privadas-partes-iguales-20250617_3171176.html",
+        "https://www.elespanol.com/invertia/empresas/energia/20250617/sector-electrico-senala-red-electrica-conocer-informe-comision-investigacion-liderada-gobierno/1003743808614_0.html"
+      ] },
+      { f: "2026-03", t: "informe", h: "El informe final europeo apunta a una cadena de fallos sin un único culpable", s: [
+        "https://www.eleconomista.es/energia/noticias/13833318/03/26/el-informe-europeo-del-apagon-no-logra-establecer-un-unico-culpable-y-apunta-a-multiples-causas.html"
+      ] },
+      { f: "2026-04-15", t: "informe", h: "La comisión del Senado declara responsables del apagón al Gobierno, a Red Eléctrica y a la CNMC", s: [
+        "https://www.elespanol.com/invertia/empresas/energia/20260415/senado-declara-responsables-apagon-gobierno-red-electrica-cnmc/1003744207471_0.html",
+        "https://www.eldiario.es/economia/comision-investigacion-apagon-pp-senado-culpa-gobierno-red-electrica-apunta-cnmc_1_13144358.amp.html"
+      ] }
+    ]
+  },
+  {
+    id: "solo-si-es-si",
+    titulo: "Las rebajas de penas de la ley del «solo sí es sí»",
+    clase: "suceso",
+    ambito: "gobierno",
+    estado: "La ley se reformó en abril de 2023 con los votos de PSOE y PP. Según el CGPJ, hasta julio de 2023 se habían acordado 1.155 rebajas de condena y 117 excarcelaciones.",
+    resumen: "La Ley de Garantía Integral de la Libertad Sexual, impulsada por el Ministerio de Igualdad de Irene Montero y aprobada por el Gobierno de coalición, unificó abuso y agresión y rebajó las penas mínimas de varios tipos. Como el Código Penal obliga a aplicar retroactivamente la norma más favorable al reo, los tribunales revisaron miles de condenas. El PSOE reformó la ley con el apoyo del PP y el voto en contra de Unidas Podemos.",
+    personas: ["Irene Montero", "Pedro Sánchez"],
+    eventos: [
+      { f: "2022-11-15", t: "decisión judicial", h: "La Audiencia de Madrid aplica las primeras rebajas de condena por la nueva ley", s: [
+        "https://theobjective.com/espana/2022-11-15/rebaja-condena-agresion-sexual/",
+        "https://www.vozpopuli.com/espana/ley-solo-si-es-si-tribunales-rebajas-delito-sexual.html",
+        "https://www.libertaddigital.com/espana/politica/2022-11-15/la-justicia-deja-en-evidencia-a-montero-y-confirma-la-primera-rebaja-de-condena-por-la-ley-del-solo-si-es-si-6954521/"
+      ] },
+      { f: "2022-11-16", t: "declaración", h: "Sánchez pide «sensibilidad» a los tribunales ante las rebajas", s: [
+        "https://theobjective.com/espana/2022-11-16/sanchez-rebajas-si-es-si/"
+      ] },
+      { f: "2022-11-29", t: "decisión judicial", h: "El Supremo avala rebajar penas por la ley, pero caso a caso", s: [
+        "https://theobjective.com/espana/2022-11-29/supremo-rebaja-penas-solo-si/"
+      ] },
+      { f: "2023-03-02", t: "informe", h: "El CGPJ cifra en 721 las rebajas de penas y en 74 las excarcelaciones", s: [
+        "https://theobjective.com/espana/tribunales/2023-03-02/cgpj-rebajas-penas-excarcelaciones-si-es-si/"
+      ] },
+      { f: "2023-03-07", t: "decisión política", h: "El PSOE inicia la reforma en el Congreso con el apoyo del PP y el rechazo de Podemos", s: [
+        "https://www.elindependiente.com/espana/2023/03/07/el-psoe-inicia-la-reforma-del-si-es-si-en-el-congreso-con-el-apoyo-del-pp-y-el-veto-podemos/",
+        "https://www.eldiario.es/politica/psoe-pide-unidas-soluciones-no-peroratas-si-si-e-irene-montero-le-acusa-mano-pp_1_10012296.html"
+      ] },
+      { f: "2023-04-20", t: "decisión política", h: "El Congreso aprueba la reforma de la ley con los votos de PSOE y PP", s: [
+        "https://theobjective.com/espana/politica/2023-04-20/congreso-aprueba-reforma-solo-si/",
+        "https://www.elindependiente.com/espana/2023/04/20/el-congreso-aprueba-la-reforma-del-si-es-si-del-psoe-tras-rebajas-de-penas/",
+        "https://www.eldiario.es/politica/psoe-pp-aprueban-reforma-ley-si-si-voto-unidas-erc-eh-bildu_1_10135971.html"
+      ] },
+      { f: "2023-06-09", t: "informe", h: "El CGPJ eleva a 1.127 las rebajas de pena y a 115 las excarcelaciones", s: [
+        "https://theobjective.com/espana/tribunales/2023-06-09/cgpj-rebajas-pena-ley-si/",
+        "https://www.elespanol.com/espana/tribunales/20230609/rebaja-penas-alza-condenas-revisadas-agresores-libres/770173181_0.html"
+      ] },
+      { f: "2023-07-05", t: "informe", h: "Las rebajas llegan a 1.155 y las excarcelaciones a 117", s: [
+        "https://www.elespanol.com/espana/tribunales/20230705/violadores-liberados-aplicacion-ley-rebajas-penas/776672589_0.html",
+        "https://www.vozpopuli.com/espana/si-es-si-cgpj-rebajas-pena-excarcelaciones-ley-montero.html"
       ] }
     ]
   }
