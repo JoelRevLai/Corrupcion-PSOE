@@ -2,7 +2,7 @@
 
 Registro hemerográfico, ordenado cronológicamente, de los casos de corrupción y escándalos que afectan al PSOE, a sus cargos y al Gobierno desde que Pedro Sánchez llegó a la Moncloa (2 de junio de 2018). Cada hito enlaza a la noticia publicada en prensa. No se enlazan vídeos.
 
-Actualizado a 24 de septiembre de 2026: 41 casos, 192 hitos y 356 noticias enlazadas.
+Actualizado a 24 de septiembre de 2026: 55 casos, 237 hitos y 437 noticias enlazadas.
 
 ## Qué hace la página
 
@@ -57,4 +57,4 @@ Todo el contenido está en `data/casos.js`. Cada caso tiene esta forma:
 
 ## Fuentes
 
-Las noticias enlazadas proceden de El Español, elDiario.es, The Objective, Vozpópuli, El Independiente, El Debate, Público, infoLibre, elEconomista, Libertad Digital, COPE y Canarias7. Todas las URL se han obtenido de resultados de búsqueda; ninguna se ha construido a mano.
+Las noticias enlazadas proceden de El Español, elDiario.es, The Objective, Vozpópuli, El Independiente, El Debate, Público, infoLibre, elEconomista, Libertad Digital, COPE, Canarias7, OKDiario, El Plural, Infobae, Newtral, Maldita.es, Civio, Confilegal, Telemadrid, Canal Sur, Última Hora, Valencia Plaza, Información, Mundiario, SoyDe y El Pespunte. Todas las URL se han obtenido de resultados de búsqueda; ninguna se ha construido a mano.

@@ -169,7 +169,7 @@ window.CASOS = [
     titulo: "Rescate de Plus Ultra y caso Zapatero",
     clase: "judicial",
     ambito: "gobierno",
-    estado: "En instrucción en la Audiencia Nacional. Zapatero, imputado desde mayo de 2026; sus hijas, citadas como investigadas el 30 de noviembre de 2026.",
+    estado: "En instrucción en la Audiencia Nacional. Zapatero, imputado desde mayo de 2026; sus hijas, citadas como investigadas el 30 de noviembre de 2026. En pieza separada por presunto contrabando, el juez investiga las joyas halladas en su despacho, tasadas de forma preliminar en 1,32 millones.",
     resumen: "La SEPI rescató en 2021 con 53 millones a una aerolínea con un solo avión operativo. La causa por el rescate se archivó en 2023; una nueva investigación por blanqueo llevó a detenciones en 2025 y a la imputación del expresidente Zapatero por organización criminal, tráfico de influencias y falsedad.",
     personas: ["José Luis Rodríguez Zapatero", "Julio Martínez Martínez", "Julio Martínez Sola", "Roberto Roselli"],
     eventos: [
@@ -199,6 +199,9 @@ window.CASOS = [
         "https://theobjective.com/espana/tribunales/2026-05-19/zapatero-imputado-blanqueo-audiencia-nacional/",
         "https://www.publico.es/politica/tribunales/zapatero-imputado-caso-plus-ultra-blanqueo-capitales.html"
       ] },
+      { f: "2026-05-26", t: "informe", h: "La tasación pericial valora en 1,32 millones las joyas halladas en la caja fuerte del despacho de Zapatero", s: [
+        "https://maldita.es/desinfo/20260526/el-valor-de-las-joyas-encontradas-en-el-despacho-de-zapatero/"
+      ] },
       { f: "2026-07-20", t: "declaración", h: "Julio Martínez declara que Zapatero pactó una comisión del 1 % por el rescate", s: [
         "https://www.libertaddigital.com/espana/2026-07-20/julio-martinez-julito-tira-manta-zapatero-pacto-comision-1-por-rescate-gobierno-plus-ultra-7438278/",
         "https://www.libertaddigital.com/espana/2026-07-20/plus-ultra-reconoce-que-contrato-a-julito-martinez-por-su-relacion-con-zapatero-7438338/"
@@ -210,6 +213,11 @@ window.CASOS = [
       { f: "2026-09-21", t: "imputación", h: "El juez cita a las hijas de Zapatero como investigadas el 30 de noviembre", s: [
         "https://www.vozpopuli.com/tribunales/la-audiencia-nacional-cita-a-las-hijas-de-zapatero-como-imputadas-en-el-caso-plus-ultra.html",
         "https://www.libertaddigital.com/espana/2026-09-21/el-juez-cita-a-las-hijas-de-zapatero-el-30-de-noviembre-por-el-caso-plus-ultra-7463421/"
+      ] },
+      { f: "2026-09-21", t: "decisión judicial", h: "El juez da tres días a Zapatero para documentar las joyas de su despacho y encarga una nueva pericial", s: [
+        "https://www.infobae.com/espana/2026/09/21/el-juez-calama-da-tres-dias-a-zapatero-para-aportar-toda-la-documentacion-sobre-las-joyas-y-encarga-una-nueva-pericial-para-determinar-su-origen-antiguedad-y-valor/",
+        "https://theobjective.com/espana/tribunales/2026-09-21/juez-cita-investigadas-hijas-zapatero/",
+        "https://www.libertaddigital.com/espana/2026-09-21/calama-encarga-un-nuevo-informe-sobre-las-joyas-y-da-3-dias-a-zapatero-para-ofrecer-la-documentacion-que-prometio-7463439/"
       ] }
     ]
   },
@@ -1023,11 +1031,11 @@ window.CASOS = [
   {
     id: "salazar",
     titulo: "Paco Salazar: denuncias de acoso y sueldo sin trabajar",
-    clase: "judicial",
+    clase: "suceso",
     ambito: "partido",
-    estado: "Investigado en secreto por un juzgado de Dos Hermanas por malversación. El PSOE le retiró la militancia sin llevar las denuncias de acoso a la Fiscalía.",
+    estado: "Causa archivada en junio de 2026 (auto recurrible): la jueza vio prevaricación en su contratación en Dos Hermanas, pero el delito había prescrito, y descartó la malversación. El PSOE le retiró la militancia sin llevar las denuncias de acoso a la Fiscalía.",
     resumen: "Dos trabajadoras de Moncloa denunciaron en el canal interno del PSOE conductas de acoso sexual del colaborador de Sánchez, que iba a entrar en la Ejecutiva. Después, la UCO investigó si cobró del Ayuntamiento de Dos Hermanas mientras trabajaba en Ferraz.",
-    personas: ["Francisco Salazar", "Antonio Hernández"],
+    personas: ["Francisco Salazar", "Antonio Hernández", "Francisco Toscano"],
     eventos: [
       { f: "2025-07-05", t: "dimisión", h: "Salazar renuncia a su nuevo cargo en Ferraz tras las acusaciones de acoso sexual", s: [
         "https://www.elespanol.com/espana/politica/20250705/preocupacion-psoe-acusaciones-acoso-sexual-paco-salazar-nuevo-hombre-fuerte-moncloa-ferraz/1003743835415_0.html"
@@ -1050,6 +1058,10 @@ window.CASOS = [
       { f: "2025-12-12", t: "decisión política", h: "El PSOE cierra el caso retirando la militancia a Salazar y sin acudir a la Fiscalía", s: [
         "https://www.elespanol.com/espana/politica/20251212/psoe_-partido_socialista_obrero_espanol-francisco_salazar-acoso_sexual-pedro_sanchez-politica/1003744052667_0.html",
         "https://www.eldiario.es/politica/psoe-cierra-caso-salazar-informe-repleto-excusas-da-credibilidad-victimas_1_12842165.html"
+      ] },
+      { f: "2026-06-26", t: "archivo", h: "Archivada la causa contra Salazar y el exalcalde de Dos Hermanas: la jueza ve prevaricación, pero prescrita", s: [
+        "https://www.eldiario.es/sevilla/archivada-causa-salazar-exalcalde-hermanas-prescripcion-delito_1_13335341.html",
+        "https://theobjective.com/espana/tribunales/2026-06-26/archivada-causa-contra-exalto-cargo-moncloa-salazar-prescripcion-del-delito/"
       ] }
     ]
   },
@@ -1058,9 +1070,9 @@ window.CASOS = [
     titulo: "Cascada de denuncias de acoso en el PSOE",
     clase: "suceso",
     ambito: "territorial",
-    estado: "Dimisiones y suspensiones de militancia. En Torremolinos, la Fiscalía abrió diligencias.",
-    resumen: "Tras el caso Salazar afloraron en dos semanas varias denuncias por acoso contra cargos socialistas: el secretario general del PSOE de Torremolinos, un miembro de la Ejecutiva Federal y un alcalde cordobés, entre otros.",
-    personas: ["Antonio Navarro", "Javier Izquierdo"],
+    estado: "Dimisiones y suspensiones de militancia. En Torremolinos y La Algaba, la Fiscalía abrió diligencias.",
+    resumen: "Tras el caso Salazar afloraron en dos semanas varias denuncias por acoso contra cargos socialistas: el secretario general del PSOE de Torremolinos, un miembro de la Ejecutiva Federal y un alcalde cordobés, entre otros. En febrero de 2026 dimitió el alcalde de La Algaba (Sevilla), denunciado por acoso sexual a un menor.",
+    personas: ["Antonio Navarro", "Javier Izquierdo", "Diego Manuel Agüera"],
     eventos: [
       { f: "2025-12-04", t: "revelación", h: "El PSOE de Málaga pide suspender a su líder en Torremolinos tras una denuncia de acoso sexual", s: [
         "https://www.elespanol.com/malaga/torremolinos/20251204/psoe_malaga-torremolinos-acoso_sexual-torremolinos/1003744042591_0.html",
@@ -1074,6 +1086,11 @@ window.CASOS = [
         "https://www.elespanol.com/espana/andalucia/20251212/andalucia-cordoba_-municipio-psoe_-partido_socialista_obrero_espanol-acoso_sexual-andalucia/1003744053255_0.html",
         "https://theobjective.com/espana/2025-12-12/me-too-psoe-denuncias-acoso-sexual/",
         "https://www.infolibre.es/politica/caso-salazar-deriva-cascada-denuncias-acoso-dimisiones-psoe_1_2113822.html"
+      ] },
+      { f: "2026-02-24", t: "decisión política", h: "El PSOE suspende de militancia al alcalde dimitido de La Algaba, denunciado por acoso sexual a un menor", s: [
+        "https://www.telemadrid.es/noticias/nacional/El-PSOE-suspende-cautelarmente-de-militancia-el-alcalde-de-La-Algaba-denunciado-por-acoso-sexual-a-un-menor-0-2865013479--20260224125354.html",
+        "https://www.canalsur.es/noticias/andalucia/sevilla/el-psoe-suspende-de-militancia-al-alcalde-de-la-algaba-denunciado-por-acoso-sexual/2248400.html",
+        "https://www.infobae.com/espana/agencias/2026/02/24/el-psoe-habia-comenzado-el-expediente-de-suspension-de-militancia-del-alcalde-de-algaba-cuando-este-pidio-su-baja/"
       ] }
     ]
   },
@@ -1165,12 +1182,17 @@ window.CASOS = [
     titulo: "Exalcalde de Linares",
     clase: "sentencia",
     ambito: "territorial",
-    estado: "Condena firme: tres años de prisión y siete de inhabilitación por malversación.",
-    resumen: "El exalcalde socialista de Linares (Jaén) Juan Fernández cobró 125.000 euros de más con cargo al Ayuntamiento.",
+    estado: "Condena firme por malversación. En julio de 2026 el Gobierno le concedió un indulto parcial que rebaja la pena de prisión a dos años y evita su ingreso en la cárcel, con la oposición de la Fiscalía.",
+    resumen: "El exalcalde socialista de Linares (Jaén) Juan Fernández cobró durante seis años un sobresueldo de 1.700 euros mensuales con cargo a la cuenta del grupo municipal socialista: 125.377 euros, ya devueltos.",
     personas: ["Juan Fernández"],
     eventos: [
       { f: "2025-07-03", t: "sentencia", h: "El Supremo confirma tres años de cárcel al exalcalde socialista de Linares", s: [
         "https://www.elespanol.com/espana/tribunales/20250703/ts-confirma-anos-alcalde-socialista-cobro-eur-extra-linares-ciudad-paro-espana/1003743833402_0.html"
+      ] },
+      { f: "2026-07-29", t: "decisión política", h: "El Gobierno indulta parcialmente al exalcalde socialista de Linares", s: [
+        "https://www.eldiario.es/andalucia/jaen/gobierno-indulta-juan-fernandez-exalcalde-socialista-linares-condenado-cobrar-sobresueldos_1_13413481.html",
+        "https://www.elespanol.com/espana/politica/20260729/sanchez-indulta-lider-separatista-laura-borras-condenados-corrupcion-vinculados-psoe/1003744337260_0.html",
+        "https://civio.es/el-boe-nuestro-de-cada-dia/2026/07/29/el-gobierno-concede-tres-indultos-a-condenados-por-delitos-de-corrupcion/"
       ] }
     ]
   },
@@ -1213,6 +1235,309 @@ window.CASOS = [
       { f: "2026-06-26", t: "informe", h: "El caso de Soria salpica a dos ministerios", s: [
         "https://www.eldebate.com/espana/castilla-y-leon/20260626/caso-corrupcion-psoe-ayuntamiento-soria-salpica-dos-ministerios-gobierno-sanchez_432636.html",
         "https://www.elespanol.com/reportajes/20260627/compra-votos-facturas-falsas-dedazos-ayuntamientos-diputaciones-psoe-copian-corrupcion-ferraz/1003744300410_0.html"
+      ] }
+    ]
+  },
+  {
+    id: "alqueria",
+    titulo: "Caso Alquería: enchufes en Divalterra (Diputación de Valencia)",
+    clase: "sentencia",
+    ambito: "territorial",
+    estado: "Absolución firme: la Audiencia de Valencia absolvió en 2023 a los catorce acusados y el TSJ valenciano confirmó la sentencia.",
+    resumen: "Anticorrupción investigó la contratación de siete altos cargos en Divalterra, empresa pública de la Diputación de Valencia, sin aval de su consejo de administración, y si se colocó a militantes del PSPV y Compromís. Fue detenido el presidente de la Diputación, el socialista Jorge Rodríguez. El tribunal no vio prevaricación, malversación ni falsedad.",
+    personas: ["Jorge Rodríguez", "Ricard Gallego", "Manuel Reguart", "Josep Ramón Tíller"],
+    eventos: [
+      { f: "2018-06-27", t: "detención", h: "Detenido el presidente de la Diputación de Valencia, el socialista Jorge Rodríguez, en la operación Alquería", s: [
+        "https://www.elespanol.com/espana/politica/20180627/operacion-alqueria-investiga-diputacion-valencia-psoe-compromis/318219072_0.html",
+        "https://www.libertaddigital.com/espana/2018-06-27/detenido-el-presidente-de-la-diputacion-de-valencia-el-socialista-jorge-rodriguez-en-una-operacion-contra-la-corrupcion-1276621159/"
+      ] },
+      { f: "2018-06-28", t: "libertad", h: "Jorge Rodríguez y los otros cinco detenidos quedan en libertad con cargos", s: [
+        "https://www.diarioinformacion.com/politica/2018/06/28/jorge-rodriguez-cinco-detenidos-juez/2037587.html"
+      ] },
+      { f: "2023-05-30", t: "sentencia", h: "La Audiencia de Valencia absuelve a Jorge Rodríguez y a los otros trece acusados", s: [
+        "https://www.ultimahora.es/noticias/comunidades/2023/05/30/1947373/audiencia-absuelve-jorge-rodriguez-otros-acusados-caso-alqueria.html",
+        "https://valenciaplaza.com/la-audiencia-de-valencia-absuelve-a-jorge-rodriguez-y-el-resto-de-acusados-del-caso-alqueria"
+      ] },
+      { f: "2023-07-03", t: "recurso", h: "La Fiscalía pide al TSJ valenciano que repita el juicio", s: [
+        "https://www.ultimahora.es/noticias/comunidades/2023/07/03/1968947/fiscalia-pide-tsjcv-repita-juicio-del-caso-alqueria-absolvio-jorge-rodriguez.html"
+      ] },
+      { f: "2023-12-14", t: "sentencia", h: "El TSJ de la Comunidad Valenciana confirma las absoluciones", s: [
+        "https://www.ultimahora.es/noticias/comunidades/2023/12/14/2068543/tsjcv-confirma-absolucion-jorge-rodriguez-otros-acusados-caso-alqueria.html"
+      ] }
+    ]
+  },
+  {
+    id: "duque-sociedad",
+    titulo: "Pedro Duque y la sociedad de su chalé en Jávea",
+    clase: "suceso",
+    ambito: "gobierno",
+    estado: "Sin consecuencias. Siguió como ministro hasta 2021 y liquidó la sociedad en 2022.",
+    resumen: "Tres meses después de la dimisión de Màxim Huerta por un asunto parecido, se publicó que el ministro de Ciencia y su mujer tenían su chalé de Jávea a nombre de una sociedad patrimonial. Duque negó haber ahorrado impuestos y dijo que hoy no lo volvería a hacer.",
+    personas: ["Pedro Duque"],
+    eventos: [
+      { f: "2018-09-27", t: "revelación", h: "Duque comparece para explicar la sociedad instrumental con la que gestionaba su chalé de Jávea", s: [
+        "https://okdiario.com/investigacion/pedro-duque-chale-lujo-javea-sociedad-instrumental-eludir-pago-4-impuestos-3161571",
+        "https://diarioinformacion.com/nacional/2018/09/27/pedro-duque-comparecera-dar-explicaciones/2067537.html",
+        "https://www.eldiario.es/economia/explicaciones-pedro-duque-sociedad-instrumental_1_1919685.html"
+      ] },
+      { f: "2022-05-10", t: "revelación", h: "Duque liquida la sociedad patrimonial nueve meses después de dejar el Ministerio", s: [
+        "https://www.elindependiente.com/espana/2022/05/10/duque-liquida-la-sociedad-patrimonial-con-la-que-gestionaba-su-chale-de-javea/"
+      ] }
+    ]
+  },
+  {
+    id: "borrell-abengoa",
+    titulo: "Borrell, multado por la CNMV por vender acciones de Abengoa",
+    clase: "suceso",
+    ambito: "gobierno",
+    estado: "Sanción administrativa (no penal) de 30.000 euros. Borrell la pagó y siguió como ministro de Exteriores.",
+    resumen: "La CNMV sancionó al ministro de Asuntos Exteriores por una infracción muy grave por la venta, en noviembre de 2015, de 10.000 acciones de Abengoa con información privilegiada, cuando era consejero de la compañía y días antes de que esta pidiera el preconcurso.",
+    personas: ["Josep Borrell"],
+    eventos: [
+      { f: "2018-11-27", t: "decisión judicial", h: "La CNMV multa a Borrell con 30.000 euros por usar información privilegiada en la venta de acciones de Abengoa", s: [
+        "https://www.elespanol.com/invertia/empresas/20181127/cnmv-multa-borell-euros-venta-acciones-abengoa/356464630_0.html",
+        "https://www.libertaddigital.com/libremercado/2018-11-27/la-cnmv-multa-a-borrell-por-vender-acciones-de-abengoa-con-informacion-privilegiada-1276628917/",
+        "https://www.eleconomista.es/economia/noticias/9545882/11/18/La-CNMV-multa-a-Borrell-con-30000-euros-por-usar-informacion-privilegiada-al-vender-acciones-de-Abengoa.html",
+        "https://www.elplural.com/politica/espana/la-cnmv-multa-a-borrell-por-usar-informacion-privilegiada-en-la-venta-de-abengoa_207093102"
+      ] }
+    ]
+  },
+  {
+    id: "perez-de-los-cobos",
+    titulo: "Caso 8-M: el cese de Pérez de los Cobos",
+    clase: "sentencia",
+    ambito: "gobierno",
+    estado: "El Supremo anuló el cese (2023) y después los ascensos a general concedidos en su lugar. Sentencias contencioso-administrativas, no penales. La causa penal contra el delegado del Gobierno en Madrid se archivó en 2020.",
+    resumen: "Marlaska destituyó al coronel jefe de la Guardia Civil en Madrid por no informarle de la investigación judicial sobre la manifestación del 8 de marzo de 2020, en la que estaba imputado el delegado del Gobierno, José Manuel Franco. El Supremo consideró que el coronel actuaba a las órdenes de la jueza y que el cese fue contrario a la función de la Policía Judicial.",
+    personas: ["Fernando Grande-Marlaska", "José Manuel Franco"],
+    eventos: [
+      { f: "2020-05-25", t: "decisión política", h: "Marlaska cesa al jefe de la Guardia Civil de Madrid por no informarle de la investigación del 8-M", s: [
+        "https://www.elindependiente.com/politica/2020/05/25/interior-cesa-al-jefe-de-la-guardia-civil-en-madrid-por-no-informarle-de-la-investigacion-del-8-m/"
+      ] },
+      { f: "2020-06-12", t: "archivo", h: "La jueza del 8-M archiva la causa contra el delegado del Gobierno en Madrid", s: [
+        "https://www.eldiario.es/politica/archiva-investigacion-delegado-gobierno-madrid_1_6020976.html",
+        "https://www.publico.es/politica/jueza-8-m-archiva-investigacion-franco-tuvo-conocimiento-tecnico-riesgo-salud.html"
+      ] },
+      { f: "2023-03-28", t: "sentencia", h: "El Supremo anula el cese de Pérez de los Cobos: estaba a las órdenes de la jueza «sin injerencia gubernativa admisible»", s: [
+        "https://www.eldiario.es/politica/supremo-anula-cese-perez-cobos-jefe-comandancia-madrid_1_10055787.html",
+        "https://www.libertaddigital.com/espana/2023-03-28/suprem-anula-cese-coronel-perez-cobos-ordenado-marlaska-6999980/",
+        "https://www.libertaddigital.com/espana/2023-03-30/sentencia-perez-cobos-razon-marlaska-cese-contraria-funcion-policia-judicial-7000651/"
+      ] },
+      { f: "2023-09-19", t: "sentencia", h: "El Supremo anula tres ascensos a general tras negar Interior el de Pérez de los Cobos", s: [
+        "https://www.eldiario.es/politica/supremo-obliga-interior-justificar-negativa-ascender-perez-cobos-general-guardia-civil_1_10525705.html",
+        "https://confilegal.com/20230919-nuevo-reves-para-grande-marlaska-el-supremo-sentencia-que-el-coronel-perez-de-los-cobos-tiene-derecho-a-ser-general/"
+      ] },
+      { f: "2024-11-08", t: "decisión judicial", h: "Pérez de los Cobos renuncia a ejecutar tres sentencias a su favor para no perjudicar a los generales ascendidos", s: [
+        "https://www.elespanol.com/espana/tribunales/20241108/perez-cobos-renuncia-ejecucion-sentencias-favor-postergacion-ascenso-general/899660314_0.html"
+      ] }
+    ]
+  },
+  {
+    id: "trenes-cantabria",
+    titulo: "Los trenes de Cantabria y Asturias que no cabían en los túneles",
+    clase: "suceso",
+    ambito: "gobierno",
+    estado: "Sin causa judicial. Dimitieron la secretaria de Estado de Transportes y el presidente de Renfe.",
+    resumen: "Renfe encargó a CAF en 2020 trenes de ancho métrico cuyas dimensiones no eran compatibles con los túneles de la red de Adif en Cantabria y Asturias, pese a los avisos previos. El error retrasó la entrega de 2024 a 2026 como mínimo.",
+    personas: ["Isabel Pardo de Vera", "Isaías Táboas"],
+    eventos: [
+      { f: "2023-02-20", t: "dimisión", h: "Dimiten Isabel Pardo de Vera y el presidente de Renfe por los trenes que no entraban en los túneles", s: [
+        "https://www.elespanol.com/invertia/observatorios/movilidad/20230220/dimiten-isabel-pardo-vera-presidente-renfe-no/742925931_0.html",
+        "https://www.eldiario.es/economia/dimiten-secretaria-transportes-presidente-renfe-polemica-trenes-no-caben-tuneles_1_9968601.html",
+        "https://www.elindependiente.com/economia/2023/02/20/el-presidente-de-renfe-y-pardo-de-vera-dimiten-por-el-fiasco-de-los-trenes-de-cantabria-y-asturias/"
+      ] }
+    ]
+  },
+  {
+    id: "gamez",
+    titulo: "Dimisión de María Gámez, directora de la Guardia Civil",
+    clase: "suceso",
+    ambito: "gobierno",
+    estado: "Causa archivada en 2024 para su marido por motivos procesales (plazo de instrucción vencido), sin entrar en el fondo.",
+    resumen: "La directora general de la Guardia Civil, exdirigente socialista en Málaga, dimitió al conocerse que un juzgado de Sevilla había imputado a su marido por prevaricación, malversación y blanqueo en una pieza sobre fondos públicos andaluces vinculada a Santana Motor.",
+    personas: ["María Gámez", "Juan Carlos Martínez"],
+    eventos: [
+      { f: "2023-03-22", t: "dimisión", h: "Un juez imputa al marido de María Gámez y ella dimite como directora de la Guardia Civil", s: [
+        "https://www.vozpopuli.com/espana/juez-imputa-marido-directora-dimitida-guardia-civil-desvio-fondos.html",
+        "https://www.newtral.es/maria-gamez-dimision-guardia-civil/20230323/"
+      ] },
+      { f: "2023-10-27", t: "decisión judicial", h: "Un error judicial anula la causa contra el marido de la exdirectora: la instrucción había caducado", s: [
+        "https://www.elespanol.com/espana/tribunales/20231027/error-judicial-anula-causa-corrupcion-marido-exdirectora-guardia-civil/805169877_0.html"
+      ] },
+      { f: "2024-06-11", t: "archivo", h: "Archivada la causa contra el marido de María Gámez", s: [
+        "https://www.publico.es/politica/archivada-causa-marido-maria-gamez-exdirectora-guardia-civil-dimitio-imputacion.html",
+        "https://www.eldiario.es/andalucia/exculpado-pieza-caso-ere-marido-exdirectora-guardia-civil-motivo-dimision-ano_1_11439594.html"
+      ] }
+    ]
+  },
+  {
+    id: "hidrocarburos",
+    titulo: "Trama de los hidrocarburos y el chalet de Ábalos",
+    clase: "judicial",
+    ambito: "gobierno",
+    estado: "En instrucción en la Audiencia Nacional (juez Santiago Pedraz), prorrogada hasta diciembre de 2026. Aldama y Claudio Rivas son los principales investigados.",
+    resumen: "Presunto fraude de al menos 182 millones en impuestos de hidrocarburos (2021-2024). La UCO sostiene que la organización de Aldama y Rivas destinó cerca de un millón de euros a comprar la «voluntad» de Ábalos y otros cargos, incluido un chalet en La Alcaidesa (Cádiz), para conseguir la licencia de operador de Villafuel.",
+    personas: ["Víctor de Aldama", "Claudio Rivas", "José Luis Ábalos", "Koldo García"],
+    eventos: [
+      { f: "2024-10-10", t: "prisión", h: "Pedraz envía a prisión a Aldama por el fraude de los hidrocarburos", s: [
+        "https://www.libertaddigital.com/espana/2024-10-10/pedraz-acuerda-prision-incondicional-victor-aldama-fraude-182-millones-impuestos-hidrocarburos-7172684/"
+      ] },
+      { f: "2024-10-21", t: "prisión", h: "La Audiencia Nacional mantiene a Aldama en prisión sin fianza", s: [
+        "https://theobjective.com/espana/tribunales/2024-10-21/audiencia-prision-fianza-aldama-hidrocarburos/"
+      ] },
+      { f: "2024-12-16", t: "detención", h: "La UCO detiene a varios empresarios de la trama que llevó a Aldama a prisión", s: [
+        "https://www.mundiario.com/articulo/politica/guardia-civil-detiene-empresarios-trama-hidrocarburos/20241216172321327694.html"
+      ] },
+      { f: "2025-01-21", t: "informe", h: "La UCO señala a Aldama y Rivas como «codirectores» del fraude de 182 millones", s: [
+        "https://theobjective.com/espana/tribunales/2025-01-21/uco-aldama-socio-ideologos-fraude-hidrocarburos/",
+        "https://www.vozpopuli.com/tribunales/uco-senala-aldama-y-rivas-ideologos-fraude-182-millones-hidrocarburos.html",
+        "https://www.elindependiente.com/espana/tribunales/2025/01/26/aldama-y-rivas-el-tandem-del-fraude-de-hidrocarburos-con-tentaculos-en-el-gobierno/"
+      ] },
+      { f: "2025-12-11", t: "informe", h: "La UCO cree que la trama destinó un millón a comprar la «voluntad» de Ábalos, incluido un chalet en La Alcaidesa", s: [
+        "https://www.eldiario.es/politica/uco-apunta-trama-hidrocarburos-infiltro-cupula-ministerios-transportes-industria-transicion-ecologica_1_12838865.html",
+        "https://www.infobae.com/espana/2025/12/11/la-uco-concluye-que-la-trama-de-hidrocarburos-de-victor-de-aldama-y-claudio-rivas-soborno-con-un-millon-de-euros-al-exministro-abalos/",
+        "https://www.libertaddigital.com/espana/2026-01-01/el-chalet-de-la-alcaidesa-el-millon-de-euros-y-las-influencias-sobre-ribera-y-maroto-asi-es-la-trama-hidrocarburos-7339164/"
+      ] },
+      { f: "2026-06-08", t: "decisión judicial", h: "Pedraz prorroga la instrucción hasta diciembre", s: [
+        "https://theobjective.com/espana/tribunales/2026-06-08/pedraz-diciembre-fraude-hidrocarburos-aldama/"
+      ] },
+      { f: "2026-09-21", t: "declaración", h: "Claudio Rivas anuncia que pedirá declarar ante el juez como investigado", s: [
+        "https://www.infobae.com/espana/agencias/2026/09/21/el-socio-principal-de-aldama-en-el-caso-hidrocarburos-se-abre-a-declarar-en-breve-ante-el-juez-como-imputado/"
+      ] },
+      { f: "2026-09-23", t: "informe", h: "La UCO pide bloquear las cuentas de las empresas portuguesas de Aldama y Rivas", s: [
+        "https://www.infobae.com/espana/agencias/2026/09/23/la-uco-solicita-al-juez-bloquear-cuentas-de-empresas-portuguesas-de-aldama-y-su-socio-en-el-caso-hidrocarburos/"
+      ] }
+    ]
+  },
+  {
+    id: "pulseras",
+    titulo: "Los fallos de las pulseras antimaltrato",
+    clase: "suceso",
+    ambito: "gobierno",
+    estado: "Sin causa penal contra cargos públicos. El Congreso reprobó a la ministra en 2025 y el Tribunal de Cuentas apreció en 2026 «graves deficiencias» en los contratos. Igualdad volvió a adjudicar el servicio a Vodafone.",
+    resumen: "La memoria de la Fiscalía reveló que fallos del sistema Cometa (geolocalización, cortes de servicio, baterías y pérdida de datos en el cambio de adjudicatario) habían llevado al archivo o a la absolución en causas por quebrantamiento de alejamiento. La ministra de Igualdad, Ana Redondo, sostuvo que la alarma generada «nada tiene que ver» con el funcionamiento de las pulseras.",
+    personas: ["Ana Redondo"],
+    eventos: [
+      { f: "2025-09-24", t: "decisión política", h: "El Congreso reprueba a la ministra Ana Redondo por la gestión de las pulseras antimaltrato", s: [
+        "https://www.infobae.com/espana/2025/09/24/el-congreso-reprueba-a-la-ministra-ana-redondo-y-exige-su-cese-por-la-gestion-de-las-pulseras-antimaltrato/",
+        "https://maldita.es/malditobulo/20250925/fallos-pulseras-telematicas-maltratadores/"
+      ] },
+      { f: "2026-09-11", t: "informe", h: "La Fiscalía constata que las pulseras siguen fallando y que ha habido absoluciones por ello", s: [
+        "https://www.eldebate.com/sociedad/20260911/fiscalia-revela-pulseras-antimaltrato-fallan-han-absuelto-gran-cantidad-maltratadores_457667.html",
+        "https://www.libertaddigital.com/espana/2026-09-14/nuevo-fracaso-de-igualdad-aumentan-los-asesinatos-machistas-mientras-continuan-los-fallos-en-las-pulseras-antimaltrato-7459805/"
+      ] },
+      { f: "2026-09-16", t: "decisión judicial", h: "La Audiencia de Málaga reprocha a Igualdad los «errores de geolocalización» de las pulseras", s: [
+        "https://www.eldebate.com/espana/andalucia/malaga/20260916/audiencia-malaga-saca-colores-igualdad-pulseras-antimaltrato-errores-geolocalizacion_459239.html"
+      ] },
+      { f: "2026-09-23", t: "informe", h: "El Tribunal de Cuentas detecta «graves deficiencias» en los contratos de las pulseras y cuestiona a Igualdad", s: [
+        "https://www.eldiario.es/sociedad/tribunal-cuentas-detecta-graves-deficiencias-pulseras-antimaltrato-cuestiona-actuacion-igualdad_1_13531652.html",
+        "https://www.elespanol.com/espana/tribunales/20260923/cuentas-pone-entredicho-gestion-ana-redondo-pulseras-antimaltrato-graves-deficiencias-riesgo/1003744394171_0.html",
+        "https://theobjective.com/espana/politica/2026-09-23/tribunal-cuentas-graves-deficiencias-pulseras-antimaltrato/",
+        "https://www.libertaddigital.com/espana/2026-09-23/el-tribunal-de-cuentas-detecta-deficiencias-en-contratos-por-valor-de-100-millones-en-las-pulseras-antimaltrato-7464758/"
+      ] }
+    ]
+  },
+  {
+    id: "bustos-mercurio",
+    titulo: "Manuel Bustos y el caso Mercurio (Sabadell)",
+    clase: "sentencia",
+    ambito: "territorial",
+    estado: "Varias condenas firmes en distintas piezas del caso Mercurio; ingresó en prisión en 2022. En diciembre de 2025 y junio de 2026 aceptó nuevas condenas por malversación, prevaricación y tráfico de influencias.",
+    resumen: "El exalcalde socialista de Sabadell acumula condenas por las piezas del caso Mercurio, que estalló en 2012: entre ellas, tres años de prisión por ordenar a la Policía Local retirar multas a su mujer y a sus hijos, y otras por cargar gastos a entes públicos y por contrataciones irregulares en el consorcio de residuos.",
+    personas: ["Manuel Bustos"],
+    eventos: [
+      { f: "2021-03", t: "sentencia", h: "El Supremo confirma tres años de prisión a Bustos por hacer retirar multas a su familia", s: [
+        "https://www.eldiario.es/catalunya/supremo-confirma-segunda-condena-corrupcion-exalcalde-sabadell-abre-puerta-ingreso-prision_1_7316398.html",
+        "https://www.vozpopuli.com/espana/supremo-prision-sabadell.html"
+      ] },
+      { f: "2022-01-12", t: "prisión", h: "El exalcalde socialista de Sabadell entra en la cárcel de Lledoners", s: [
+        "https://www.eldiario.es/catalunya/exalcalde-socialista-sabadell-entra-prision-cumplir-condena-caso-mercurio_1_8650324.html"
+      ] },
+      { f: "2025-12-19", t: "sentencia", h: "Bustos acepta seis meses de cárcel por malversación en otra pieza del caso Mercurio", s: [
+        "https://theobjective.com/espana/tribunales/2025-12-19/exalcalde-sabadell-manuel-bustos-carcel-malversacion/",
+        "https://www.eldebate.com/espana/cataluna/barcelona/20251219/exalcalde-sabadell-manuel-bustos-acepta-seis-meses-carcel-piezas-caso-mercurio_367354.html"
+      ] },
+      { f: "2026-06-12", t: "sentencia", h: "Nueva condena de ocho meses por contrataciones irregulares en el consorcio de residuos", s: [
+        "https://www.infobae.com/espana/agencias/2026/06/12/el-exalcalde-socialista-de-sabadell-condenado-de-nuevo-en-otra-derivada-del-caso-mercurio/"
+      ] }
+    ]
+  },
+  {
+    id: "fraile-punica",
+    titulo: "José María Fraile, exalcalde de Parla (trama Púnica)",
+    clase: "sentencia",
+    ambito: "territorial",
+    estado: "Condenado por la Audiencia Nacional en diciembre de 2025 a dos años de prisión y cuatro meses y medio más, tras reconocer los hechos y reparar el daño.",
+    resumen: "Único exalcalde socialista entre los seis condenados en la pieza de la Púnica sobre los contratos de eficiencia energética adjudicados a Cofely a cambio de comisiones entre 2012 y 2014. Se le atribuían más de 600.000 euros en comisiones.",
+    personas: ["José María Fraile"],
+    eventos: [
+      { f: "2025-04-09", t: "juicio", h: "El exalcalde socialista de Parla se declara culpable en el juicio de la Púnica", s: [
+        "https://www.soydemadrid.com/noticia-parla/el-exalcalde-de-parla-se-declara-culpable-en-el-caso-punica-129405.aspx"
+      ] },
+      { f: "2025-12-22", t: "sentencia", h: "La Audiencia Nacional condena a seis exalcaldes madrileños, entre ellos el socialista de Parla", s: [
+        "https://www.publico.es/politica/tribunales/audiencia-nacional-condena-seis-exalcaldes-comunidad-madrid-practicas-corruptas-contratos-punica-cofely.html",
+        "https://www.telemadrid.es/noticias/madrid/Condenados-seis-exalcaldes-de-la-Comunidad-de-Madrid-por-la-trama-de-la-Punica-0-2845815421--20251222054536.html",
+        "https://www.infobae.com/espana/2025/12/22/la-audiencia-nacional-dicta-sentencia-contra-29-personas-en-el-mayor-pelotazo-de-la-trama-punica-condena-a-cinco-exalcaldes-del-pp-uno-del-psoe-y-otro-de-un-partido-local/"
+      ] }
+    ]
+  },
+  {
+    id: "gines",
+    titulo: "Romualdo Garrido, alcalde de Gines",
+    clase: "judicial",
+    ambito: "territorial",
+    estado: "Pendiente de juicio por la Pará de Gines (el juez rechazó la petición de archivo de la Fiscalía) e investigado en la causa de Rafael Pineda. Niega los hechos.",
+    resumen: "El alcalde socialista de Gines (Sevilla) irá a juicio, junto a otros cargos municipales, en una causa con una veintena de acusados por irregularidades en la organización de la Pará de Gines, con un quebranto de unos 860.000 euros. Además, la UCO investiga si presionó a un técnico para agilizar la licencia de un restaurante cuyo dueño estaba investigado por narcotráfico, gestión en la que intermedió Rafael Pineda.",
+    personas: ["Romualdo Garrido"],
+    eventos: [
+      { f: "2026-02-18", t: "imputación", h: "La UCO investiga al alcalde de Gines por prevaricación y cohecho en la licencia de un restaurante", s: [
+        "https://www.elpespunte.es/articulo/gines/alcalde-gines-niega-tener-relacion-hechos-investigados-uco-pone-disposicion-justicia/20260218164519124347.html",
+        "https://okdiario.com/investigacion/uco-acusa-alcalde-socialista-gines-forzar-licencia-narco-saltandose-ley-16665120"
+      ] },
+      { f: "2026-06-10", t: "procesamiento", h: "El juez envía a juicio al alcalde de Gines por la organización de la Pará", s: [
+        "https://www.elespanol.com/sevilla/provincia/20260610/juicio-alcalde-socialista-gines-presuntas-irregularidades-organizacion-evento/1003744280802_0.html"
+      ] }
+    ]
+  },
+  {
+    id: "el-boalo",
+    titulo: "Soledad Ávila, alcaldesa de El Boalo",
+    clase: "judicial",
+    ambito: "territorial",
+    estado: "Investigada en un juzgado de Colmenar Viejo.",
+    resumen: "La alcaldesa socialista de El Boalo, Cerceda y Mataelpino (Madrid), que llegó al cargo por una moción de censura en noviembre de 2025, está investigada por la adjudicación de contratos menores por más de 135.000 euros a seis familiares directos cuando era concejala de Educación (2015-2023).",
+    personas: ["Soledad Ávila"],
+    eventos: [
+      { f: "2026-03-10", t: "imputación", h: "Imputada la alcaldesa de El Boalo por adjudicar 135.000 euros a familiares", s: [
+        "https://www.libertaddigital.com/madrid/2026-03-10/corrupcion-en-el-psoe-imputada-la-alcaldesa-de-el-boalo-por-adjudicar-135-000-euros-a-familiares-7372100/"
+      ] }
+    ]
+  },
+  {
+    id: "frigiliana",
+    titulo: "Registro del Ayuntamiento de Frigiliana",
+    clase: "judicial",
+    ambito: "territorial",
+    estado: "En instrucción en el juzgado de Torrox. El alcalde y cinco concejales, investigados.",
+    resumen: "El alcalde socialista de Frigiliana (Málaga), Alejandro Herrero, y cinco concejales de su equipo figuran como investigados por prevaricación y malversación, entre otros delitos, tras un registro de trece horas en el Ayuntamiento.",
+    personas: ["Alejandro Herrero"],
+    eventos: [
+      { f: "2026-06-30", t: "registro", h: "Registran durante trece horas el Ayuntamiento de Frigiliana; el alcalde y cinco ediles, investigados", s: [
+        "https://theobjective.com/espana/tribunales/2026-07-01/alcalde-ediles-socialistas-frigiliana-malaga/"
+      ] }
+    ]
+  },
+  {
+    id: "la-granja",
+    titulo: "Exalcalde de La Granja de San Ildefonso",
+    clase: "judicial",
+    ambito: "territorial",
+    estado: "El TSJ de Castilla y León ordenó en septiembre de 2026 continuar la causa por procedimiento abreviado; la Fiscalía debe decidir si pide juicio.",
+    resumen: "José Luis Vázquez, alcalde socialista de La Granja (Segovia) entre 2007 y 2019, está investigado por prevaricación y malversación por nombramientos y retribuciones de personal, contratos y pagos aprobados pese a los reparos de la intervención municipal.",
+    personas: ["José Luis Vázquez"],
+    eventos: [
+      { f: "2026-09-01", t: "procesamiento", h: "Siguen adelante las diligencias contra el exalcalde socialista de La Granja", s: [
+        "https://www.infobae.com/espana/agencias/2026/09/01/siguen-diligencias-contra-un-exalcalde-del-psoe-de-la-granja-de-san-ildefonso-segovia-por-prevaricacion-y-malversacion/"
       ] }
     ]
   }
